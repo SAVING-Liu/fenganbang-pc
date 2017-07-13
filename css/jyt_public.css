@@ -2,7 +2,7 @@
 * @Author: jyt
 * @Date:   2017-07-12 08:53:54
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-12 18:29:17
+* @Last Modified time: 2017-07-13 11:29:01
 */
 /*发布需求-描述类别*/
 body{
@@ -442,6 +442,7 @@ body{
 	margin-top: 30px;
 	margin-left: 360px;
 }
+/*交纳保证金*/
 .jyt_money{
 	font-style: normal;
 	color: #ff910e;
@@ -450,4 +451,183 @@ body{
 .jyt_money span{
 	color: #ff910e;
 	font-size: 20px;
+}
+.jyt_paybox1{
+	width: 1140px;
+	margin: 0 auto;
+	border: 1px solid #3b90ed;
+	margin-top: 33px;
+}
+.jyt_wxtit{
+	background: #f4f5f7;
+	padding-left: 30px;
+	overflow:hidden; 
+	border-bottom: 1px solid #edebeb;
+}
+.jyt_wxtit img{
+	display: block;
+	padding: 15px 0;
+	float: left;
+}
+.jyt_wxtit p{
+	display: block;
+	color: #333333;
+	float: left;
+	font-size: 18px;
+	padding-top: 17px;
+	padding-left: 15px;
+}
+.jyt_wxxq{
+	overflow: hidden; 
+}
+.wxcodebox{
+	width: 198px;
+	height: 198px;
+	border: 1px solid #eaeaea;
+	float: left;
+	margin-top: 55px;
+	margin-left: 200px;
+}
+.wxcodebox1{
+	background: #999999;
+	width: 155px;
+	height: 155px;
+	margin: 21px;
+}
+.jyt_wxtrouble{
+	background: url('../images/jyt_wxbg.jpg') no-repeat top left;
+	width: 569px;
+	height: 277px;
+	margin: 20px 30px 20px 0;
+	float: right;
+}
+.jyt_wxtrouble p{
+	width: 200px;
+	margin: 85px auto 25px;
+	font-size: 18px;
+	color: #999999;
+	text-align: center;
+	line-height: 30px;
+}
+.jyt_wxtrouble h5{
+	width: 200px;
+	margin: 0 auto;
+	font-weight: normal;
+	color: #999999;
+	font-size: 12px;
+}
+.jyt_wxtrouble h5 a{
+	color: #dd2727;
+}
+.jyt_paybox2{
+	width: 1140px;
+	margin: 0 auto;
+	border: 1px solid #e6e6e6;
+	margin-top: 33px;
+}
+.jyt_zfbxq{
+	overflow:hidden;
+	display: none;
+}
+.jyt_zfbtit{
+	padding-left: 30px;
+	overflow:hidden; 
+	border-bottom: 1px solid #edebeb;
+}
+.jyt_zfbtit img{
+	display: block;
+	padding: 15px 0;
+	float: left;
+}
+.jyt_zfbtit p{
+	display: block;
+	color: #333333;
+	float: left;
+	font-size: 16px;
+	padding-top: 17px;
+	padding-left: 15px;
+}
+.jyt_paybox3{
+	width: 1140px;
+	margin: 0 auto;
+	border: 1px solid #e6e6e6;
+	margin-top: 33px;
+	margin-bottom: 60px;
+}
+.jyt_yue{
+	color: #333333;
+}
+.jyt_yuexq{
+	overflow: hidden; 
+	padding: 18px 0;
+}
+.jyt_pwd{
+	float: left;
+	margin-left: 78px;
+	overflow: hidden;
+	line-height: 33px;
+}
+.jyt_pwd p{
+	float: left;
+	color: #333333;
+	font-size: 18px;
+	padding-right: 18px;
+}
+.jyt_pwd input{
+	float: left;
+	height: 33px;
+	line-height: 33px;
+	font-size: 16px;
+	padding: 0 10px;
+	border: 1px solid #e6e6e6;
+	width: 198px;
+}
+.jyt_pwd a{
+	float: left;
+	color: #3c8fed;
+	padding-left: 15px;
+	font-size: 14px;
+	text-decoration: underline;
+}
+.jyt_paysub{
+	color: #fff;
+	background: #3c8fed;
+	width: 130px;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	float: right;
+	margin-right: 30px;
+	border-radius: 7px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.jyt_pubsuccessxq h5 span{
+	font-size: 18px;
+	color: #999999;
+}
+.jyt_modelbox{
+	margin-left: 360px;
+	margin-top: 35px;
+	overflow: hidden;
+}
+.jyt_model{
+	float: left;
+	margin-right: 40px;
+}
+.jyt_model img{
+	display: block;
+	margin-bottom: 20px;
+}
+.jyt_modelsel{
+	width: 24px;
+	height: 24px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.jyt_modelno{
+	background: url('../images/jyt_modelno.jpg') no-repeat top left;
+}
+.jyt_modelyes{
+	background: url('../images/jyt_modelyes.jpg') no-repeat top left;
 }

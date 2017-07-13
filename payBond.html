@@ -34,7 +34,54 @@
 						<h5 style="padding-bottom: 0;">商家保证金</h5>
 						<i class="jyt_money">￥ <span>366.00</span></i>
 					</div>
+					<div class="jyt_paybox1">
+						<!--微信支付-->
+						<div class="jyt_wxtit">
+							<img src="images/jyt_wx.jpg">
+							<p>微信支付</p>
+						</div>
+						<div class="jyt_wxxq">
+							<div class="wxcodebox">
+								<div class="wxcodebox1"></div>
+							</div>
+							<div class="jyt_wxtrouble">
+								<p>请使用微信扫描二维码以完成支付</p>
+								<h5>（如果支付遇到问题可 <a href="javascript:void(0);">联系客服</a> ）</h5>
+							</div>
+						</div>
+					</div>
 					
+					<div class="jyt_paybox2">
+						<!--支付宝支付-->
+						<div class="jyt_zfbtit">
+							<img src="images/jyt_zfb.jpg">
+							<p>支付宝支付</p>
+						</div>
+						<div class="jyt_zfbxq">
+							<div class="wxcodebox">
+								<div class="wxcodebox1"></div>
+							</div>
+							<div class="jyt_wxtrouble">
+								<p>请使用支付宝扫描二维码以完成支付</p>
+								<h5>（如果支付遇到问题可 <a href="javascript:void(0);">联系客服</a> ）</h5>
+							</div>
+						</div>
+					</div>
+					<div class="jyt_paybox3">
+						<!--余额支付-->
+						<div class="jyt_wxtit">
+							<img src="images/jyt_yue.jpg">
+							<p class="jyt_yue">余额支付&nbsp;&nbsp;&nbsp;&nbsp;3600元</p>
+						</div>
+						<div class="jyt_yuexq">
+							<div class="jyt_pwd">
+								<p>支付密码：</p>
+								<input type="password" />
+								<a href="javascript:void(0);">忘记密码？</a>
+							</div>
+							<input onclick="javascript:window.location.href='openStore.html'" class="jyt_paysub" type="button" value="确认付款" />
+						</div>
+					</div>
 				</div>
 			</div>
 				
@@ -42,9 +89,14 @@
 		<div class="footer"></div>	
 <script type="text/javascript">
 $(document).ready(function() {
-	$('#mydatepicker').dcalendarpicker(); //初始化日期选择器
-	$('#mycalendar').dcalendar(); //初始化日历
-	$('#mydatepicker').dcalendarpicker({format: 'yyyy-mm-dd'});//日历格式
+	$(".jyt_paybox2 .jyt_zfbtit").on("click",function(){
+		$(".jyt_wxxq").slideUp(400);
+		$(".jyt_zfbxq").slideDown(400);
+	});
+	$(".jyt_paybox1 .jyt_wxtit").on("click",function(){
+		$(".jyt_zfbxq").slideUp(400);
+		$(".jyt_wxxq").slideDown(400);
+	})
 });
 </script>														
     </body>

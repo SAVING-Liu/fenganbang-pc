@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/app/dcalendar.picker.js"></script>
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content">
+			<div class="jyt_ publish">
+				<div class="jyt_publishtop">
+					<div class="jty_tit">
+						<p class="p1 jyt_pcol">企业认证</p>
+						<p style="padding-left: 248px;" class="p2 jyt_pcol">审核</p>
+						<p style="padding-left: 242px;" class="p3">交纳保证金</p>
+						<p style="padding-left: 242px;" class="p4">开店成功</p>
+					</div>
+					<div class="genreyes jyt_genreyes1">1</div>
+					<div class="genreyes jyt_genreyes2">2</div>
+					<div class="genreyes jyt_genreyes3">3</div>
+					<div class="genreyes jyt_genreyes4">4</div>
+					<div class="jyt_hui">
+						<div class="jty_blue wid4"></div>
+					</div>
+				</div>
+				<div class="jyt_publishcon">
+					<div class="jyt_pubsuccess" style="margin-top: 60px;">
+						<img src="images/jyt_pub1.jpg">
+						<div class="jyt_pubsuccessxq">
+							<p>恭喜您，开店成功！</p>
+							<h5>您已成功开店啦，请选择店铺模板后，去后台管理店铺！&nbsp;&nbsp;&nbsp;<span>（点击图片查看大图）</span></h5>
+						</div>
+
+					</div>
+					<div class="jyt_modelbox">
+						<div class="jyt_model">
+							<img src="images/jyt_model1.jpg">
+							<div class="jyt_modelsel jyt_modelno"></div>
+						</div>
+						<div class="jyt_model">
+							<img src="images/jyt_model2.jpg">
+							<div class="jyt_modelsel jyt_modelno jyt_modelyes"></div>
+						</div>
+						<div class="jyt_model">
+							<img src="images/jyt_model3.jpg">
+							<div class="jyt_modelsel jyt_modelno"></div>
+						</div>
+					</div>
+					<div class="jyt_box1">
+						<button class="jyt_confirm jyt_mar" type="button">后台管理店铺</button>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<div class="footer"></div>	
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$(".jyt_modelsel").on("click",function(){
+		$(".jyt_modelsel").removeClass('jyt_modelyes');
+		$(this).addClass('jyt_modelyes');
+	})
+});
+</script>														
+    </body>
+   
+</html>
