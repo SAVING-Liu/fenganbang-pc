@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+p,a,li,h1,h2,h3,h4,h5,span{
+	font-family: "微软雅黑";
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.zpf_ins_wrap{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.zpf_ins_head{
+	width: 100%;
+	height: 53px;
+	overflow: hidden;
+}
+.zpf_ins_head p{
+	font-size: 14px;
+	color: #999;
+	line-height: 53px;
+}
+.zpf_ins_cont{
+	width: 100%;
+	height: 378px;
+}
+.zpf_ins_cont_left{
+	width: 899px;
+	height: 376px;
+	border: 1px #e6e6e6 solid;
+	background: #ffffff;
+	float: left;
+}
+.zpf_ins_cont_l_o{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px #e6e6e6 dashed;
+}
+.zpf_ins_cont_l_o h5{
+	font-size: 22px;
+	font-weight: 100;
+	padding-left: 30px;
+	line-height: 70px;
+}
+.zpf_ins_cont_l_t{
+	width: 100%;
+	height: 42px;
+	overflow: hidden;
+}
+.zpf_ins_cont_l_t p{
+	display: block;
+	width: 100px;
+	height: 15px;
+	font-size: 14px;
+	margin-top: 24px;
+	color: #999999;
+	text-align: right;
+	float: left;
+}
+.zpf_ins_cont_t_o{
+	width: auto;
+	margin-top: 26px;
+	height: 15px;
+	margin-left: 5px;
+	float: left;
+}
+.zpf_ins_cont_t_o p{
+	font-size: 14px;
+	margin-top: 0;
+	text-align: left;
+	color: black;
+}
+.zpf_ins_cont_l_s{
+	width: 287px;
+	height: 50px;
+	margin-top: 23px;
+	margin-left: 30px;
+	background: #3c8fed;
+	cursor: pointer;
+	overflow: hidden;
+}
+.zpf_ins_cont_l_s img{
+	display: block;
+	margin-left: 50px;
+	margin-top: 13px;
+	float: left;
+}
+.zpf_ins_cont_l_s p{
+	float: left;
+	font-size: 20px;
+	color: white;
+	line-height: 50px;
+	padding-left: 40px;
+}
+.zpf_ins_cont_right{
+	width: 279px;
+	height: 376px;
+	border: 1px #e6e6e6 solid;
+	background: #ffffff;
+	float: right;
+}
+.zpf_ins_cont_r_o{
+	width: 240px;
+	height: 250px;
+	border-bottom: 1px #e6e6e6 dashed;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.zpf_ins_cont_r_o img{
+	display: block;
+	margin: 35px auto 20px auto;
+}
+.zpf_ins_cont_r_o p{
+	font-size: 18px;
+	color: #666;
+	text-align: center;
+}
+.zpf_ins_cont_r_t{
+	width: 240px;
+	height: 50px;
+	margin: 20px auto 0 auto;
+}
+.zpf_ins_cont_r_t_l{
+	width: 50%;
+	height: 50px;
+	border-right: 1px #e6e6e6 solid;
+	box-sizing: border-box;
+	overflow: hidden;
+	float: left;
+}
+.zpf_ins_cont_r_t_l h5{
+	font-size: 24px;
+	color: #3c8fed;
+	text-align: center;
+
+}
+.zpf_ins_cont_r_t_l p{
+	font-size: 14px;
+	color: #666666;
+	text-align: center;
+	margin-top: 2px;
+}
+.zpf_ins_cont_r_t_r{
+	width: 50%;
+	height: 50px;
+	float: left;
+}
+.zpf_ins_cont_r_t_r img{
+	display: block;
+	margin: 3px auto 0 auto;
+}
+.zpf_ins_cont_r_t_r p{
+	font-size: 14px;
+	color: #666666;
+	text-align: center;
+	margin-top: 2px;
+}
+.zpf_ins_main{
+	width: 100%;
+	height: 314px;
+	margin: 30px auto 55px auto;
+	background: white;
+}
+.zpf_ins_main_o{
+	width: 100%;
+	height: 30px;
+	background: #e6e6e6;
+}
+.zpf_ins_main_o p{
+	font-size: 14px;
+	color: #999;
+	line-height: 30px;
+	padding-left: 30px;
+}
+.zpf_ins_main_t{
+	width: 901px;
+    height: 376px;
+}
+.zpf_ins_main_t h5{
+	display: block;
+	width: 100%;
+    height: 70px;
+    border-bottom: 1px #e6e6e6 dashed;
+    font-size: 22px;
+    font-weight: 100;
+    text-indent: 30px;
+    line-height: 70px;
+}
+.zpf_ins_main_t p{
+	font-size: 14px;
+	color: #666;
+	padding-left: 30px;
+	line-height: 35px;
+}
+.zpf_ins_main_t p:nth-child(2){
+	margin-top: 15px;
+}
