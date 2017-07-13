@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:27:19
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 15:46:48
+* @Last Modified time: 2017-07-13 19:34:21
 */
 .lf_jump{
 	display:block;
@@ -98,4 +98,224 @@ button{
 .lf_bannerWraper img{
     display:block;
     width:100%;
+}
+/* 首页-免费发布及我要开店  */
+.lf_indexnumDetail{
+    width:100%;
+    background-color: #363945;
+    padding:20px 0;
+}
+.lf_indexnumDetailwrap{
+    width:1200px;
+    margin:0 auto;
+}
+.lf_indexnumDetailwrap>ul{
+    width:920px;   
+}
+.lf_indexNumber{
+    height:82px;
+    line-height: 82px;
+    overflow:hidden;
+}
+.lf_indexNumber>img{
+    display:block;
+    float:left;
+    margin-top:26px;
+}
+.lf_indexNumber>span{
+    display:block;
+    float:left;
+    font-weight:bolder;
+    font-size:28px;
+    color:#fff;
+    padding-left:20px;
+}
+.lf_numdescript{
+    font-size:14px;
+    color:#fff;
+    text-align: center;
+}
+.lf_indexBtns>button{
+    display:block;
+    width:210px;
+    height:42px;
+    color:#fff;
+    border-radius:5px;
+    font-size:18px;
+}
+.lf_indexBtns>button.lf_freeBtn{
+    background-color:#3c8fed;
+    margin-bottom:16px;
+}
+.lf_indexBtns>button.lf_openBtn{
+    background-color:#ff910e;
+}
+/* 首页 商品列表 */
+.lf_indexGoods{
+    width:100%;
+    background-color: #fff
+}
+.lf_indexGoodsbox{
+    width:1200px;
+    margin:0 auto;
+    padding-top:20px;
+}
+.lf_indexGoodsbox-title{
+    width:100%;
+    border-bottom:3px solid #e6e6e6;
+    height:60px;
+    line-height: 60px
+}
+.lf_indexGoodsbox-title li{
+    height:100%;
+    border-bottom:3px solid #e6e6e6;
+    float:left;
+    position:relative;
+    bottom:-3px;
+    margin-right:74px;
+    font-size:20px;
+    color:#999;
+    cursor:pointer;
+}
+.lf_indexGoodsbox-title .lf_indexListon{
+    border-bottom:3px solid #3c8fed;
+    color:#3c8fed;
+}
+.lf_indexGoodsbox-con{
+    padding:20px 0 0;
+}
+.lf_indexGoodsbox-con .lf_indexGoodsCon{
+    display:none;
+}
+.lf_indexGoodsbox-con .lf_indexGoodsCon-on{
+    display:block;
+}
+.lf_indexGoodsCon li{
+    float:left;
+    width:280px;
+    height:402px;
+    border:1px solid #e6e6e6;
+    background-color: #fff;
+    padding:20px 20px 0;
+    overflow:hidden;
+    position:relative;
+    margin-right:26px;
+    margin-bottom:20px;
+}
+.lf_indexGoodsCon li:hover{
+    border:1px solid #3c8fed;
+    background-color: #f5f9ff;
+}
+.lf_indexGoodsCon li>.lf_jump{
+    height:244px;
+}
+.lf_indexGoodsCon li>a>img{
+    display:block;
+    width:238px;
+    height:242px;
+    border:1px solid #e6e6e6;
+}
+.lf_indexGoodsDetail-title{
+    padding:16px 0 6px;
+}
+.lf_indexGoodsDetail-title>h2{
+    font-size:16px;
+    color:#333333;
+}
+.lf_indexStar{
+    width:94px;
+    text-align-last: justify;
+}
+.lf_indexService{
+    line-height:28px;
+    font-size:14px;
+}
+.lf_indexService i{
+     color:#999;
+}
+.lf_indexService span{
+     color:#333;
+     padding-left:10px;
+}
+.lf_indexConnect{
+    display:block;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    width:58px;
+    color:#fff;
+    background-color: #3c8fed;
+    border-radius:5px;
+    padding:5px 0;
+}
+.lf_indexToshop{
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:278px;
+    color:#fff;
+    background-color: #3c8fed;
+    border-radius:3px;
+    font-size:16px;
+    padding:6px 0;
+}
+/* 广告 */
+.lf_indexAdv{
+    width:1200px;
+    padding:10px 0 30px;
+    margin:0 auto;
+}
+.lf_indexAdv>ul>li{
+    width:590px;
+    position:relative;
+}
+.lf_indexAdv>ul>li img{
+    display:block;
+    width:590px;
+    height:90px;
+}
+.lf_advbtn{
+    display:block;
+    position: absolute;
+    right:2px;
+    bottom:2px;
+    padding:3px 8px;
+    color:#fff;
+    font-size:12px;
+    background-color: #717481
+}
+/* 需求 */
+.lf_demand{
+    width:100%;
+}
+.lf_demandTitle{
+    width:100%;
+    height:84px;
+    background:url("../images/lf_qbg.png") no-repeat center top;
+}
+.lf_demandTitlewrap{
+    width:1200px;
+    margin:0 auto;
+    height:44px;
+    padding:20px 0;
+    background:url("../images/lf_qbg2.png") no-repeat center top;
+}
+.lf_demandTitlewrap>ul{
+    height:44px;
+    background:url("../images/lf_ulbg.png") no-repeat center top;
+    line-height: 44px
+}
+.lf_demandTitlewrap>ul>li{
+    font-size:16px;
+    color:#fff;
+    float:left;
+}
+.lf_demandQ{
+    padding-left:20px;
+    margin-right:166px;
+}
+.lf_demandTitlewrap>ul>li.lf_demandA{
+    font-size:14px;
+    width:155px;
 }
