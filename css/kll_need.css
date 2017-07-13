@@ -24,6 +24,11 @@
 	line-height: 39px;
 	font-size: 14px;
 	overflow: hidden;
+	display: none;
+}
+
+.kll-need_type>.kll-need_list_one {
+	display: block;
 }
 
 .kll-need_type>.kll-need_list_one .kll-need_class {
