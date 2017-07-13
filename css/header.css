@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:37:10
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 10:44:53
+* @Last Modified time: 2017-07-13 12:09:03
 */
 .lf_jump{
 	display:block;
@@ -304,4 +304,54 @@ button{
 }
 .lf_secondNav>ul>li:hover .lf_thirdNav{
 	display:block;
+}
+/* 公共底部 */
+.lf_footerNav{
+	width:100%;
+	height:184px;
+	background:#363945 url("../images/lf_footer.png") no-repeat center top;
+	overflow:hidden;
+}
+.lf_footerNavwrap li{
+	color:#fff;
+}
+.lf_footerNavwrap li a{
+	color:#fff;
+}
+.lf_footerNavwrap li:hover a{
+	color:#ff9524;
+}
+.lf_footerNavwrap{
+	width:1200px;
+	margin:0 auto;
+	background:url("../images/lf_footerbg.png");
+	height:121px;
+	padding:30px 0 32px;
+}
+.lf_serviceHotline{
+	float:left;
+	padding-left:15px;
+}
+.lf_footerNavwrap>ul>li:nth-child(1){
+	font-size:16px;
+	margin-bottom: 22px;
+}
+.lf_serviceHotline>li:nth-child(2){
+	font-size:20px;
+	line-height:40px;
+	height:50px;
+}
+.lf_serviceHotline>li:nth-child(3){
+	font-size:14px;
+}
+.lf_footerNav li:hover{
+	color:#ff9524;
+	cursor:pointer;
+}
+.lf_IntroductionGuide{
+	float:left;
+	margin-left:88px;
+}
+.lf_IntroductionGuide .footer-guide{
+	line-height:36px;
 }

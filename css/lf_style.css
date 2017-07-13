@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:27:19
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 10:41:35
+* @Last Modified time: 2017-07-13 11:13:19
 */
 .lf_jump{
 	display:block;
@@ -64,4 +64,22 @@ select{
 }
 button{
     cursor:pointer;
+}
+/* 公共样式 */
+.lf_indexNav>li{
+    float:left;
+    padding:23px 0;
+    margin-left:34px;
+}
+.lf_indexNav>li img{
+    display:block;
+    width:29px;
+    height:29px;
+    margin:0 auto 2px;
+}
+.lf_indexNav>li span{
+    display:block;
+    text-align:center;
+    font-size:14px;
+    color:#999;
 }
