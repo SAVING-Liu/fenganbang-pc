@@ -374,3 +374,28 @@
 	width: 63px;
 	color: #fff;
 }
+
+/*需求详情*/
+.kll-center_ns {
+	padding-top: 20px;
+}
+
+.kll-ns_path {
+	line-height: 50px;
+	color: #a1a1a1;
+}
+
+.kll-ns_patha {
+	color: #A1A1A1;
+}
+
+.kll-ns_details {
+	padding-bottom: 20px;
+}
+
+.kll-ns_detop {
+	border: 1px solid #A1A1A1;
+	padding: 24px 0 24px 20px;
+	width: 884px;
+}
+
