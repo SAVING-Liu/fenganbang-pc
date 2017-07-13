@@ -1,0 +1,358 @@
+.header {
+	height: 221px;
+	background: #3c8fed;
+}
+
+
+/*需求大厅*/
+.kll-center_box {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.kll-need_type {
+	margin-top: 20px;
+	width: 1198px;
+	border: 1px solid #e6e6e6;
+	border-bottom: none;
+	overflow: hidden;
+}
+
+.kll-need_type>.kll-need_list {
+	border-bottom: 1px solid #E6E6E6;
+	cursor: pointer;
+	line-height: 39px;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.kll-need_type>.kll-need_list_one .kll-need_class {
+	background: #f5f5f7;
+}
+
+
+.kll-need_list_one .kll-need_class .kll-need_img {
+	vertical-align: middle;
+	padding-left: 5px;
+}
+
+.kll-need_type>.kll-need_list .kll-need_class {
+	border-right: 1px solid #e6e6e6;
+	width: 128px;
+	height: 39px;
+	float: left;
+	text-align: center;
+}
+
+.kll-need_type>.kll-need_list .kll-need_class:active {
+	color: #007AFF;
+}
+
+.kll-need_type>.kll-need_list .kll-need_classul {
+	float: left; 
+	width: 1060px;
+	overflow: hidden;
+}
+
+.kll-need_list .kll-need_classul .kll-need_list {
+	float: left;
+	width: 128px;
+	height: 39px;
+	text-align: center;
+}
+
+.kll-need_list>.kll-need_classul .kll-need_list:hover {
+	color: #ff9524;
+}
+
+
+.kll-center_box>.kll-need_change {
+	margin-top: 87px;
+	position: relative;
+}
+
+.kll-need_change>.kll-need_p {
+	position: absolute;
+	top: -46px;
+	height: 45px;
+	line-height: 45px;
+	width: 135px;
+	text-align: center;
+	border-top: 1px solid #e6e6e6;
+	background: #f5f5f7;
+	cursor: pointer;
+}
+
+.kll-need_change>.kll-need_pone {
+	left: 0;
+	border-left: 1px solid #e6e6e6;
+}
+
+.kll-need_change>.kll-need_ptwo {
+	left: 136px;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+}
+
+.kll-need_change>.kll-need_pchange {
+	background: #fff;
+	height: 46px;
+}
+
+.kll-need_change>.kll-need_ul {
+	border: 1px solid #E6E6E6;
+	height: 45px;
+}
+
+.kll-need_change>.kll-need_ul .kll-need_list {
+	float: left;
+	line-height: 45px;
+	height: 45px;
+	padding: 0 0 0 20px;
+	cursor: pointer;
+}
+
+.kll-need_change>.kll-need_ul .kll-need_listchange {
+	color: #3c8fed;
+}
+
+.kll-need_ul .kll-need_list .kll-need_span:hover {
+	font-size: 17px;
+	display: inline-block;
+}
+
+.kll-need_ul .kll-need_list .kll-need_input {
+	width: 62px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #E6E6E6;
+	padding-left: 5px;
+}
+
+.kll-need_ul .kll-need_list .kll-need_ok {
+	width: 54px;
+	line-height: 24px;
+	background: #f5f5f7;
+	border: 1px solid #E6E6E6;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.kll-need_change>.kll-need_ul .kll-need_site {
+	float: right;
+	margin-right: 30px;
+	line-height: 24px;
+	width: 92px;
+	border: 1px solid #E6E6E6;
+	color: #333;
+	height: 24px;
+	margin-top: 10px;
+	text-align: center;
+	padding: 0;
+	font-size: 14px;
+	position: relative;
+}
+
+.kll-need_ul .kll-need_site .kll-need_b {
+	vertical-align: middle;
+	font-weight: normal;
+	padding-right: 5px;
+}
+
+.kll-need_ul .kll-need_site .kll-need_img {
+	vertical-align: middle;
+}
+
+.kll-need_ul .kll-need_site .kll-need_out {
+	position: absolute;
+	top: 25px;
+	left: -250px;
+	width: 340px;
+	height: 149px;
+	padding: 20px;
+	background: url("../images/need_bg.png");
+	display: none;
+}
+
+.kll-need_site .kll-need_out .kll-need_h4 {
+	font-weight: 700;
+	font-size: 14px;
+	border-bottom: 2px solid #3c8fed;
+	text-align: left;
+	line-height: 20px;
+}
+
+ .kll-need_out .kll-need_siteul .kll-need_siteli {
+	float: left;
+	width: 80px;
+	padding-top: 10px;
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+}
+
+.kll-need_clear {
+	clear: both;
+}
+
+.kll-need_box {
+	padding-bottom: 20px;
+	overflow: hidden;
+	display: none;
+}
+
+.kll-need_boxchagne {
+	display: block;
+}
+
+.kll-need_show .kll-need_showli {
+	width: 1140px;
+	border: 1px solid #e6e6e6;
+	background: #fff;
+	margin-top: 20px;
+	overflow: hidden;
+	height: 66px;
+	padding: 12px 29px 12px 29px;
+}
+
+.kll-need_show .kll-need_showli:hover {
+	border: 1px solid #3c8fed;
+	background: #f5f9ff;
+}
+
+.kll-need_showli .kll-need_showimg {
+	display: block;
+	float: left;
+	width: 69px;
+	height: 66px;
+	border-radius: 50%;
+}
+
+.kll-need_showli .kll-need_showbox {
+	float: left;
+	padding-left: 31px;
+	width: 305px;
+}
+
+.kll-need_showbox .kll-need_showtitle {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #333;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.kll-need_showbox .kll-need_showtitle:hover {
+	text-decoration: underline;
+}
+
+.kll-need_showbox .kll-need_showtitle:hover .kll-need_showtag {
+	text-decoration: none;
+}
+
+.kll-need_showbox .kll-need_showtitle .kll-need_showtag {
+	font-size: 12px;
+	color: #fff;
+	background: #ff6600;
+	display: inline-block;
+	margin-right: 11px;
+	padding: 0 3px;
+	border-radius: 3px;
+}
+
+.kll-need_showbox .kll-need_showtime {
+	padding-top: 15px;
+	font-size: 12px;
+	color: #333;
+}
+
+.kll-need_showbox .kll-need_showtimer {
+	color: #5098ee;
+}
+
+.kll-need_showli .kll-need_showmoney {
+	padding-left: 170px;
+	line-height: 66px;
+	font-size: 24px;
+	color: #ff6600;
+	float: left;
+	font-weight: 700;
+}
+
+.kll-need_showli .kll-need_shownum {
+	line-height: 66px;
+	font-size: 14px;
+	color: #adadad;
+	padding-left: 160px;
+	float: left;
+} 
+
+.kll-need_showli .kll-need_shownum .kll-need_show {
+	color: #1e7cc4;
+	font-size: 18px;
+	padding-right: 5px;
+}
+
+
+.kll-need_showli .kll-need_showsite {
+	line-height: 80px;
+	font-size: 14px;
+	color: #323232;
+	float: right;
+} 
+
+.kll-need_box .kll-need_page {
+	float: right;
+	padding-top: 40px;
+}
+
+.kll-need_box .kll-need_page .kll-need_btn {
+	width: 92px;
+	line-height: 30px;
+	height: 30px;
+	color: #fff;
+	font-size: 14px;
+	background: #3c8fed;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.kll-need_box .kll-need_page .kll-need_pageshow {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+ .kll-need_page .kll-need_pageshow .kll-need_pagenum {
+ 	color: #7c7c7c;
+ 	display: inline-block;
+ 	line-height: 30px;
+ 	padding: 0 5px;
+ 	cursor: pointer;
+ }
+ 
+.kll-need_page .kll-need_pageshow .kll-need_pagenumshow {
+ 	color: #fff;
+ 	background: #39a9ff;
+ }
+ 
+.kll-need_page .kll-need_pagein {
+ 	width: 38px;
+ 	height: 28px;
+ 	border: 1px solid #3c8fed;
+ 	text-align: center;
+ }
+
+.kll-need_box .kll-need_page .kll-need_btnok {
+	background: #3c8fed;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	width: 63px;
+	color: #fff;
+}

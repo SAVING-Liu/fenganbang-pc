@@ -1,0 +1,258 @@
+/*
+* @Author: Administrator
+* @Date:   2017-07-11 17:37:10
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-07-12 16:52:11
+*/
+.lf_jump{
+	display:block;
+	height:100%;
+}
+.lf_left{
+	float:left;
+}
+.lf_right{
+	float:right;
+}
+.lf_borderBox{
+	-moz-box-sizing: border-box; /*Firefox3.5+*/ 
+	-webkit-box-sizing: border-box; /*Safari3.2+*/ 
+	-o-box-sizing: border-box; /*Opera9.6*/ 
+	-ms-box-sizing: border-box; /*IE8*/ 
+	box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+}
+.lf_clearFloat:after{
+	content:".";
+	height:0;
+	display:block;
+	clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
+.lf_displayFlex{
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ 
+    display: -ms-flexbox; /* TWEENER - IE 10 */ 
+    display: -webkit-flex; /* NEW - Chrome */ 
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -moz-box-orient:horizontal;
+    -moz-box-direction:reverse;
+    -webkit-flex-direction:row;
+    flex-direction:row;/* 元素排列方式 */
+    -webkit-justify-content:space-around;
+    -moz-box-pack:space-around;
+    -webkit--moz-box-pack:space-around;
+    box-pack:space-around;
+    justify-content:space-around;
+    -webkit-flex-wrap:wrap;
+    -webkit-box-lines:multiple;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;/* 定义子元素换行情况 */
+}
+a{
+	color:#333;
+}
+body{
+	font-size:14px;
+	color:#333;
+}
+select{
+	background:0;
+	border:0;
+}
+button{
+	cursor:pointer;
+}
+/* 公共头部 */
+/* 顶部 */
+.lf_head{
+	width:100%;
+	border-bottom:1px solid #e6e6e6;
+	background-color: #f8f8f8;
+}
+.lf_headWrap{
+	width:1200px;
+	margin:0 auto;
+	height:45px;
+}
+.lf_welcome{
+	height:44px;
+	line-height:44px;
+	width:112px;
+}
+.lf_activeNav>li:nth-last-child(1)>.lf_jump{
+	background:0;
+}
+.lf_navli{
+	float:left;
+	height:44px;
+	line-height:44px;
+}
+.lf_navli>.lf_jump{
+	padding:0 20px;
+	background:url("../images/lf_line.png") no-repeat right center;
+}
+.lf_registFree>.lf_jump{
+	color:#3c8fed;
+}
+.lf_phone>.lf_jump>.lf_icon{
+	display:block;
+	width:20px;
+	height:100%;
+	float:left;
+	background:url("../images/icon_phone.png") no-repeat left center;
+}
+.lf_wechat>.lf_jump{
+	background:0;
+}
+.lf_wechat>.lf_jump>.lf_icon{
+	display:block;
+	width:24px;
+	height:100%;
+	float:left;
+	background:url("../images/icon_weixin.png") no-repeat left center;
+}
+.lf_stableNav .lf_wechat>.lf_jump>.lf_icon{
+	background:url("../images/icon_email.png") no-repeat left center;	
+}
+.lf_wechat>.lf_jump>.lf_iconMsg{
+	display:block;
+	margin-left:8px;
+	width:28px;
+	height:100%;
+	float:right;
+	background:url("../images/icon_cirreact.png") no-repeat right center;
+	font-size:12px;
+	color:#fff;
+	text-align:center;
+}
+.lf_stableNav .lf_wechat>.lf_jump{
+	padding-right:4px;
+}
+/* 搜索部分 */
+.lf_searchBox{
+	width:100%;
+	padding:20px 0;
+}
+.lf_searchWrap{
+	width:1200px;
+	margin:0 auto;
+}
+.lf_searchWrap>.lf_jump>img{
+	display:block;
+	width:114px;
+	height:96px;
+}
+.lf_location{
+	padding:28px 0 28px 45px;
+	width:188px;
+}
+.lf_location>select{
+	height:20px;
+	font-size:16px;
+	padding-right:24px;
+	color:#3c8fed;
+	background:url("../images/icon_bottom.png") no-repeat right center;
+}
+.lf_location>p{
+	font-size:12px;
+	color:#999;
+	height:20px;
+	line-height:20px;
+}
+.lf_search{
+	margin:24px 0;
+	height:48px;
+	width:506px;
+	border:2px solid #3c8fed;
+	overflow:hidden;
+	border-radius: 3px;
+}
+.lf_search>select{
+	display:block;
+	float:left;
+	height:100%;
+	padding:0 38px 0 18px;
+	border-right:2px solid #f0f0f0;
+	font-size:16px;
+	color:#666666;
+	background:url("../images/icon_bottom1.png") no-repeat 80px center;
+	cursor:pointer;
+}
+.lf_search>input{
+	display:block;
+	float:left;
+	height:100%;
+	width:250px;
+	padding:0 10px;
+	font-size:16px;
+}
+.lf_search>button{
+	display:block;
+	float:right;
+	font-size:18px;
+	color:#fff;
+	height:100%;
+	width:123px;
+	background-color:#3c8fed;
+}
+.lf_headBtns{
+	margin: 24px 0;
+    height: 48px;
+    float:left;
+}
+.lf_headBtns>button{
+	height:100%;
+	border-radius:3px;
+	display:block;
+	float:left;
+	width:128px;
+	color:#fff;
+	font-size:18px;
+	margin-left:22px;
+}
+.lf_freeSend{
+	background-color:#6db84b;
+}
+.lf_openShop{
+	background-color:#ff910e;
+}
+/*头部导航栏 */
+.lf_headNav{
+	width:100%;
+	background-color:#3c8fed;
+}
+.lf_headNavwrap{
+	width:1200px;
+	margin:0 auto;
+}
+.lf_headNavlist{
+	height:42px;
+	line-height:42px;
+}
+.lf_headNavlist>li>.lf_jump{
+	float:left;
+	color:#fff;
+	font-size:18px;
+	padding:0 50px;
+	color:#fff;
+}
+.lf_headNav-on>.lf_jump{
+	background-color:#316ec6;
+}
+.lf_headNavlist>li.lf_allClassify>.lf_jump{
+	position:relative;
+	width:180px;
+	background:#ff9524 url("../images/icon_bottom2.png") no-repeat 140px center;
+	border-top-left-radius: 10px;
+	padding:0;
+	text-align:center;
+}
+.lf_headClassify{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#e88216;
+}

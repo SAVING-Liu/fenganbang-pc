@@ -1,0 +1,53 @@
+/*
+* @Author: Administrator
+* @Date:   2017-07-11 17:27:19
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-07-11 17:37:30
+*/
+.lf_jump{
+	display:block;
+	height:100%;
+}
+.lf_left{
+	float:left;
+}
+.lf_right{
+	float:right;
+}
+.lf_borderBox{
+	-moz-box-sizing: border-box; /*Firefox3.5+*/ 
+	-webkit-box-sizing: border-box; /*Safari3.2+*/ 
+	-o-box-sizing: border-box; /*Opera9.6*/ 
+	-ms-box-sizing: border-box; /*IE8*/ 
+	box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+}
+.lf_clearFloat:after{
+	content:".";
+	height:0;
+	display:block;
+	clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
+.lf_displayFlex{
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ 
+    display: -ms-flexbox; /* TWEENER - IE 10 */ 
+    display: -webkit-flex; /* NEW - Chrome */ 
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -moz-box-orient:horizontal;
+    -moz-box-direction:reverse;
+    -webkit-flex-direction:row;
+    flex-direction:row;/* 元素排列方式 */
+    -webkit-justify-content:space-around;
+    -moz-box-pack:space-around;
+    -webkit--moz-box-pack:space-around;
+    box-pack:space-around;
+    justify-content:space-around;
+    -webkit-flex-wrap:wrap;
+    -webkit-box-lines:multiple;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;/* 定义子元素换行情况 */
+}
