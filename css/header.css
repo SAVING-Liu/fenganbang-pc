@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:37:10
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 15:03:46
+* @Last Modified time: 2017-07-13 15:23:00
 */
 .lf_jump{
 	display:block;
@@ -389,7 +389,7 @@ button{
 }
 /* 侧边栏  */
 .sideBar{
-	width:1px;
+	width:38px;
 	height:100%;
 	padding-top:10%;
 	overflow:hidden;
@@ -399,9 +399,9 @@ button{
 	right:0;
 	transition:all .3s linear;
 }
-.sideBar:hover{
+/* .sideBar:hover{
 	width:38px;
-}
+} */
 .sideBarwrap{
 	
 }

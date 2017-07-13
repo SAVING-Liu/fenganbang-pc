@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:27:19
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 11:13:19
+* @Last Modified time: 2017-07-13 15:15:17
 */
 .lf_jump{
 	display:block;
@@ -66,6 +66,7 @@ button{
     cursor:pointer;
 }
 /* 公共样式 */
+/* 首页头部 */
 .lf_indexNav>li{
     float:left;
     padding:23px 0;
@@ -82,4 +83,15 @@ button{
     text-align:center;
     font-size:14px;
     color:#999;
+}
+/* 首页-body */
+.lf_banner{
+    width:100%;
+    background-color:#181e2a;
+}
+.lf_bannerWraper{
+    width:1200px;
+    margin:0 auto;
+    height:420px;
+    overflow:hidden;
 }
