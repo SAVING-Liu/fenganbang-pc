@@ -1,0 +1,80 @@
+/*
+* @Author: Administrator
+* @Date:   2017-07-13 08:26:19
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-07-13 10:18:58
+*/
+.wy_header{
+	width: 1200px;
+	height: 96px;
+	margin: 20px auto;
+	/* padding: 20px 0; */
+	overflow: hidden;
+	position: relative;
+}
+.wy_header .wy_logo{
+	height:96px;
+	width:114px;
+	display: block;
+	float: left;
+	padding-right: 45px;
+	border-right: 1px solid #e0e0e0;
+}
+.wy_header .wy_tit{
+	float: left;
+	line-height: 96px;
+	margin-left: 35px;
+	font-size: 22px;
+}
+.wy_header .wy_backBtn{
+	position: absolute;
+	right: 3px;
+	bottom: 0;
+	font-size: 16px;
+}
+.wy_loginBody{
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+}
+.wy_loginBg1{
+	background: url(../images/wy_login_bg1.png) no-repeat center top;
+}
+.wy_loginBg2{
+	width: 1200px;
+	height: 550px;
+	margin: 0 auto;
+	background: url(../images/wy_login_bg2.png); 
+}
+.wy_form{
+	width: 450px;
+	height: 390px;
+	background: #fff;
+	float: right;
+	margin-top: 80px;
+	margin-right: 60px;
+}
+.wy_form .wy_p{
+	width: 393px;
+	line-height: 102px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+.wy_form .wy_inputBox{
+	width: 393px;
+	height: 51px;
+	margin: 0 auto 19px;
+	position: relative;
+}
+.wy_form .wy_inputBox > input{
+	border: 1px solid #e7e7e7;
+	width: calc(100% - 50px);
+	height: 100%;
+	font-size: 16px;
+	padding-left: 50px;
+}
+.wy_icon{
+	position: absolute;
+	left: 14px;
+	top: 14px;
+}

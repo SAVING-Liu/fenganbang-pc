@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:37:10
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-12 16:52:11
+* @Last Modified time: 2017-07-13 10:44:53
 */
 .lf_jump{
 	display:block;
@@ -135,6 +135,7 @@ button{
 .lf_searchBox{
 	width:100%;
 	padding:20px 0;
+	background-color:#fff;
 }
 .lf_searchWrap{
 	width:1200px;
@@ -232,8 +233,10 @@ button{
 	height:42px;
 	line-height:42px;
 }
-.lf_headNavlist>li>.lf_jump{
+.lf_headNavlist>li{
 	float:left;
+}
+.lf_headNavlist>li>.lf_jump{
 	color:#fff;
 	font-size:18px;
 	padding:0 50px;
@@ -242,9 +245,12 @@ button{
 .lf_headNav-on>.lf_jump{
 	background-color:#316ec6;
 }
-.lf_headNavlist>li.lf_allClassify>.lf_jump{
+.lf_headNavlist>li.lf_allClassify{
 	position:relative;
 	width:180px;
+}
+.lf_headNavlist>li.lf_allClassify>.lf_jump{
+	width:100%;
 	background:#ff9524 url("../images/icon_bottom2.png") no-repeat 140px center;
 	border-top-left-radius: 10px;
 	padding:0;
@@ -255,4 +261,47 @@ button{
 	top:0;
 	left:0;
 	background-color:#e88216;
+}
+.lf_secondNav{
+	position:absolute;
+	top:42px;
+	left:0;
+	width:180px;
+	background-color: #e88216;
+	display:none;
+	z-index:10;
+}
+.lf_secondNav>ul{
+	position:relative;
+}
+.lf_secondNav>ul>li{
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+	line-height: 40px;
+	cursor:pointer;
+}
+.lf_secondNav>ul>li>a{
+	color:#fff;
+}
+.lf_thirdNav{
+	position:absolute;
+	top:0;
+	left:180px;
+	width:140px;
+	background-color:#fff;
+	z-index:10;
+	display:none;
+}
+.lf_allClassify:hover .lf_secondNav{
+	display:block;
+}
+.lf_secondNav>ul>li:hover{
+	background-color: #fff;
+}
+.lf_secondNav>ul>li:hover .lf_thirdNavlist{
+	color:#e88216;
+}
+.lf_secondNav>ul>li:hover .lf_thirdNav{
+	display:block;
 }
