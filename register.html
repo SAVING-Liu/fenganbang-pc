@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="ZZJBS"/>
+        <!-- 引入文件 -->
+        <link rel="stylesheet" href="css/common.css" /><!-- 公共样式 -->
+        <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script><!-- 引入jquery文件 -->
+        <script type="text/javascript" src="js/app/common.js"></script><!-- 引入公共js文件 -->
+
+        <link rel="stylesheet" href="css/wy_main.css">
+        <title>风安帮</title>
+    </head>
+    <body>
+        <!-- 头 -->
+    	<header class="wy_header">
+    		<img class="wy_logo" src="images/lf_logo.png" alt="">
+    		<span class="wy_tit">欢迎注册</span>
+    		<a class="wy_backBtn" href="javascript:void(0);">返回首页</a>
+    	</header>
+        <!-- 中间 -->
+    	<div class="wy_loginBody wy_registerBody">
+    		<div class="wy_loginBg1 wy_registerBg1">
+    			<div class="wy_loginBg2 wy_registerBg2">
+                    <!-- 注册框 -->
+    				<div class="wy_registerform">
+    					<p class="wy_p">账号注册</p>
+                        <!-- 身份选择 -->
+    					<div class="wy_shenfenBox">
+    						<span>选&nbsp;&nbsp;择&nbsp;&nbsp;身&nbsp;&nbsp;份&nbsp;：</span>
+    						<input id="wy_radio1" type="radio" name="name"><label for="wy_radio1">品牌商</label>
+
+    						<input id="wy_radio2" type="radio" name="name"><label for="wy_radio2">安装团队</label>
+
+    						<input id="wy_radio3" type="radio" name="name"><label for="wy_radio3">辅材供应商</label>
+
+    						<input id="wy_radio4" type="radio" name="name"><label for="wy_radio4">终端消费者</label>
+    					</div>
+                        
+                        <!-- 手机号 -->
+    					<div class="wy_inputBox">
+    						<span>手&nbsp;&nbsp;&nbsp;&nbsp;机&nbsp;&nbsp;&nbsp;&nbsp;号&nbsp;&nbsp;：</span>
+    						<input class="wy_input" type="text" placeholder='请输入手机号'>
+    					</div>
+                        <!-- 验证码 -->
+    					<div class="wy_inputBox wy_inputBox1">
+    						<span>手&nbsp;&nbsp;机&nbsp;&nbsp;验&nbsp;&nbsp;证&nbsp;：</span>
+    						<input class="wy_input wy_input1" type="text" placeholder='请输入手机号验证码'>
+    						<input class="wy_yzmBtn" type="button" value="获取验证码">
+    					</div>
+                        <!-- 身份证 -->
+    					<div class="wy_inputBox">
+    						<span>身&nbsp;&nbsp;份&nbsp;&nbsp;证&nbsp;&nbsp;号&nbsp;：</span>
+    						<input class="wy_input" type="text" placeholder='请输入18位身份证号码'>
+    					</div>
+                        <!-- 密码 -->
+    					<div class="wy_inputBox">
+    						<span>登&nbsp;&nbsp;录&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;：</span>
+    						<input class="wy_input" type="text" placeholder='建议至少使用两种字符组合'>
+    					</div>
+                        <!-- 确认密码 -->
+    					<div class="wy_inputBox">
+    						<span>确&nbsp;&nbsp;认&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;：</span>
+    						<input class="wy_input" type="text" placeholder='请再次输入登录密码'>
+    					</div>
+                        <!-- 支付密码 -->
+    					<div class="wy_inputBox">
+    						<span>支&nbsp;&nbsp;付&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;：</span>
+    						<input class="wy_input" type="text" placeholder='设置6位数字密码'>
+    					</div>
+                        
+                        <div class="wy_bottomBox">
+                            <!-- 协议 -->
+                            <div class="wy_gouBox">
+                                <img src="images/wy_gou.png" height="15" width="15" alt="">
+                                <span>阅读并同意<em>《风安帮用户注册协议》</em></span>
+                            </div>
+                            <!-- 去登录 -->
+                            <div class="wy_rightBox">
+                                <span>已有账号？</span>
+                                <a class="wy_gologin" href="login.html">登录</a>
+                            </div>
+                        </div>
+
+    					<button class="wy_loginBtn" type="button">注册</button>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+        <!-- 底部 -->
+    	<footer class="wy_footer">
+    		<ul>
+                <li><a href="javascript:void(0);">联系方式</a><span>|</span></li>
+                <li><a href="javascript:void(0);">注册新用户</a><span>|</span></li>
+                <li><a href="javascript:void(0);">交易规则</a><span>|</span></li>
+                <li><a href="javascript:void(0);">品牌商入口</a><span>|</span></li>
+                <li><a href="javascript:void(0);">发布需求</a><span>|</span></li>
+                <li><a href="javascript:void(0);">挑选优质服务商</a><span>|</span></li>
+                <li><a href="javascript:void(0);">需求大厅</a><span>|</span></li>
+                <li><a href="javascript:void(0);">辅材街</a><span>|</span></li>
+                <li><a href="javascript:void(0);">服务大厅</a><span>|</span></li>
+                <li><a href="javascript:void(0);">团队培训</a></li>      
+            </ul>
+            <p class="wy_p"><img class="wy_tel" src="images/wy_tel.png" alt=""><span class='wy_span1'>客服热线：</span> <span>400-xxx-xxxx</span>（周一至周日：7*24小时）</p>
+            <p>©2017-2018  风安帮 豫ICP备15058772号  <span class="wy_span2">技术支持：</span><a class="wy_jbs" href="">金帮手</a></p>
+    	</footer>
+    </body>
+</html>
