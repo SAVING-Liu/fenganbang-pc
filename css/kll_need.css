@@ -24,11 +24,6 @@
 	line-height: 39px;
 	font-size: 14px;
 	overflow: hidden;
-	display: none;
-}
-
-.kll-need_type>.kll-need_list_one {
-	display: block;
 }
 
 .kll-need_type>.kll-need_list_one .kll-need_class {
@@ -64,10 +59,6 @@
 	width: 128px;
 	height: 39px;
 	text-align: center;
-}
-
-.kll-need_list .kll-need_classul .kll-need_list_change {
-	color: #007AFF;
 }
 
 .kll-need_list>.kll-need_classul .kll-need_list:hover {
@@ -214,15 +205,6 @@
 
 .kll-need_boxchagne {
 	display: block;
-}
-
-.kll-need_box .kll-need_boxnone {
-	text-align: center;
-	line-height: 240px;
-}
-
-.kll-need_box .kll-need_boxnall {
-	color: #3c8fed;
 }
 
 .kll-need_show .kll-need_showli {
