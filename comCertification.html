@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/app/dcalendar.picker.js"></script>
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content">
+			<div class="jyt_ publish">
+				<div class="jyt_publishtop">
+					<div class="jty_tit">
+						<p class="p1 jyt_pcol">企业认证</p>
+						<p style="padding-left: 248px;" class="p2">审核</p>
+						<p style="padding-left: 242px;" class="p3">交纳保证金</p>
+						<p style="padding-left: 242px;" class="p4">开店成功</p>
+					</div>
+					<div class="genreyes jyt_genreyes1">1</div>
+					<div class="genreno jyt_genreyes2">2</div>
+					<div class="genreno jyt_genreyes3">3</div>
+					<div class="genreno jyt_genreyes4">4</div>
+					<div class="jyt_hui">
+						<div class="jty_blue wid1"></div>
+					</div>
+				</div>
+				<div class="jyt_publishcon">
+					<div class="jyt_requirementtit"><h5>企业认证</h5></div>
+					<ul class="jyt_openstoreul">
+						<li>
+							<p><span>*</span> 营业执照：</p>
+							<input class="jyt_inp3" type="text" />
+							<button>上传</button>
+							<div class="clear"></div>
+							<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+						</li>
+						<li>
+							<p style="width: 110px;"><span>*</span> 法人身份证：</p>
+						</li>
+						<li>
+							<p style="text-align: right;"><span>*</span> 正面：</p>
+							<input class="jyt_inp3" type="text" />
+							<button>上传</button>
+							<div class="clear"></div>
+							<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+						</li>
+						<li>
+							<p style="text-align: right;"><span>*</span> 反面：</p>
+							<input class="jyt_inp3" type="text" />
+							<button>上传</button>
+							<div class="clear"></div>
+							<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+						</li>
+						<li>
+							<p><span>*</span> 公司名称：</p>
+							<input class="jyt_inp3" type="text" />
+							<div class="clear"></div>
+						</li>
+						<li>
+							<p><span>*</span> 公司地址：</p>
+							<textarea></textarea>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<p><span>*</span> 联系人：</p>
+							<input class="jyt_inp3" type="text" />
+							<div class="clear"></div>
+						</li>
+						<li>
+							<p><span>*</span> 联系电话：</p>
+							<input class="jyt_inp3" type="text" />
+							<div class="clear"></div>
+						</li>
+					</ul>
+					<div class="jyt_box1">
+						<button onclick="javascript:window.location.href='auditing.html'" class="jyt_requirementnext jyt_mar1" type="button"> 提交</button>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<div class="footer"></div>	
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#mydatepicker').dcalendarpicker(); //初始化日期选择器
+	$('#mycalendar').dcalendar(); //初始化日历
+	$('#mydatepicker').dcalendarpicker({format: 'yyyy-mm-dd'});//日历格式
+});
+</script>														
+    </body>
+   
+</html>

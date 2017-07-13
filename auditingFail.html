@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/app/dcalendar.picker.js"></script>
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content">
+			<div class="jyt_ publish">
+				<div class="jyt_publishtop">
+					<div class="jty_tit">
+						<p class="p1 jyt_pcol">企业认证</p>
+						<p style="padding-left: 248px;" class="p2 jyt_pcol">审核</p>
+						<p style="padding-left: 242px;" class="p3">交纳保证金</p>
+						<p style="padding-left: 242px;" class="p4">开店成功</p>
+					</div>
+					<div class="genreyes jyt_genreyes1">1</div>
+					<div class="genreyes jyt_genreyes2">2</div>
+					<div class="genreno jyt_genreyes3">3</div>
+					<div class="genreno jyt_genreyes4">4</div>
+					<div class="jyt_hui">
+						<div class="jty_blue wid2"></div>
+					</div>
+				</div>
+				<div class="jyt_publishcon">
+					<div class="jyt_requirementtit"><h5>审核失败</h5></div>
+					<div class="jyt_audting">
+						<img src="images/jyt_pub2.jpg">
+						<div class="jyt_audtingxq">
+							<p style="color: #e21404;">审核失败！</p>
+							<h5>对不起，您的审核失败，请重新提交开店申请！</h5>
+						</div>
+					</div>
+					<a class="jyt_backindex" href="javascript:void(0);">重新开店</a>
+				</div>
+			</div>
+				
+		</div>
+		<div class="footer"></div>	
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#mydatepicker').dcalendarpicker(); //初始化日期选择器
+	$('#mycalendar').dcalendar(); //初始化日历
+	$('#mydatepicker').dcalendarpicker({format: 'yyyy-mm-dd'});//日历格式
+});
+</script>														
+    </body>
+   
+</html>

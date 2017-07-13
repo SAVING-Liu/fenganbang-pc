@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/app/dcalendar.picker.js"></script>
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content">
+			<div class="jyt_ publish">
+				<div class="jyt_publishtop">
+					<div class="jty_tit">
+						<p class="p1 jyt_pcol">选择类目</p>
+						<p class="p2 jyt_pcol">描述需求</p>
+						<p class="p3">确认需求，并托管项目金额   </p>
+						<p class="p4">发布成功</p>
+					</div>
+					<div class="genreyes jyt_genreyes1">1</div>
+					<div class="genreyes jyt_genreyes2">2</div>
+					<div class="genreno jyt_genreyes3">3</div>
+					<div class="genreno jyt_genreyes4">4</div>
+					<div class="jyt_hui">
+						<div class="jty_blue wid2"></div>
+					</div>
+				</div>
+				<div class="jyt_publishcon">
+					<div class="jyt_requirementtit"><p>基本信息</p></div>
+					<ul class="jyt_requirementul">
+						<li>
+							<p>需求标题：</p>
+							<input type="text" class="jyt_inp1" />
+							<div class="clear"></div>
+						</li>
+						<li>
+							<p>需求地点：</p>
+							<input type="text" class="jyt_inp2" />
+							<h3>省</h3>
+							<input type="text" class="jyt_inp2" />
+							<h3>市</h3>
+							<input type="text" class="jyt_inp2" />
+							<h3>区/县</h3>
+							
+							<div class="clear"></div>
+						</li>
+						<li>
+							<p>项目工期：</p>
+							<input type="text" class="jyt_inp1" />
+							<h5>天</h5>
+							<div class="clear"></div>
+						</li>
+						<li class="jyt_li">
+							<p>截止投标时间：</p>
+							<input id='mydatepicker'  class="jyt_inp1" type='text'/> 
+							<div class="clear"></div> 
+						</li>
+						<li>
+							<p>联系方式：</p>
+							<input type="text" class="jyt_inp1" placeholder="输入手机号" />
+							<div class="clear"></div>
+						</li>
+						<li>
+							<p>设置托管项目金额：</p>
+							<input class="jyt_inpbg" type="text" class="jyt_inp1" />
+							<div class="clear"></div>
+						</li>
+						<li>
+							<h6>输入明确预算，明确的预算更能吸引服务商参与</h6>
+						</li>
+						<li>
+							<p>设置预付款比例：</p>
+							<input class="jyt_inpbg" type="text" class="jyt_inp1" placeholder="不能低于20%" />
+							<div class="clear"></div>
+						</li>
+						<li>
+							<p>具体要求：</p>
+							<textarea type="text" placeholder="请描述详情"></textarea>
+							<div class="clear"></div>
+						</li>
+					</ul>
+					<div class="jyt_box1">
+						<button onclick="javascript:history.back(-1);" class="jyt_requirementprev" type="button"> 上一步</button>
+						<button onclick="javascript:window.location.href='confirmReq .html'" class="jyt_requirementnext" type="button"> 下一步</button>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<div class="footer"></div>	
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#mydatepicker').dcalendarpicker(); //初始化日期选择器
+	$('#mycalendar').dcalendar(); //初始化日历
+	$('#mydatepicker').dcalendarpicker({format: 'yyyy-mm-dd'});//日历格式
+});
+</script>														
+    </body>
+   
+</html>

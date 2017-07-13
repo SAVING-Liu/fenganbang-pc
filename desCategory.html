@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content">
+			<div class="jyt_ publish">
+				<div class="jyt_publishtop">
+					<div class="jty_tit">
+						<p class="p1 jyt_pcol">选择类目</p>
+						<p class="p2">描述需求</p>
+						<p class="p3">确认需求，并托管项目金额   </p>
+						<p class="p4">发布成功</p>
+					</div>
+					<div class="genreyes jyt_genreyes1">1</div>
+					<div class="genreno jyt_genreyes2">2</div>
+					<div class="genreno jyt_genreyes3">3</div>
+					<div class="genreno jyt_genreyes4">4</div>
+					<div class="jyt_hui">
+						<div class="jty_blue wid1"></div>
+					</div>
+				</div>
+				<div class="jyt_publishcon">
+					<div class="jyt_publishconl">
+						<ul class="jyt_tab1">
+							<li class="jyt_cli1">
+								<p>新风系统</p>
+								<span>></span>
+							</li>
+							<li>
+								<p>空调</p>
+								<span>></span>
+							</li>
+							<li>
+								<p>新风系统</p>
+								<span>></span>
+							</li>
+							<li>
+								<p>空调</p>
+								<span>></span>
+							</li>
+							<li>
+								<p>新风系统</p>
+								<span>></span>
+							</li>
+						</ul>
+					</div>
+					<div class="jyt_publishconr">
+						<div class="jyt_categoryxq1">
+							<ul class="jyt_categoryxq jyt_xian">
+								<li>组合式</li>
+								<li>吊顶机</li>
+								<li>柜式机</li>
+								<li>组合式</li>
+							</ul>
+							<ul class="jyt_categoryxq">
+								<li>组合式</li>
+								<li>吊顶机</li>
+								<li>柜式机</li>
+								<li>组合式</li>
+								<li>组合式</li>
+							</ul>
+							<ul class="jyt_categoryxq">
+								<li>组合式</li>
+								<li>吊顶机</li>
+								<li>柜式机</li>
+								<li>组合式</li>
+								<li>柜式机</li>
+								<li>柜式机</li>
+							</ul>
+							<ul class="jyt_categoryxq">
+								<li>组合式</li>
+								<li>吊顶机</li>
+								<li>柜式机</li>
+								<li>组合式</li>
+								<li>吊顶机</li>
+								<li>吊顶机</li>
+							</ul>
+							<ul class="jyt_categoryxq">
+								<li>组合式</li>
+								<li>吊顶机</li>
+								<li>柜式机</li>
+								<li>组合式</li>
+							</ul>
+						</div>
+					</div>
+					<button onclick="window.location.href='desRequirements.html'" class="jyt_publishnext" type="button"> 下一步</button>
+				</div>
+			</div>
+				
+		</div>
+		<div class="footer"></div>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".jyt_tab1 li").on("click",function(){
+		index = $(this).index();
+		$(".jyt_tab1 li").removeClass("jyt_cli1");
+		$(this).addClass("jyt_cli1");
+		$(".jyt_categoryxq").css('display', 'none');
+		$(".jyt_categoryxq1 .jyt_categoryxq").eq(index).css('display', 'block');
+	})
+	$(".jyt_categoryxq li").on("click",function(){
+		$(".jyt_categoryxq li").removeClass('jyt_cli2');
+		$(this).addClass('jyt_cli2');
+	})
+});
+
+</script>																
+    </body>
+   
+</html>

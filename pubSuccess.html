@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/app/dcalendar.picker.js"></script>
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content">
+			<div class="jyt_ publish">
+				<div class="jyt_publishtop">
+					<div class="jty_tit">
+						<p class="p1 jyt_pcol">选择类目</p>
+						<p class="p2 jyt_pcol">描述需求</p>
+						<p class="p3 jyt_pcol">确认需求，并托管项目金额   </p>
+						<p class="p4 jyt_pcol">发布成功</p>
+					</div>
+					<div class="genreyes jyt_genreyes1">1</div>
+					<div class="genreyes jyt_genreyes2">2</div>
+					<div class="genreyes jyt_genreyes3">3</div>
+					<div class="genreyes jyt_genreyes4">4</div>
+					<div class="jyt_hui">
+						<div class="jty_blue wid4"></div>
+					</div>
+				</div>
+				<div class="jyt_publishcon">
+					<div class="jyt_pubsuccess">
+						<img src="images/jyt_pub1.jpg">
+						<div class="jyt_pubsuccessxq">
+							<p>恭喜您，发布需求成功！</p>
+							<h5>您已成功发布需求啦，赶快去查看吧！</h5>
+						</div>
+					</div>
+					<div class="jyt_box1">
+						<button class="jyt_confirm jyt_mar" type="button">查看需求详情</button>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<div class="footer"></div>	
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#mydatepicker').dcalendarpicker(); //初始化日期选择器
+	$('#mycalendar').dcalendar(); //初始化日历
+	$('#mydatepicker').dcalendarpicker({format: 'yyyy-mm-dd'});//日历格式
+});
+</script>														
+    </body>
+   
+</html>
