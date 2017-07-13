@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:37:10
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 13:25:29
+* @Last Modified time: 2017-07-13 14:10:47
 */
 .lf_jump{
 	display:block;
@@ -368,4 +368,22 @@ button{
 	width:97px;
 	height:97px;
 	margin:0 auto;
+}
+.footerBot{
+	width:100%;
+	padding:20px 0 30px;
+	background-color:#fff;
+}
+.footerBot>p{
+	width:1200px;
+	text-align:center;
+	margin:0 auto;
+	font-size:14px;
+	color:#999;
+}
+.footerBot>p>a{
+	color:#999;
+}
+.footerBot>p>a:hover{
+	color:#ff9524;
 }
