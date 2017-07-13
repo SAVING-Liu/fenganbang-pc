@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:37:10
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 12:09:03
+* @Last Modified time: 2017-07-13 13:25:29
 */
 .lf_jump{
 	display:block;
@@ -318,7 +318,7 @@ button{
 .lf_footerNavwrap li a{
 	color:#fff;
 }
-.lf_footerNavwrap li:hover a{
+.lf_footerNavwrap li a:hover{
 	color:#ff9524;
 }
 .lf_footerNavwrap{
@@ -331,6 +331,7 @@ button{
 .lf_serviceHotline{
 	float:left;
 	padding-left:15px;
+	width:180px;
 }
 .lf_footerNavwrap>ul>li:nth-child(1){
 	font-size:16px;
@@ -344,14 +345,27 @@ button{
 .lf_serviceHotline>li:nth-child(3){
 	font-size:14px;
 }
-.lf_footerNav li:hover{
-	color:#ff9524;
-	cursor:pointer;
-}
 .lf_IntroductionGuide{
-	float:left;
-	margin-left:88px;
+	float: left;
+    width: 204px;
+    padding-left: 44px;
 }
 .lf_IntroductionGuide .footer-guide{
 	line-height:36px;
+}
+.footerCode{
+	float:right;
+}
+.footerCode a{
+	font-size:14px;
+	text-align:center;
+	color:#fff;
+	display:block;
+	margin-bottom: 5px
+}
+.footerCode img{
+	display:block;
+	width:97px;
+	height:97px;
+	margin:0 auto;
 }
