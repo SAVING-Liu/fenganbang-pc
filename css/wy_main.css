@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-13 08:26:19
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 10:18:58
+* @Last Modified time: 2017-07-13 12:05:29
 */
 .wy_header{
 	width: 1200px;
@@ -68,13 +68,89 @@
 }
 .wy_form .wy_inputBox > input{
 	border: 1px solid #e7e7e7;
-	width: calc(100% - 50px);
+	width: calc(100% - 65px);
 	height: 100%;
 	font-size: 16px;
 	padding-left: 50px;
+	padding-right: 15px;
 }
-.wy_icon{
+.wy_form .wy_icon{
 	position: absolute;
 	left: 14px;
 	top: 14px;
+	height: 26px;
+	width: auto;
+}
+.wy_form .wy_bottomBox{
+	overflow: hidden;
+	width: 393px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #adaaad;
+}
+.wy_form .wy_bottomBox .wy_gouBox{
+	float: left;
+	overflow: hidden;
+}
+.wy_form .wy_bottomBox .wy_rightBox{
+	float: right;
+}
+.wy_rightBox >a{
+	display: block;
+    float: left;
+    color: #adaaad;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 2px;
+    padding-left: 10px;
+}
+.wy_rightBox >a:first-child{
+	padding: 0;
+	padding-right: 8px;
+	border-right: 1px solid #adaaad;
+}
+.wy_gouBox > img{
+	float: left;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+.wy_gouBox > span{
+	display: block;
+	float: left;
+}
+.wy_form .wy_loginBtn{
+	width: 393px;
+	height: 40px;
+	margin: 0 auto;
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	background: #3c8fed;
+	border-radius: 5px;
+	margin-top: 40px;
+}
+.wy_footer{
+	width: 872px;
+	margin: 0 auto;
+	padding: 60px 164px 80px;
+	text-align: center;
+}
+.wy_footer >ul{
+	overflow: hidden;
+}
+.wy_footer >ul>li{
+	float: left;
+	display: block;
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+	/* border-right: 1px solid #636563; */
+
+}
+.wy_footer >ul>li >a{
+	color: #636563;
+}
+.wy_footer >ul>li>span{
+	color: #636563;
+	margin: 0 12px;
 }
