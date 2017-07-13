@@ -171,17 +171,17 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a class="lf_jump" href="javascript:void(0)">
-                                <img class="content-banner" src="images/lf_goods01.png" />
+                                <img class="content-banner" src="images/lf_banner.png" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a class="lf_jump" href="javascript:void(0)">
-                                <img class="content-banner" src="images/lf_goods01.png" />
+                                <img class="content-banner" src="images/lf_banner.png" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a class="lf_jump" href="javascript:void(0)">
-                                <img class="content-banner" src="images/lf_goods01.png" />
+                                <img class="content-banner" src="images/lf_banner.png" />
                             </a>
                         </div>
                     </div>
@@ -193,10 +193,21 @@
         <footer></footer>
         <div id="aside"></div>
         <script type="text/javascript">
-        //底部加载
-        $('footer').load('footer.html');
-        //侧边栏加载
-        $('#aside').load('sidebar.html');
+            //底部加载
+            $('footer').load('footer.html');
+            //侧边栏加载
+            $('#aside').load('sidebar.html');
+            /*轮播图*/
+            $(function () {
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+                    autoplay : 3000, //时间
+                    // 如果需要分页器
+                    pagination: '.swiper-pagination',
+                    autoplayDisableOnInteraction : false,
+                 }) ; 
+            });
         </script>
     </body>
 </html>
