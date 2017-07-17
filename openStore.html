@@ -11,6 +11,13 @@
         <title>风安帮</title>
     </head>
     <body>
+		<div class="jyt_bigimg">
+		<div style="overflow-y: scroll;height: 100vh;">
+			<div class="jyt_close"><img src="images/jyt_close.png"></div>
+			<img class="jyt_bigimg1" src="">
+		</div>
+			
+		</div>
 		<div class="header"></div>
 		<div class="jyt_content">
 			<div class="jyt_ publish">
@@ -40,15 +47,15 @@
 					</div>
 					<div class="jyt_modelbox">
 						<div class="jyt_model">
-							<img src="images/jyt_model1.jpg">
+							<img name="1" src="images/jyt_model1.jpg">
 							<div class="jyt_modelsel jyt_modelno"></div>
 						</div>
 						<div class="jyt_model">
-							<img src="images/jyt_model2.jpg">
+							<img name="2" src="images/jyt_model2.jpg">
 							<div class="jyt_modelsel jyt_modelno jyt_modelyes"></div>
 						</div>
 						<div class="jyt_model">
-							<img src="images/jyt_model3.jpg">
+							<img name="3" src="images/jyt_model3.jpg">
 							<div class="jyt_modelsel jyt_modelno"></div>
 						</div>
 					</div>
@@ -62,11 +69,26 @@
 		<div class="footer"></div>	
 <script type="text/javascript">
 $(document).ready(function() {
-
 	$(".jyt_modelsel").on("click",function(){
 		$(".jyt_modelsel").removeClass('jyt_modelyes');
 		$(this).addClass('jyt_modelyes');
-	})
+	});
+	//点击查看大图
+	$(".jyt_modelbox").find("img").on("click",function(){
+		var num = $(this).attr("name");
+		if(num==1){
+			$(".jyt_bigimg1").attr("src","images/jyt_bigimg1.jpg");
+		}else if(num == 2){
+			$(".jyt_bigimg1").attr("src","images/jyt_bigimg2.jpg");
+		}else{
+			$(".jyt_bigimg1").attr("src","images/jyt_bigimg3.jpg");
+		}
+		$(".jyt_bigimg").fadeIn(500);
+	});
+	//关闭大图
+	$(".jyt_close").on("click",function(){
+		$(".jyt_bigimg").fadeOut(500);
+	});
 });
 </script>														
     </body>

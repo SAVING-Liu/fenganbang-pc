@@ -2,7 +2,7 @@
 * @Author: jyt
 * @Date:   2017-07-12 08:53:54
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 11:29:01
+* @Last Modified time: 2017-07-13 18:14:56
 */
 /*发布需求-描述类别*/
 body{
@@ -618,6 +618,9 @@ body{
 .jyt_model img{
 	display: block;
 	margin-bottom: 20px;
+	width: 100px;
+	height: 140px;
+	cursor: pointer;
 }
 .jyt_modelsel{
 	width: 24px;
@@ -630,4 +633,324 @@ body{
 }
 .jyt_modelyes{
 	background: url('../images/jyt_modelyes.jpg') no-repeat top left;
+}
+.jyt_bigimg{
+	position: fixed;
+	z-index: 10000;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	height: 100vh;
+}
+.jyt_bigimg img{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+}
+.jyt_close{
+	position: fixed;
+	top: 20px;
+	right: 40px;
+	display: block;
+	cursor: pointer;
+}
+.jyt_close img{
+	display: block;
+}
+/*支付*/
+.jyt_paytit{
+	width: 1168px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e2e2e2;
+	padding: 20px 0;
+}
+.jyt_goodsname{
+	font-size: 18px;
+	color: #333333;
+	padding: 20px 0; 
+}
+.jyt_nickname{
+	font-size: 14px;
+	color: #666666;
+	padding-bottom: 20px;
+}
+.jyt_paysuccesscon{
+	background: #fff;
+}
+.jyt_paysuccess{
+	width: 1200px;
+	margin: 0 auto;
+}
+.jyt_payxq{
+	padding-top: 45px;
+}
+.jyt_payxqtit{
+	background: #ebffdc;
+	overflow: hidden;
+	padding: 18px 0;
+}
+.jyt_payxqtit img{
+	display: block;
+	float: left;
+	margin: 0 15px 0 35px ;
+}
+.jyt_payxqtit p{
+	float: left;
+	color: #040404;
+	font-size: 20px;
+	padding-top: 5px;
+}
+.jyt_orderbox{}
+.jyt_orderbox ul{
+	border-bottom: 1px dashed #e6e6e6;
+	width: 1115px;
+	margin: 0 auto;
+	padding-top: 45px;
+	padding-bottom: 20px;
+}
+.jyt_orderbox ul li{
+	overflow: hidden;
+	padding-bottom: 7px;
+	background: url('../images/jyt_lidotted.jpg') no-repeat 43px 9px;
+	padding-left: 45px;
+}
+.jyt_orderbox ul li p{
+	float: left;
+	font-size: 14px;
+	color: #262525;
+	text-align: right;
+	width: 80px;
+}
+.jyt_orderbox ul li h6{
+	float: left;
+	font-weight: normal;
+	font-size: 16px;
+	color: #cf010a;
+}
+.jyt_orderbox ul li h5{
+	float: left;
+	font-weight: normal;
+	font-size: 14px;
+	color: #707070;
+}
+.jyt_btnbox{
+	overflow: hidden; 
+	margin: 30px 0 60px 90px;
+}
+.jyt_btnbox button{
+	float: left;
+	margin-right: 7px;
+	border-radius: 4px;
+	width: 105px;
+	height: 26px;
+	line-height: 22px;
+	font-size: 14px;
+}
+.jyt_goorder{
+	background: #3c8fed;
+	color: #fff;
+}
+.jyt_backauxiliary{
+	color: #3c8fed;
+	border: 1px solid #3c8fed;
+}
+.jyt_look{
+	color: #353535;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-bottom: 30px; 
+}
+.jyt_goodslist{
+	overflow: hidden;
+}
+.jyt_goodslist li{
+	display: block;
+	padding: 20px 20px 10px 20px;
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	width: 280px;
+	float: left;
+	margin: 0 10px;
+	margin-bottom: 28px;
+}
+.jyt_goodslist li a{
+	display: block;
+} 
+.jyt_goodslist li img{
+	display: block;
+	width: 238px;
+	height: 243px;
+}
+.jyt_goodslist li h5{
+	font-weight: normal;
+	color: #ff910e;
+	font-size: 16px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.jyt_goodslist li p{
+	color: #333333;
+	font-size: 14px;
+	height: 70px;
+	overflow: auto;
+}
+
+.jyt_goodslist li h3{
+	font-weight: normal;
+	color: #666666;
+	font-size: 14px;
+	float: left;
+	background: url('../images/jyt_goodsbg1.jpg') no-repeat left 4px;
+	padding-left: 15px;
+	width: 130px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.jyt_goodslist li h4{
+	font-weight: normal;
+	color: #666666;
+	font-size: 14px;
+	float: right;
+}
+.jyt_teamtain{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*团队培训*/
+.jyt_teamtit{
+	color: #444444;
+	font-size: 22px;
+	text-align: center;
+	padding: 50px 0;
+}
+.jyt_teamtain{
+	background: #fff;
+	min-height: 620px;
+}
+.jyt_teamtop{
+	border-bottom: 2px solid #efefef; 
+	color: #444444;
+	font-size: 16px;
+	margin: 20px;
+	padding: 15px 0;
+}
+.jyt_teamcontit{
+	padding-top: 10px;
+	overflow: hidden;
+	height: 48px;
+	line-height: 43px;
+	padding-left: 60px
+}
+.jyt_teamcontit p{
+	float: left;
+}
+.jyt_tainclass{
+	float: left;
+	overflow: hidden;
+}
+.jyt_tainclass li{
+	float: left;
+	width: 133px;
+	height: 48px;
+	text-align: center;
+	margin: 0 10px;
+	cursor: pointer;
+}
+.jyt_tainclass li.jyt_clibg{
+	background: url('../images/jyt_teambg.jpg') no-repeat top left;
+	color: #fff;
+}
+.jyt_form{
+	background: #f7f7f7;
+	width: 1015px;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 2px solid #3c8fed;
+	min-height: 400px;
+	margin: 0 auto;
+	margin-top: 23px;
+	padding-left: 42px;
+	padding-right: 23px;
+	padding-top: 20px;
+}
+.jyt_taintit{
+	float: left;
+	color: #000000;
+	font-size: 20px;
+}
+.jyt_tainendtim{
+	float: right;
+	color: #909090;
+	font-size: 14px;
+}
+.jyt_tainendtim{
+	color: #606060;
+}
+.jyt_tainstarttime{
+	color: #909090;
+	font-size: 14px;
+	padding-top: 15px;
+}
+.jyt_tainstarttime span{
+	color: #606060;
+}
+.jyt_formul{
+	padding-top: 35px;
+}
+.jyt_formul li{
+	overflow: hidden;
+	line-height: 30px;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.jyt_formul li p{
+	float: left;
+	padding-right: 25px;
+}
+.jyt_formul li input{
+	float: left;
+	padding: 0 10px 0 25px;
+	border: 1px solid #e6e6e6;
+	line-height: 30px;
+	height: 30px;
+	width: 190px;
+}
+.jyt_btnbox1{
+	overflow: hidden; 
+	margin: 30px 0 60px 90px;
+}
+.jyt_btnbox1 button{
+	float: left;
+	margin-right: 7px;
+	border-radius: 4px;
+	width: 133px;
+	height: 43px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.jyt_subsuccess{
+	overflow:hidden; 
+	margin-top: 100px;
+}
+.jyt_subsuccess img{
+	display: block;
+	float: left;
+}
+.jyt_subsuccess .jyt_subsuccessxq{
+	float: left;
+	padding-left: 20px;
+}
+.jyt_subsuccessxq p{
+	font-size: 24px;
+	color: #009a63;
+}
+.jyt_subsuccessxq h5{
+	font-size: 18px;
+	color: #727272;
+	font-weight: normal;
 }
