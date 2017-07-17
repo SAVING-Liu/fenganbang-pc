@@ -348,7 +348,7 @@
 
 .wy_project_centerBox{
 	width: 1198px;
-	height: auto;
+	height: 740px;
 	border: 1px solid #e6e6e6;
 	margin: 20px auto;
 	overflow: hidden;
@@ -466,9 +466,14 @@
 .wy_project_box .wy_project_tabTit > li:nth-child(6){
 	width: 132px;
 }
+.wy_project_listBox{
+	width: 928px;
+	height: 560px;
+	overflow-y: scroll;
+}
 .wy_project_list .wy_project_time{
 	background: #f5f5f5;
-	width: 907px;
+	width: 890px;
 	height: 34px;
 	line-height: 34px;
 	color: #999;
@@ -477,6 +482,7 @@
 	border-top: 1px solid #f0f0f0;
 }
 .wy_project_listBody{
+	width: 911px;
 	border-bottom: 1px solid #e6e6e6;
 	margin-bottom: 10px;
 	overflow: hidden;
@@ -519,6 +525,9 @@
 	float: left;
 	line-height: 70px;
 }
+.wy_project_listBody .wy_firm{
+	color: #3c8fed;
+}
 .wy_project_listBody .wy_num > .wy_people{
 	font-size: 16px;
 	color: #1e7cc4;
@@ -531,7 +540,39 @@
 	line-height: 70px;
 	float: left;
 }
-.wy_project_listBody .wy_project_btn> a{
-	color: #cf4242;
+.wy_project_listBody .wy_project_btn{
+	width: 116px;
+	float: left;
 	font-size:14px;
 }
+.wy_project_listBody .wy_project_btn> a{
+	color: #cf4242;
+	border: 1px solid #cf4242;
+	display: block;
+	width: 82px;
+	height: 22px;
+	margin: 15px 0 6px 23px;
+	text-align: center;
+	border-radius: 5px;
+	background: #f5f5f5;
+}
+.wy_project_listBody .wy_project_btn>.wy_a_btn{
+	color: #888;
+	border: 1px solid #aaa;
+	margin-top: 24px;
+}
+.wy_project_listBody .wy_project_btn>p{
+	margin-top: 6px;
+	padding-left: 38px;
+	color: #666;
+}
+.wy_project_listBody .wy_project_btn>.wy_appeal{
+	margin-left: 13px;
+}
+.wy_project_listBody .wy_project_btn>p:hover{
+	cursor: pointer;
+}
+
+
+
+/* 招标中-选择团队 */
