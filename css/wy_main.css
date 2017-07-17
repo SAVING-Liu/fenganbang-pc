@@ -402,15 +402,12 @@
 	margin-top: 12px;
 	line-height: 44px;
 }
-.wy_aside_ul .wy_aside_li{
+.wy_aside_ul .wy_aside_li > a{
 	font-size: 16px;
 	color: #666;
 	line-height: 34px;
 }
-.wy_aside_ul .wy_aside_li:hover{
-	cursor: pointer;
-}
-.wy_aside_ul .wy_aside_li_on{
+.wy_aside_ul .wy_aside_li_on > a{
 	color: #3c8fed;
 }
 /* 右边 */
@@ -429,6 +426,7 @@
 	margin-right: 55px;
 	box-sizing: border-box;
 	color: #666;
+	cursor: pointer;
 }
 .wy_project_box .wy_project_ul > .wy_project_li_on{
 	border-bottom: 3px solid #3c8fed;
@@ -448,22 +446,22 @@
 	color: #666;
 	font-size: 16px;
 }
-.wy_project_box .wy_project_tabTit > li:nth-child(1){
+.wy_project_box .wy_project_tabTit > .wy_li1{
 	width: 88px;
 }
-.wy_project_box .wy_project_tabTit > li:nth-child(2){
+.wy_project_box .wy_project_tabTit > .wy_li2{
 	width: 243px;
 }
-.wy_project_box .wy_project_tabTit > li:nth-child(3){
+.wy_project_box .wy_project_tabTit > .wy_li3{
 	width: 154px;
 }
-.wy_project_box .wy_project_tabTit > li:nth-child(4){
+.wy_project_box .wy_project_tabTit > .wy_li4{
 	width: 174px;
 }
-.wy_project_box .wy_project_tabTit > li:nth-child(5){
+.wy_project_box .wy_project_tabTit > .wy_li5{
 	width: 136px;
 }
-.wy_project_box .wy_project_tabTit > li:nth-child(6){
+.wy_project_box .wy_project_tabTit > .wy_li6{
 	width: 132px;
 }
 .wy_project_listBox{
@@ -530,7 +528,7 @@
 }
 .wy_project_listBody .wy_num > .wy_people{
 	font-size: 16px;
-	color: #1e7cc4;
+	color: #3c8fed;
 }
 .wy_project_listBody .wy_state{
 	width: 136px;
@@ -576,3 +574,4 @@
 
 
 /* 招标中-选择团队 */
+
