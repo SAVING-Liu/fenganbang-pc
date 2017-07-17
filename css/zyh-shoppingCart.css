@@ -1,0 +1,75 @@
+/*create zhangyuhan*/
+/*
+    ***初始化设置轮播图的相关属性
+    **imgWidth 图片宽度
+    **imgeight 图片高度
+    **marin 图片左右间距
+    **imgNumber 当前展示数量
+    ***
+    */
+/*轮播图和左右按钮*/
+.hot-map{
+    /*初始化设置*/
+    --imgWidth: 120px;
+    --imgHeight:120px;
+    --margin:7.5px;
+    --imgNumber:4;
+    /*--end--*/
+    width: 650px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: space-around;
+}
+/*轮播图外层容器*/
+.lunbo{
+    background-color: #ffffff;
+    width: calc(var(--imgWidth) * var(--imgNumber) + var(--margin) * var(--imgNumber) * 2);
+    overflow: hidden;
+}
+/*轮播图内容器*/
+.hot-img-boxs{
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s;
+}
+/*商品图片*/
+.imgs{
+    min-width: var(--imgWidth);
+    height: var(--imgHeight);
+    background-color: #7c7c7c;
+    margin-right: var(--margin);
+    margin-left: var(--margin);
+    transition: all 0.4s;
+}
+.imgs img{
+    width: var(--imgWidth);
+    height: var(--imgHeight);
+}
+.map-img{
+    height: 150px;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-left{
+    background-image: url("../images/25_left.jpg");
+}
+.img-right{
+    background-image: url("../images/25_right.jpg");
+}
+.imgs::after{
+    content: "￥"attr(pic);
+    display: block;
+    width: var(--imgWidth);
+    position: relative;
+    font-size: 0.7rem;
+    top: -25px;
+    background-color: rgba(121, 117, 117, 0.48);
+    color: white;
+    text-indent: 0.5rem;
+    line-height: 22px;
+    height: 22px;
+}

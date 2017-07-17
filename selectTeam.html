@@ -13,6 +13,33 @@
 		<div class="header">
 			
 		</div>
+		<!-- 头部导航 -->
+        <div class="lf_headNav">
+           <div class="lf_headNavwrap">
+               <ul class="lf_headNavlist">
+                   <li class="lf_headNavItem lf_headNav-on">
+                       <a href="javascript:void(0);" class="lf_jump">
+                          个人中心
+                       </a> 
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">首页</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">需求大厅</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">服务大厅</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">辅材街</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">团队培训</a>
+                   </li>
+               </ul>
+           </div>
+        </div>
 		
 		<!--中间内容-->
 		<div class="wy_project_centerBox">
@@ -38,8 +65,29 @@
 
 			<!-- 右边 -->
 			<div class="wy_project_box">
-				
+				<div class="wy_team_topBox">
+					<div>
+						<img src="" alt="">
+						<p>格力中央空调安装项目，急需施工团队合作</p>
+						<p>已投标<span>2</span>人</p>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<div class="wy_sideBar"></div>
+		<footer>
+			
+		</footer>
     </body>
 </html>
+<script>
+	$(function(){
+		// 头部加载
+		$('.header').load('header2.html');
+		//底部加载
+	    $('footer').load('footer.html');
+	    // 侧边栏
+		$('.wy_sideBar').load('sidebar.html');
+	})
+</script>

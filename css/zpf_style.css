@@ -12,6 +12,8 @@ ul li{
 a{
 	text-decoration: none;
 }
+
+/*安装团队详情*/
 .zpf_ins_wrap{
 	width: 1200px;
 	height: auto;
@@ -202,4 +204,503 @@ a{
 }
 .zpf_ins_main_t p:nth-child(2){
 	margin-top: 15px;
+}
+
+
+/*搜索店铺列表*/
+.zpf_ser_wrap{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.zpf_ser_main{
+	width: 100%;
+	height: 127px;
+	border: 1px #e6e6e6 solid;
+	box-sizing: border-box;
+	margin-top: 8px;
+	overflow: hidden;
+}
+.zpf_ser_main:nth-child(3){
+	margin-top: 30px;
+}
+.zpf_ser_main:nth-last-child(1){
+	margin-bottom: 30px;
+}
+.zpf_ser_main_left{
+	width: 100px;
+	height: 127px;
+	float: left;
+}
+.zpf_ser_main_left img{
+	float: right;
+	margin-top: 23px;
+}
+.zpf_ser_main_center{
+	width: calc(100% - 345px);
+	height: 127px;
+	float: left;
+}
+.zpf_ser_main_center p{
+	font-size: 14px;
+	color: #666;
+	padding-left: 30px;
+	line-height: 25px;
+}
+.zpf_ser_main_center p:nth-child(1){
+	font-size: 16px;
+	margin-top: 25px;
+	color: #463832;
+}
+.zpf_ser_main_right{
+	width: 245px;
+	height: 127px;
+	float: left;
+}
+.zpf_ser_main_right input[type=button]{
+	display: block;
+	width: 182px;
+	height: 28px;
+	border: 0;
+	background: #3c8fed;
+	font-size: 14px;
+	color: white;
+	line-height: 28px;
+	text-align: center;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+
+/*消息*/
+.zpf_new_wrap{
+	width: 1200px;
+	height: 730px;
+	background: white;
+	margin: 30px auto 80px auto;
+	border: 1px #e6e6e6 solid;
+}
+.zpf_new_wrap_left{
+	width: 210px;
+	height: 730px;
+	border-right: 1px #e6e6e6 solid;
+	box-sizing: border-box;
+	overflow: hidden;
+	float: left;
+}
+.zpf_new_wrap_left ul{
+	width: 100%;
+	height: auto;
+	margin-top: 25px;
+	overflow: hidden;
+}
+.zpf_new_wrap_left ul li{
+	display: block;
+	width: 100%;
+	height: 59px;
+	cursor: pointer;
+}
+.zpf_new_wrap_left img{
+	display: block;
+	margin-left: 30px;
+	margin-top: 14px;
+	float: left;
+}
+.zpf_new_wrap_left p{
+	font-size: 16px;
+	color: #999999;
+	line-height: 53px;
+	padding-left: 10px;
+	float: left;
+}
+.zpf_new_wrap_active{
+	color: #3C8FED !important;
+}
+.zpf_new_wrap_left input[type=button]{
+	display: block;
+	width: 28px;
+	height: 14px;
+	border: 0;
+	background: #de352f;
+	border-radius: 6px;
+	font-size: 12px;
+	color: white;
+	line-height: 14px;
+	text-align: center;
+	margin-top: 21px;
+	margin-left: 8px;
+	float: left;
+}
+.zpf_new_wrap_right{
+	width: calc(100% - 210px);
+	height: 730px;
+	overflow: hidden;
+	float: left;
+}
+.zpf_new_main{
+	width: 95%;
+	height: 730px;
+	margin: 0 auto;
+}
+.zpf_new_main_top{
+	width: 100%;
+	height: 69px;
+	border-bottom: 1px #e6e6e6 dashed;
+	overflow: hidden;
+}
+.zpf_new_main_top h5{
+	font-size: 18px;
+	height: 34px;
+	color: #333;
+	margin-top: 32px;
+	font-weight: bold;
+	cursor: pointer;
+	float: left;
+}
+.zpf_news_main_active{
+	color: #3c8fed !important;
+	border-bottom: 3px #3c8fed solid;
+}
+.zpf_new_main_top span{
+	float: right;
+	font-weight: 100;
+	font-size: 16px;
+	color: #666666;
+	cursor: pointer;
+}
+.zpf_new_main_cont{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.zpf_new_main_c_o{
+	width: 100%;
+	height: 64px;
+	overflow: hidden;
+}
+.zpf_new_main_c_o p{
+	height: 20px;
+	font-size: 16px;
+	color: #666666;
+	border-left: 4px #bfbfbf solid;
+	margin-top: 25px;
+	padding-left: 16px;
+	line-height: 23px;
+	float: left;
+}
+.zpf_news_active{
+	border-left: 4px #3c8fed solid !important;
+}
+.zpf_new_main_c_o span{
+	margin-left: 581px;
+}
+.zpf_new_main_c_t{
+	width: 100%;
+	height: auto;
+	background: #f8f8f8;
+	overflow: hidden;
+}
+.zpf_new_main_c_t p{
+	font-size: 14px;
+	color: #666666;
+	padding:0 20px ;
+	line-height: 23px;
+	margin-top: 10px;
+}
+.zpf_new_main_c_t a{
+	display: block;
+	font-size: 14px;
+	color: #3c8fed;
+	padding:0 20px ;
+	margin: 10px 0 20px 0;
+}
+.zpf_new_main_footer{
+	width: auto;
+	height: auto;
+	margin-top: 34px;
+	overflow: hidden;
+	float: right;
+}
+.zpf_new_main_footer input[type=button]{
+	display: block;
+	width: 26px;
+	height: 28px;
+	border: 1px #e6e6e6 solid;
+	font-size: 14px;
+	color: #999999;
+	line-height: 28px;
+	text-align: center;
+	margin-left: 12px;
+	cursor: pointer;
+	float: left;
+}
+.zpf_new_main_footer input[type=button]:nth-last-child(1){
+	width: 56px;
+}
+.zpf_new_main_active{
+	color: #2e62ad !important;
+}
+.zpf_news_del{
+	display: block;
+	width: 78px;
+	height: 22px;
+	border: 1px #bfbfbf solid;
+	background: #ff5d0e;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	line-height: 22px;
+	border-radius: 3px;
+	margin-top: 34px;
+	margin-left: 606px;
+	cursor: pointer;
+	float: left;
+}
+.zpf_news_qx{
+	display: block;
+	width: 48px;
+	height: 22px;
+	border: 1px #c3c3c3 solid;
+	background: #ededed;
+	font-size: 14px;
+	color: #666666;
+	line-height: 22px;
+	text-align: center;
+	margin-top: 34px;
+	margin-left: 24px;
+	border-radius: 3px;
+	cursor: pointer;
+	float: left;
+}
+.zpf_news_main_head{
+	width: 100%;
+	height: 69px;
+	border-bottom: 1px #e6e6e6 dashed;
+	overflow: hidden;
+}
+.zpf_news_main_head h5{
+	font-size: 18px;
+	color: #333;
+	margin-top: 32px;
+	font-weight: bold;
+}
+.zpf_news_main_head span{
+	float: right;
+	font-weight: 100;
+	font-size: 16px;
+	color: #666666;
+	cursor: pointer;
+}
+.zpf_news_main_head label{
+	display: block;
+	float: left;
+	font-size: 16px;
+	color: #666666;
+	margin-top: 34px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.zpf_news_main_head input[type=checkbox]{
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-top: 39px;
+	margin-left: 9px;
+	cursor: pointer;
+	float: left;
+}
+.zpf_new_main_top input[type=checkbox]{
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-top: 39px;
+	margin-left: 9px;
+	cursor: pointer;
+	float: left;
+}
+.zpf_new_main_c_o input[type=checkbox]{
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-top: 31px;
+	margin-right: 32px;
+	cursor: pointer;
+	float: right;
+}
+
+/*公告*/
+.zpf_notice_main_cont{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px #e6e6e6 dashed;
+	overflow: hidden;
+}
+.zpf_notice_main_cont:nth-last-child(1){
+	border-bottom: 0;
+}
+.zpf_notice_main_c_o{
+	display: block;
+	width: 100%;
+	height: 64px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.zpf_notice_main_c_o p{
+	height: 20px;
+	font-size: 16px;
+	color: #666666;
+	border-left: 4px #3c8fed solid;
+	margin-top: 25px;
+	padding-left: 16px;
+	line-height: 23px;
+	float: left;
+}
+
+.zpf_notice_main_c_o span{
+	margin-left:470px;
+}
+.zpf_notice_main_c_o p:nth-child(2){
+	margin-left: 272px;
+}
+.zpf_notice_main_zong h5{
+	font-size: 16px;
+	font-style: normal;
+	color: #666666;
+	line-height: 33px;
+	margin-bottom: 22px;
+	margin-top: 5px;
+}
+.zpf_notice_main_zong p{
+	font-size: 16px;
+	color: #666666;
+	line-height: 33px;
+	text-indent: 2em;
+}
+.zpf_notice_main_zong p:nth-last-child(2){
+	text-align: right;
+}
+.zpf_notice_main_zong p:nth-last-child(1){
+	text-align: right;
+}
+.zpf_notice_main_cont ul{
+	width: 100%;
+	height: 50px;
+}
+.zpf_notice_main_cont ul:nth-child(1){
+	width: 100%;
+	height: 30px;
+	background: #f8f8f8;
+	margin-top: 25px;
+}
+.zpf_notice_main_cont ul:nth-child(1) li{
+	height: 30px;
+	font-size: 14px;
+	color: #666666;
+	line-height: 30px;
+	border-bottom: 0;
+	background: #f8f8f8;
+}
+.zpf_notice_main_cont ul:nth-last-child(1) li{
+	border-bottom: 0;
+}
+.zpf_notice_main_cont ul li{
+	width: auto;
+	height: 50px;
+	font-size: 14px;
+	color: #666666;
+	line-height: 50px;
+	border-bottom: 1px #e6e6e6 dashed;
+	float: left;
+}
+.zpf_notice_main_cont ul li:nth-child(3){
+	width: 120px;
+}
+.zpf_notice_main_cont ul li:nth-child(1){
+	width: 331px;
+	padding-left: 30px;
+}
+.zpf_notice_main_cont ul li:nth-child(2){
+	width: calc(100% - 481px);
+}
+.zpf_cont_link{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.zpf_modify_cont{
+	width: auto;
+	height: auto;
+	margin-left: 60px;
+	overflow: hidden;
+}
+.zpf_modify_main{
+	width: 100%;
+	height: 31px;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.zpf_modify_main p{
+	display: block;
+	width: 171px;
+	font-size: 16px;
+	color: #666666;
+	margin-top: 4px;
+	float: left;
+}
+.zpf_modify_main span{
+	color: #ca2323;
+	margin-right: 10px;
+}
+.zpf_modify_main input[type=text]{
+	display: block;
+	width: 177px;
+	height: 29px;
+	border: 1px #808080 solid;
+	font-size: 16px;
+	color: #666666;
+	line-height: 29px;
+	text-indent: 5px;
+	float: left;
+}
+.zpf_modify_main input[type=password]{
+	display: block;
+	width: 177px;
+	height: 29px;
+	border: 1px #808080 solid;
+	font-size: 16px;
+	color: #666666;
+	line-height: 29px;
+	text-indent: 5px;
+	float: left;
+}
+.zpf_modify_main input[type=button]{
+	display: block;
+	width: 128px;
+	height: 29px;
+	border: 1px #808080 solid;
+	background: #e6e6e6;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #666666;
+	margin-left: 8px;
+	line-height: 29px;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+}
+.zpf_modify_btn{
+	display: block;
+	width: 70px;
+	height: 29px;
+	border: 1px #a2bb92 solid;
+	background: #f0f9ea;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #666666;
+	margin-left: 171px;
+	margin-top: 30px;
+	line-height: 29px;
+	text-align: center;
+	cursor: pointer;
 }

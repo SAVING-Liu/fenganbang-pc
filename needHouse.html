@@ -124,7 +124,7 @@
 			</div>
 			<!--切换盒子-->
 			<div class="kll-need_box kll-need_boxchagne">
-				<h3 class="kll-need_boxnone">没有搜索到相关需求,查看全部<a href="#">需求</a></h3>
+				<h3 class="kll-need_boxnone">没有搜索到相关需求,查看<a class="kll-need_boxnall" href="#">全部需求&gt;</a></h3>
 				<!--<ul class="kll-need_show">
 					<li class="kll-need_showli">
 						<img class="kll-need_showimg" src="images/kl_header.jpg" alt="" />
@@ -182,13 +182,65 @@
 					<button class="kll-need_btn">下一页&gt;&gt;</button>
 				</div>
 			</div>
-			<!--尾部-->
 		</div>
 		
+		<!--尾部-->
 		<div class="footer">
 			
 		</div>
 		<!--引入js-->
-		<script src="js/app/kll_need.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//声明对象
+			var changeBox = 0;//盒子切换0代表第一个盒子,1代表第二个盒子
+			var typeBox = 0;//类型盒子是否展开,0代表收起,1代表展开
+			
+			//加载头部
+			$(".header").load("header.html");
+			//加载头部
+			$(".footer").load("footer.html");
+			//给总需求总分类事件
+			$(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").on("click", function () {
+				if (typeBox == 1) {
+					return false;
+				}
+				$(this).addClass("kll-need_list_change")
+					   .siblings(".kll-need_list").removeClass("kll-need_list_change");
+			});
+			//需求类型展开
+			$('.kll-need_list_one .kll-need_class').on("click", function () {
+				if (typeBox == 0) {
+					$(".kll-need_type>.kll-need_list").not(".kll-need_list_one").css("display", "block");
+					typeBox = 1;
+					//绑定类型点击事件
+					$(".kll-need_type>.kll-need_list").not(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").on("click", function () {
+						$(this).addClass("kll-need_list_change")
+							   .siblings(".kll-need_list").removeClass("kll-need_list_change");
+					});
+					//给总需求类型解除绑定事件
+					$(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").removeClass("kll-need_list_change");
+				} else {
+					$(".kll-need_type>.kll-need_list").not(".kll-need_list_one").css("display", "none");
+					typeBox = 0;
+					//取消事件
+					$(".kll-need_type>.kll-need_list").not(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").off("click");
+				}
+			});
+			//订单筛选选择
+			$(".kll-need_change .kll-need_ul .kll-need_list").on("click", function () {
+				$(this).addClass("kll-need_listchange")
+					   .siblings(".kll-need_list").removeClass("kll-need_listchange");
+			});
+			
+			//进行中/已完成切换
+			$(".kll-need_p").on("click", function () {
+				var index = $(this).index(".kll-need_p");
+				typeBox = index;
+				$(".kll-need_p").eq(index).addClass("kll-need_pchange")
+										  .siblings(".kll-need_p").removeClass("kll-need_pchange");
+				$(".kll-need_box").eq(index).addClass("kll-need_boxchagne")
+											.siblings(".kll-need_box").removeClass("kll-need_boxchagne");
+			});
+		</script>
 	</body>
 </html>
