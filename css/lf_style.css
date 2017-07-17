@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:27:19
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 19:34:21
+* @Last Modified time: 2017-07-17 15:53:13
 */
 .lf_jump{
 	display:block;
@@ -304,7 +304,8 @@ button{
 .lf_demandTitlewrap>ul{
     height:44px;
     background:url("../images/lf_ulbg.png") no-repeat center top;
-    line-height: 44px
+    line-height: 44px;
+    overflow:hidden;
 }
 .lf_demandTitlewrap>ul>li{
     font-size:16px;
@@ -318,4 +319,128 @@ button{
 .lf_demandTitlewrap>ul>li.lf_demandA{
     font-size:14px;
     width:155px;
+}
+/* 热门需求 */
+.lf_demandBox{
+    background-color:#f1f1f1;
+    width:100%;
+}
+.lf_demandBoxwrap{
+    width:1200px;
+    margin:0 auto;
+}
+.lf_demand-title{
+    font-size:24px;
+    height:96px;
+    line-height: 96px;
+    color:#333;
+    text-align: center;
+}
+.lf_demand-content{
+    -webkit-justify-content:space-between;
+    -moz-box-pack:space-between;
+    -webkit--moz-box-pack:space-between;
+    box-pack:space-between;
+    justify-content:space-between;
+}
+.lf_demand-content>li{
+    width:390px;  
+    margin-bottom: 20px;
+}
+.lf_demand-content>li>.lf_jump{
+    border:1px solid #fff;
+    width:100%;
+    padding:24px 30px;
+    background:#fff url("../images/lf_blueLine.png") no-repeat left 24px;
+}
+.lf_demand-content>li>.lf_jump:hover{
+    background:#f5f9ff url("../images/lf_blueLine.png") no-repeat left 24px;
+    border:1px solid #3c8fed;
+}
+.lf_demandCon-title{
+    font-size: 16px;
+    color:#333;
+    height:20px;
+    line-height:20px;
+}
+.lf_tender{
+    height:60px;
+    line-height: 60px;
+    border-bottom:1px solid #e6e6e6;
+}
+.lf_tender>.lf_left{
+    font-size: 14px;
+    color:#de352f;
+}
+.lf_tender>.lf_left>span{
+    font-size:18px;
+}
+.lf_tender>.lf_right{
+    font-size:14px;
+    color:#999;
+}
+.lf_demandSource{
+    padding-top:20px;
+}
+.lf_demandSource>img{
+    display:block;
+    float:left;
+    height:38px;
+    width:38px;
+    border:1px solid #e6e6e6;
+}
+.lf_demandShop{
+    height:40px;
+    line-height: 40px;
+    font-size: 14px;
+    color:#999;
+    padding-left:20px;
+}
+.lf_demandShop>span{
+    color:#333;
+}
+.lf_demandAddress{
+    font-size:14px;
+    color:#999;
+    height:40px;
+    line-height: 40px;
+}
+.lf_demand-address{
+    display:block;
+    float:left;
+    width:20px;
+    height:100%;
+    background: url("../images/icont_site.png") no-repeat center left;
+}
+.lf_demand-content>li>.lf_jump:hover .lf_demand-address{
+    background: url("../images/icont_site1.png") no-repeat center left;
+}
+.lf_moreDemand{
+    width:1200px;
+    margin:0 auto;
+    text-align:center;
+    padding:14px 0 50px;
+}
+.lf_moreDemand>input{
+    width:126px;
+    height:38px;
+    border:1px solid #999;
+    font-size:14px;
+    color:#666;
+    cursor:pointer;
+    border-radius: 10px;
+}
+.lf_joinIn{
+    width:100%;
+    background-color: #fff;
+    padding:24px 0 34px;
+}
+.lf_joinInwrap{
+    width:1200px;
+    margin:0 auto;
+}
+.lf_joinInwrap img{
+    display: block;
+    width:100%;
+    height:95px;
 }
