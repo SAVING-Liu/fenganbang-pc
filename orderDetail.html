@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/wy_main.css">
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content jyt_myinfo">
+			<div class="jyt_myinfobox">
+				<div class="jyt_myinfoL">
+					<div class="wy_aside_box">
+						<!-- 头像 -->
+						<div class="wy_aside_headBox">
+							<img class="wy_aside_headImg" src="images/wy_header.png" alt="">
+							<span class="wy_aside_name">山野的风</span>
+							<p class="wy_project_p1">我的账户</p>
+						</div>
+						<!-- 导航 -->
+						<h2 class="wy_aside_h2">个人中心：</h2>
+						<ul class="wy_aside_ul">
+							<li class="wy_aside_li"><a href="myInformation.html">我的信息</a></li>
+							<li class="wy_aside_li wy_aside_li_on"><a href="myOrder.html">我的订单</a></li>
+							<li class="wy_aside_li"><a href="myProject.html">我的项目</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">收货地址</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">修改密码</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="jyt_myinfoR">
+					<ul class="jyt_myinfoRtit" style="padding-bottom: 25px;">
+						<li class="jyt_cli3">订单详情</li>
+					</ul>
+					<!--物流信息-->
+					<div class="jyt_logistics">
+							<p>订单编号：暂无</p>
+							<h6>当前状态：待发货</h6>
+							<div class="clear"></div>
+							<p>发货方式：快递</p>
+							<h6>物流公司：暂无</h6>
+							<h5>运单号码：暂无</h5>	
+							<div class="clear"></div>
+					</div>
+					<!--收货信息-->
+					<div class="jyt_logistics">
+						<h1>详细信息</h1>
+						<ul>
+							<li>
+								<h4>收货人：<span>CR小杀</span></h4>
+							</li>
+							<li>
+								<h4>收货地址：<span>河南省 郑州市 金水区MOMO小区3号楼1单元6楼西户</span> </h4>
+							</li>
+							<li>
+								<h4>联系电话：<span>17300000000</span></h4>
+							</li>
+						</ul>
+					</div>
+					<!--订单信息-->
+					<div class="jyt_logistics">
+						
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="footer"></div>		
+<script type="text/javascript">
+$(document).ready(function() {
+
+		
+	//调整左侧盒子高度
+	// $(".jyt_myinfoL").css('height', $(".jyt_myinfoR").height());
+	box1()
+	function box1(){
+		var hh = $(".jyt_goosxq1box").height();
+		var len = $(".jyt_myOrderxq").length;
+		for (var i = 0; i < len; i++) {
+			var hh = $(".jyt_myOrderxq").eq(i).find(".jyt_goosxq1box").height();
+				$(".jyt_myOrderxq").eq(i).find("li").css('height', hh);
+				$(".jyt_myOrderxq").eq(i).find(".jyt_myOrderxqtit").css('height', "35px");
+		}
+	}
+	
+});
+</script>												
+    </body>
+   
+</html>

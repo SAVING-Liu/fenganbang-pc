@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/common.css">
         <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/wy_main.css">
         <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
-        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="js/app/common.js"></script>              
-		<script type="text/javascript" src="js/app/dcalendar.picker.js"></script>
+		<script type="text/javascript" src="js/lib/dcalendar.picker.js"></script>
         <title>风安帮</title>
     </head>
     <body>
@@ -15,7 +16,24 @@
 		<div class="jyt_content jyt_myinfo">
 			<div class="jyt_myinfobox">
 				<div class="jyt_myinfoL">
-					555
+					<div class="wy_aside_box">
+						<!-- 头像 -->
+						<div class="wy_aside_headBox">
+							<img class="wy_aside_headImg" src="images/wy_header.png" alt="">
+							<span class="wy_aside_name">山野的风</span>
+							<p class="wy_project_p1">我的账户</p>
+						</div>
+
+						<!-- 导航 -->
+						<h2 class="wy_aside_h2">个人中心：</h2>
+						<ul class="wy_aside_ul">
+							<li class="wy_aside_li wy_aside_li_on"><a href="myInformation.html">我的信息</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">我的订单</a></li>
+							<li class="wy_aside_li"><a href="myProject.html">我的项目</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">收货地址</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">修改密码</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="jyt_myinfoR">
 					<ul class="jyt_myinfoRtit">
@@ -147,14 +165,21 @@
 							</div>
 							<div>
 								<div class="jyt_yuexq">
-									<div class="jyt_pwd">
-										<p>支付密码：</p>
-										<input type="password" />
-										<a href="javascript:void(0);">忘记密码？</a>
+									<div style="margin-left: 60px;" class="jyt_pwd">
+										<p>手机号：</p>
+										<input type="text" placeholder="请输入支付宝绑定的手机号" />
 									</div>
-									<input onclick="javascript:window.location.href='openStore.html'" class="jyt_paysub" type="button" value="确认付款" />
+									<div class="jyt_yzm">
+										<p>验证码：</p>
+										<input class="jyt_yzmbox" type="text" />
+										<input class="jyt_yzmbtn" type="button" value="获取验证码" />
+									</div>
+									<div class="clear"></div>
+									<input class="jyt_combind" type="button" value="完成绑定" />
 								</div>
+
 							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -172,8 +197,6 @@ $(document).ready(function() {
 	$(".jyt_myinfoRtit li").on("click",function(){
 
 	//调整左侧盒子高度
-		
-
 		$(".jyt_myinfoRtit li").removeClass('jyt_cli3');
 		$(this).addClass('jyt_cli3');
 		var index = $(this).index();

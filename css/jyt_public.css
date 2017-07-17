@@ -2,7 +2,7 @@
 * @Author: jyt
 * @Date:   2017-07-12 08:53:54
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-17 12:01:35
+* @Last Modified time: 2017-07-17 19:00:08
 */
 /*发布需求-描述类别*/
 body{
@@ -975,6 +975,7 @@ body{
 }
 .jyt_myinfoR{
 	float: left;
+	min-height: 698px;
 	height: auto;
 }
 .jyt_myinfoRtit{
@@ -1123,3 +1124,267 @@ body{
 	width: 200px;
 	text-align: center;
 }
+.jyt_yzm{
+	float: right;
+	overflow: hidden;
+}
+.jyt_yzm{
+	float: left;
+	margin-left: 78px;
+	overflow: hidden;
+	line-height: 33px;
+}
+.jyt_yzm p{
+	float: left;
+	color: #333333;
+	font-size: 18px;
+	padding-right: 18px;
+}
+.jyt_yzm input.jyt_yzmbox{
+	float: left;
+	height: 33px;
+	line-height: 33px;
+	font-size: 16px;
+	padding: 0 10px;
+	border: 1px solid #e6e6e6;
+	width: 198px;
+}
+.jyt_yzm input.jyt_yzmbtn{
+	float: left;
+	height: 33px;
+	line-height: 33px;
+	font-size: 15px;
+	color: #666666;
+	background: #f0f9ea;
+	border: 1px solid #a2bb92;
+	width: 118px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.jyt_combind{
+	color: #fff;
+	background: #3c8fed;
+	width: 130px;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 7px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	margin-top: 20px;
+	margin-left: 395px;
+}
+/*我的订单*/
+.jyt_myOrder{
+	padding-left: 20px;
+	display: none;
+}
+.jyt_myOrdertit{
+	overflow: hidden;
+	width: 928px;
+	background: #f5f5f5;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.jyt_myOrdertit li{
+	float: left;
+	height: 45px;
+	line-height: 45px;
+	color: #666666;
+	font-size: 16px;
+}
+.jyt_pad1{
+	padding-right: 265px;
+	padding-left: 20px;
+}
+.jyt_pad2{
+	padding-right: 63px;
+}
+.jyt_pad3{
+	padding-right: 80px;
+}
+.jyt_pad4{
+	padding-right: 75px;
+}
+.jyt_pad5{
+	padding-right: 75px;
+}
+.jyt_myOrderxq{
+	overflow: hidden;
+	width: 928px;
+	margin: 0 auto;
+	border: 1px solid #e6e6e6;
+	margin-top: 10px;
+}
+.jyt_myOrderxqtit{
+	background: #f5f5f5;
+	overflow: hidden;
+	padding-left: 20px;
+	line-height: 35px;
+	height: 35px;
+	width: 100%;
+}
+.jyt_myOrderxqtit p{
+	float: left;
+	font-size: 16px;
+	color: #999999;
+	padding-right: 35px;
+}
+.jyt_myOrderxqtit p span{
+	color: #4c4c4c;
+}
+.jyt_myOrderxqtit h6{
+	float: left;
+	font-weight: normal;
+	color: #333333;
+	font-size: 14px;
+}
+.jyt_goosxq1box{
+	float: left;
+}
+.jyt_goosxq1{
+	margin-top: -1px;
+	border-top: 1px solid #e6e6e6;
+	border-right: 1px solid #f5f5f5;
+	overflow: hidden;
+	width: 412px;
+}
+.jyt_myOrderxq li{
+	float: left;
+	height: 100%;
+}
+.jyt_goosxq1 img{
+	float: left;
+	width: 62px;
+	height: 65px;
+	display: block;
+	border: 1px solid #d9d9d9;
+	margin: 20px;
+}
+.jyt_goosxq1 a{
+	float: left;
+	padding-top: 35px;
+	width: 250px;
+	font-size: 15px;
+	color: #4c4c4c;
+}
+.jyt_goosxq1 a:hover{
+	text-decoration: underline;
+	color:  #3c8fed;
+}
+.jyt_goosxq1 i{
+	float: right;
+	display: block;
+	padding-top: 35px;
+	margin-right: 38px;
+	color: #999999;
+	font-size: 14px;
+	font-style: normal;
+}
+.jyt_goosxq2{
+	height: 100%;
+	border-right: 1px solid #f5f5f5;
+}
+.jyt_goosxq2 p{
+	width: 118px;
+	text-align: center;
+	color: #666666;
+	font-size: 14px;
+	padding-top: 35px;
+}
+.jyt_goosxq2 h6{
+	width: 118px;
+	text-align: center;
+	color: #ff9661;
+	font-size: 14px;
+	padding-top: 35px;
+}
+.jyt_goosxq2 a{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 15px;
+}
+.jyt_goosxq2 a:hover{
+	text-decoration: underline;
+	color:  #3c8fed;
+}
+.jyt_goosxq3{
+	width: 128px;
+}
+.jyt_goosxq3 button{
+	margin: 0 auto;
+	display: block;
+	width: 83px;
+	height: 23px;
+	line-height: 20px;
+	background: #f5f5f5;
+	color: #cf4242;
+	border: 1px solid #cf4242;
+	border-radius: 5px;
+	margin-top: 35px;
+	cursor: pointer;
+}
+.jyt_goosxq3 p{
+	font-size: 14px;
+	color: #666666;
+	text-align: center;
+	padding-top: 15px;
+}
+.jyt_orderR{
+	width: 969px;
+	overflow-y: scroll;
+	height: 698px;
+}
+/*订单详情*/
+.jyt_logistics{
+	width: 969px;
+	border-bottom: 1px solid #eaeaea;
+}
+.jyt_logistics p{
+	float: left;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 398px;
+	color: #333333;
+	font-size: 14px;
+}
+.jyt_logistics h6{
+	width: 280px;
+	font-weight: normal;
+	padding-bottom: 20px;
+	float: left;
+	color: #333333;
+	font-size: 14px;
+}
+.jyt_logistics h5{
+	font-weight: normal;
+	padding-bottom: 20px;
+	float: left;
+	color: #333333;
+	font-size: 14px;
+}
+.jyt_logistics h1{
+	padding-left: 20px;
+	font-weight: normal;
+	font-size: 18px;
+	color: #333333;
+	padding-top: 20px;
+}
+.jyt_logistics ul{
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.jyt_logistics ul li{
+	padding-bottom: 15px;
+} 
+.jyt_logistics ul li h4{
+	font-weight: normal;
+	font-size: 14px;
+	color: #666666;
+} 
+.jyt_logistics ul li h4 span{
+	color: #333333;
+} 
