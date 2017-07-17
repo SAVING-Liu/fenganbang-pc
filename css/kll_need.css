@@ -381,7 +381,31 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 100;
 	background: #f9f9f9;	
+	border-bottom: 1px solid #e6e6e6;
+	display: none;
+}
+
+.kll-ns_topcenter {
+	margin: 0 auto;
+	width: 1200px;
+	height: 55px;
+}
+
+.kll-ns_topcenter .kll-ns_demul {
+	border: none;
+	float: left;
+}
+
+.kll-ns_topbtn {
+	float: right;
+	width: 218px;
+	background: #3c8fed;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 55px;
 }
 
 .kll-center_ns {
