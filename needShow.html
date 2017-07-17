@@ -17,11 +17,11 @@
 		<div class="kll-ns_top">
 			<div class="kll-ns_topcenter">
 				<ul class="kll-ns_demul">
-					<li class="kll-ns_demli kll-ns_demli_change">
-						需求描述
-					</li>
 					<li class="kll-ns_demli">
-						<a href="#goit">投标者</a>
+						<a href="#kll-ns_demul">需求描述</a>
+					</li>
+					<li class="kll-ns_demli kll-ns_demli_change">
+						投标者
 					</li>
 				</ul>
 				<button class="kll-ns_topbtn">投标</button>
@@ -72,7 +72,7 @@
 					<button class="kll-ns_debtn">投标</button>
 				</div>
 				<div class="kll-ns_demiddle">
-					<ul class="kll-ns_demul">
+					<ul class="kll-ns_demul" id="kll-ns_demul">
 						<li class="kll-ns_demli kll-ns_demli_change">
 							需求描述
 						</li>
@@ -225,11 +225,20 @@
 		</div>
 		<!--引入js-->
 		<script src="js/lib/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/kll_out.js"></script>
 		<script type="text/javascript">
 			//加载头部
 			$(".header").load("header.html");
 			//加载头部
-			$(".footer").load("header.html");
+			$(".footer").load("footer.html");
+			//加载侧边栏
+			$(".slide").load("sidebar.html");
+			//添加遮罩层
+			$(".kll-ns_debtn").on("click", function () {
+				alertBox({
+					news: "根据国家信网办最新的实名制要求，所有服务提供方都需要实名认证，造成不便还请谅解。请先进行实名认证",
+				});
+			});
 		</script>
 	</body>
 </html>
