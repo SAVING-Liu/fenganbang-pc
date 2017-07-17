@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-11 17:27:19
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-17 16:20:25
+* @Last Modified time: 2017-07-17 18:29:51
 */
 .lf_jump{
 	display:block;
@@ -444,4 +444,35 @@ button{
     width:100%;
     height:95px;
 }
-/* 服务大厅 */
+/* 辅材街_商品 */
+.lf_materialPrice{
+    color:#ff910e;
+    font-size:16px;
+    padding:18px 0 14px;
+}
+.lf_materialDescript{
+    font-size:14px;
+    color:#333;
+}
+.lf_materialShop{
+    padding-top:16px;
+    font-size:14px;
+    color:#666;
+    line-height: 20px
+}
+.lf_material-shopname{
+    height:20px;
+    line-height:20px;
+}
+.lf_material-shopname>img{
+    display:block;
+    float:left;
+    width:10px;
+    height:13px;
+    margin-top:4px;
+    margin-right:6px;
+}
+.lf_material-shopname>a{
+    color:#666;
+    text-decoration: underline;
+}

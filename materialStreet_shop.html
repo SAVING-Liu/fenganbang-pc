@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="ZZJBS"/>
+        <!-- 引入文件 -->
+        <link rel="stylesheet" href="css/swiper.min.css"/>
+        <link rel="stylesheet" href="css/common.css" /><!-- 公共样式 -->
+        <link rel="stylesheet" href="css/header.css"/>
+        <link rel="stylesheet" href="css/lf_style.css"/>
+        <link rel="stylesheet" href="css/kll_need.css"/>
+        <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script><!-- 引入jquery文件 -->
+        <script type="text/javascript" src="js/lib/swiper.min.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script><!-- 引入公共js文件 -->
+        <title>辅材街_商品</title>
+        <style>
+			.kll-need_type{
+				margin-top:0;
+			}
+			.lf_serviceCon-item{
+				padding-top: 20px
+			}
+			.lf_indexGoodsbox{
+				padding-top:0;
+			}
+			.kll-need_page{
+				padding-top: 26px;
+				padding-bottom: 54px;
+			}
+			.kll-center_box>.kll-need_change{
+				margin-top:30px;
+			}
+			.kll-need_change>.kll-need_ul{
+				background-color: #f5f5f5
+			}
+        </style>
+    </head>
+    <body>
+    	<header></header>
+        <div class="content">
+            <!-- 服务内容 -->
+            <div class="lf_serviceCon">
+            	<div class="lf_serviceCon-item kll-center_box">
+            		<!--分类列表-->
+					<ul class="kll-need_type">
+						<!--第一排-->
+						<li class="kll-need_list kll-need_list_one">
+							<p class="kll-need_class">需求类型<img class="kll-need_img" src="images/need_down.png" /></p>
+							<ul class="kll-need_classul">
+								<li class="kll-need_list">
+									全部
+								</li>
+							</ul>
+						</li>
+						<!--详细的分类-->
+						<li class="kll-need_list">
+							<p class="kll-need_class">新风系统</p>
+							<ul class="kll-need_classul">
+								<li class="kll-need_list">
+									全部
+								</li>
+								<li class="kll-need_list">
+									壁挂机
+								</li>
+								<li class="kll-need_list">
+									吊顶机
+								</li>
+								<li class="kll-need_list">
+									柜式机
+								</li>
+								<li class="kll-need_list">
+									组合机
+								</li>
+							</ul>
+						</li>
+						<li class="kll-need_list">
+							<p class="kll-need_class">空调</p>
+							<ul class="kll-need_classul">
+								<li class="kll-need_list">
+									全部
+								</li>
+								<li class="kll-need_list">
+									壁挂机
+								</li>
+								<li class="kll-need_list">
+									柜式机
+								</li>
+								<li class="kll-need_list">
+									组合机
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!--进行中/已完成切换头部-->
+			<div class="kll-need_change">
+				<ul class="kll-need_ul">
+					<li class="kll-need_list kll-need_listchange">
+						<span class="kll-need_span">默认</span>
+					</li>
+					<li class="kll-need_list">
+						<span class="kll-need_span">销量</span>
+						<img class="kll-need_img" src="images/kll_updown.png" />
+					</li>
+					<li class="kll-need_list">
+						<span class="kll-need_span">价格</span>
+						<img class="kll-need_img" src="images/kll_updown.png" />
+					</li>
+					<li class="kll-need_list">
+						<input class="kll-need_input" type="text" />
+						<span class="kll-need_span">~</span>
+						<input class="kll-need_input" type="text" />
+						<span class="kll-need_ok">确定</span>
+					</li>
+					<li class="kll-need_list kll-need_site">
+						<b class="kll-need_b">郑州</b><img class="kll-need_img" src="images/need_down.png" />
+						<div class="kll-need_out">
+							<h4 class="kll-need_h4">请选择区</h4>
+							<ul class="kll-need_siteul">
+								<li class="kll-need_siteli">金水区</li>
+								<li class="kll-need_siteli">惠济区</li>
+								<li class="kll-need_siteli">二七区</li>
+								<li class="kll-need_siteli">中原区</li>
+								<li class="kll-need_siteli">管城区</li>
+								<li class="kll-need_siteli">高新区</li>
+								<li class="kll-need_siteli">经开区</li>
+								<li class="kll-need_siteli">郑东新区</li>
+								<li class="kll-need_siteli">航空港</li>
+								<li class="kll-need_siteli">上街区</li>
+							</ul>
+						</div>
+					</li>
+					<li class="kll-need_clear"></li>
+				</ul>
+			</div>
+            	</div>
+            </div>
+            <!-- 服务大厅商品列表 -->
+            <div class="lf_indexGoods">
+                <div class="lf_indexGoodsbox">
+                    <div class="lf_indexGoodsbox-con">
+                        <div class="lf_indexGoodsCon lf_indexGoodsCon-on">
+                            <ul class="lf_clearFloat">
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lf_borderBox">
+                                    <a href="javascript:void(0);" class="lf_jump">
+                                        <img src="images/lf_goods04.png" alt=""/>
+                                    </a>
+                                    <div class="lf_indexGoodsDetail">
+                                        <p class="lf_materialPrice">￥66.00</p>
+                                        <p class="lf_materialDescript">
+                                        	全新桂林空调交流接触器G CJX9B-25S/D 220V 空调配件
+                                        </p>
+                                        <div class="lf_materialShop lf_clearFloat">
+                                        	<p class="lf_left lf_material-shopname">
+                                        		<img src="images/lf_sanLine.png" alt=""/>
+                                        		<a href="javascript:void(0);">迪信配件</a>
+                                        	</p>
+                                        	<p class="lf_right">
+                                        		河南 郑州 
+                                        	</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                             <!--分页-->
+							<div class="kll-need_page">
+								<button class="kll-need_btn">&lt;&lt;上一页</button>
+								<div class="kll-need_pageshow">
+									<span class="kll-need_pagenum kll-need_pagenumshow">1</span>
+									<span class="kll-need_pagenum">2</span>
+									<span class="kll-need_pagenum">3</span>
+									<span class="kll-need_pagenum">...</span>
+									<span class="kll-need_pagenum">9</span>
+									<span class="kll-need_pagenum">10</span>
+								</div>
+								<input class="kll-need_pagein" placeholder="1" type="text" />
+								<button class="kll-need_btnok">确定</button>
+								<button class="kll-need_btn">下一页&gt;&gt;</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+        <div id="aside"></div>
+        <script type="text/javascript">
+            //侧边栏加载
+            $('#aside').load('sidebar.html');
+            //商品选项卡
+            var _h = $('.lf_indexGoodsCon>ul>li').length;
+            for(var i = 1;i<_h;i++){
+                
+                if(((i-3)%4)==0){
+                    $('.lf_indexGoodsCon>ul>li').eq(i).css('margin-right','0');
+                }
+            };
+           //声明对象
+			var changeBox = 0;//盒子切换0代表第一个盒子,1代表第二个盒子
+			var typeBox = 0;//类型盒子是否展开,0代表收起,1代表展开
+			
+			//加载头部
+			$("header").load("header.html");
+			//加载头部
+			$("footer").load("footer.html");
+			//给总需求总分类事件
+			$(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").on("click", function () {
+				if (typeBox == 1) {
+					return false;
+				}
+				$(this).addClass("kll-need_list_change")
+					   .siblings(".kll-need_list").removeClass("kll-need_list_change");
+			});
+			//需求类型展开
+			$('.kll-need_list_one .kll-need_class').on("click", function () {
+				var index = $(this).index('.kll-need_list_one .kll-need_class');
+				if (typeBox == 0) {
+					$(".kll-need_type").eq(index).children('.kll-need_list').not(".kll-need_list_one").css("display", "block");
+					typeBox = 1;
+					//绑定类型点击事件
+					$(".kll-need_type").eq(index).children('.kll-need_list').not(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").on("click", function () {
+						$(this).addClass("kll-need_list_change")
+							   .siblings(".kll-need_list").removeClass("kll-need_list_change");
+					});
+					//给总需求类型解除绑定事件
+					$(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").removeClass("kll-need_list_change");
+				} else {
+					$(".kll-need_type").eq(index).children('.kll-need_list').not(".kll-need_list_one").css("display", "none");
+					typeBox = 0;
+					//取消事件
+					$(".kll-need_type").eq(index).children('.kll-need_list').not(".kll-need_list_one").children(".kll-need_classul").children(".kll-need_list").off("click");
+				}
+			});
+			//订单筛选选择
+			$(".kll-need_change .kll-need_ul .kll-need_list").on("click", function () {
+				$(this).addClass("kll-need_listchange")
+					   .siblings(".kll-need_list").removeClass("kll-need_listchange");
+			});		
+        </script>
+    </body>
+</html>
