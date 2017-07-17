@@ -1,9 +1,4 @@
-/*
-* @Author: Administrator
-* @Date:   2017-07-13 08:26:19
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 12:05:29
-*/
+/* 登录、忘记密码*/
 .wy_header{
 	width: 1200px;
 	height: 96px;
@@ -95,7 +90,7 @@
 .wy_form .wy_bottomBox .wy_rightBox{
 	float: right;
 }
-.wy_rightBox >a{
+.wy_form .wy_rightBox >a{
 	display: block;
     float: left;
     color: #adaaad;
@@ -104,7 +99,7 @@
     margin-top: 2px;
     padding-left: 10px;
 }
-.wy_rightBox >a:first-child{
+.wy_form .wy_rightBox >a:first-child{
 	padding: 0;
 	padding-right: 8px;
 	border-right: 1px solid #adaaad;
@@ -154,3 +149,429 @@
 	color: #636563;
 	margin: 0 12px;
 }
+.wy_footer p{
+	font-size: 14px;
+	color: #666;
+}
+.wy_footer .wy_p{
+	margin: 30px auto 12px;
+	width: 370px;
+	height: 22px;
+	line-height: 22px;
+}
+.wy_footer .wy_tel{
+	height:16px;
+	width:17px;
+	display: block; 
+	padding-top: 3px;
+	float: left;
+	margin-right: 10px;
+}
+.wy_footer .wy_span1{
+	font-size: 16px;
+	float: left;
+}
+.wy_footer .wy_span2{
+	margin-left: 10px;
+}
+.wy_footer .wy_jbs{
+	color: #666;
+}
+
+
+/* 注册 */
+
+.wy_registerBody{
+	height: 771px;
+}
+.wy_registerBg1{
+	background: url(../images/wy_registerbg1.png) no-repeat center top;
+}
+.wy_registerBg2{
+	width: 1200px;
+	height: 771px;
+	margin: 0 auto;
+	background: url(../images/wy_registerbg2.png); 
+}
+.wy_registerBody .wy_registerform{
+	width: 510px;
+	height: 680px;
+	padding: 0 43px;
+	background: #fff;
+	float: right;
+	margin-top: 44px;
+	margin-right:5px;
+}
+.wy_registerform .wy_p{
+	line-height: 116px;
+	font-size: 20px;
+}
+.wy_registerform .wy_inputBox{
+	width: 510px;
+	height: 42px;
+	line-height: 42px;
+	margin: 0 auto 19px;
+	font-size: 14px;
+}
+.wy_registerform .wy_shenfenBox{
+	margin-bottom: 19px;
+	font-size: 14px;
+}
+.wy_registerform .wy_shenfenBox > input{
+	margin: 0 5px 0 10px;
+}
+.wy_registerform .wy_shenfenBox >span{
+	width: 110px;
+	display: block;
+	float: left;
+}
+.wy_registerform .wy_inputBox >span{
+	display: block;
+	float: left;
+	width: 100px;
+}
+.wy_registerform .wy_inputBox > .wy_input{
+	border: 1px solid #e7e7e7;
+	width: 368px;
+	height: 40px;
+	font-size: 14px;
+	padding: 0 15px;
+	float: right;
+}
+.wy_registerform .wy_inputBox1{
+	position: relative;
+}
+.wy_registerform .wy_yzmBtn{
+	width: 100px;
+	height: 36px;
+	background: #f7f7f7;
+	position: absolute;
+	color: #000;
+	right: 2px;
+	top: 2.5px;
+}
+.wy_registerform .wy_inputBox > .wy_input1{
+	width: 263px;
+	padding-right: 120px;
+}
+.wy_registerform .wy_bottomBox{
+	overflow: hidden;
+	width: 400px;
+	float: right;
+	font-size: 12px;
+	color: #adaaad;
+}
+.wy_registerform .wy_bottomBox .wy_gouBox{
+	float: left;
+	overflow: hidden;
+}
+.wy_registerform .wy_bottomBox .wy_gouBox em{
+	font-style: normal;
+	color: #206dc4;
+}
+.wy_registerform .wy_bottomBox .wy_rightBox{
+	float: right;
+	color: #000;
+}
+.wy_registerform .wy_rightBox .wy_gologin{
+	color: #dd2727;
+}
+.wy_registerform .wy_loginBtn{
+	width: 400px;
+	height: 40px;
+	float: right;
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	background: #3c8fed;
+	border-radius: 5px;
+	margin-top: 30px;
+} 
+
+
+/* 找回密码 */
+
+.wy_findPwdBody{
+	width: 100%;
+	height: 567px;
+	overflow: hidden;
+}
+.wy_findPwdBody .wy_loginBg1{
+	background: url(../images/wy_findpwd1.png) no-repeat center top;
+}
+.wy_findPwdBody .wy_loginBg2{
+	width: 1200px;
+	height: 567px;
+	margin: 0 auto;
+	background: url(../images/wy_findpwd2.png); 
+}
+.wy_form1{
+	width: 460px;
+	height: 496px;
+	margin-top: 32px;
+	font-size: 14px;
+}
+.wy_form1 .wy_icon{
+	top: 16px;
+}
+.wy_form1 .wy_inputBox {
+	width: 396px;
+}
+.wy_form1 .wy_inputBox > input.wy_input{
+	width: calc(100% - 117px);
+    padding-left: 100px;
+    font-size: 14px;
+}
+.wy_findPwdBody .wy_inputBox1{
+	position: relative;
+}
+.wy_findPwdBody .wy_inputBox1 .wy_yzmBtn{
+	padding: 0;
+	width: 100px!important;
+	height: 46px;
+	background: #f7f7f7;
+	position: absolute;
+	color: #000;
+	right: 2px;
+	top: 3px;
+	text-align: center;
+	font-size: 14px;
+}
+.wy_form1 .wy_inputBox > input.wy_input1{
+	width: calc(100% - 222px);
+    padding-right: 120px;
+}
+
+
+
+/* 个人中心-我的项目 */
+
+.wy_project_centerBox{
+	width: 1198px;
+	height: 740px;
+	border: 1px solid #e6e6e6;
+	margin: 20px auto;
+	overflow: hidden;
+}
+/* 左边 */
+.wy_aside_box{
+	width: 189px;
+	height: 100%;
+	padding: 20px 21px 0px;
+	background: #f8f8f8;
+	border-right: 1px solid #e6e6e6;
+	float: left;
+}
+.wy_aside_box .wy_aside_headBox{
+	overflow: hidden;
+}
+.wy_aside_box .wy_aside_headImg{
+	width: 60px;
+	height: 60px;
+	display: line-block;
+	border: none;
+	border-radius: 10px;
+	float: left;
+	overflow: hidden;
+	margin-right: 12px;
+}
+.wy_aside_box .wy_aside_name{
+	float: left;
+	display: block;
+	width: 117px;
+	height: 55px;
+	color: #333;
+	font-size: 16px;
+	padding-top: 5px;
+}
+.wy_aside_box .wy_project_p1{
+	width: 187px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	border: 1px solid #e6e6e6;
+	margin-top: 10px;
+	text-align: center;
+	background: #fff;
+	color: #3c8fed;
+	font-size: 14px;
+}
+.wy_aside_h2{
+	font-size: 16px;
+	color: #333;
+	margin-top: 12px;
+	line-height: 44px;
+}
+.wy_aside_ul .wy_aside_li > a{
+	font-size: 16px;
+	color: #666;
+	line-height: 34px;
+}
+.wy_aside_ul .wy_aside_li_on > a{
+	color: #3c8fed;
+}
+/* 右边 */
+.wy_project_box{
+	float: left;
+	padding: 0 19px;
+}
+.wy_project_box .wy_project_ul{
+	overflow: hidden;
+	margin: 24px 0 40px;
+}
+.wy_project_box .wy_project_ul > .wy_project_li{
+	float: left;
+	font-size: 17px;
+	line-height: 28px;
+	margin-right: 55px;
+	box-sizing: border-box;
+	color: #666;
+	cursor: pointer;
+}
+.wy_project_box .wy_project_ul > .wy_project_li_on{
+	border-bottom: 3px solid #3c8fed;
+	color: #3c8fed;
+}
+.wy_project_box .wy_project_tabTit{
+	overflow: hidden;
+	background: #f5f5f5;
+	width: 928px;
+	height: 44px;
+	line-height: 44px;
+	margin-bottom: 30px;
+}
+.wy_project_box .wy_project_tabTit > li{
+	float: left;
+	text-align: center;
+	color: #666;
+	font-size: 16px;
+}
+.wy_project_box .wy_project_tabTit > .wy_li1{
+	width: 88px;
+}
+.wy_project_box .wy_project_tabTit > .wy_li2{
+	width: 243px;
+}
+.wy_project_box .wy_project_tabTit > .wy_li3{
+	width: 154px;
+}
+.wy_project_box .wy_project_tabTit > .wy_li4{
+	width: 174px;
+}
+.wy_project_box .wy_project_tabTit > .wy_li5{
+	width: 136px;
+}
+.wy_project_box .wy_project_tabTit > .wy_li6{
+	width: 132px;
+}
+.wy_project_listBox{
+	width: 928px;
+	height: 560px;
+	overflow-y: scroll;
+}
+.wy_project_list .wy_project_time{
+	background: #f5f5f5;
+	width: 890px;
+	height: 34px;
+	line-height: 34px;
+	color: #999;
+	font-size: 14px;
+	padding-left: 21px;
+	border-top: 1px solid #f0f0f0;
+}
+.wy_project_listBody{
+	width: 911px;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 12px 0;
+}
+.wy_project_listBody > img{
+	margin-left: 18px;
+	float: left;
+}
+.wy_project_listBody > .wy_project_content{
+	padding: 0 10px;
+	float: left;
+}
+.wy_project_listBody > .wy_project_content > .wy_p1 {
+	font-size: 15px;
+	width: 223px;
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 10px 0 16px;
+}
+.wy_project_listBody > .wy_project_content > .wy_p2{
+	font-size: 13px;
+}
+.wy_project_listBody > .wy_project_content > .wy_p2 > .wy_span{
+	color: #3c8fed;
+}
+.wy_project_listBody .wy_money{
+	width: 154px;
+	float: left;font-size: 24px;
+	line-height: 70px;
+	color: #ff6600;
+	text-align: center;
+}
+.wy_project_listBody .wy_num{
+	font-size: 14px;
+	color: #888;
+	width: 174px;
+	text-align: center;
+	float: left;
+	line-height: 70px;
+}
+.wy_project_listBody .wy_firm{
+	color: #3c8fed;
+}
+.wy_project_listBody .wy_num > .wy_people{
+	font-size: 16px;
+	color: #3c8fed;
+}
+.wy_project_listBody .wy_state{
+	width: 136px;
+	color: #3c8fed;
+	font-size: 14px;
+	text-align: center;
+	line-height: 70px;
+	float: left;
+}
+.wy_project_listBody .wy_project_btn{
+	width: 116px;
+	float: left;
+	font-size:14px;
+}
+.wy_project_listBody .wy_project_btn> a{
+	color: #cf4242;
+	border: 1px solid #cf4242;
+	display: block;
+	width: 82px;
+	height: 22px;
+	margin: 15px 0 6px 23px;
+	text-align: center;
+	border-radius: 5px;
+	background: #f5f5f5;
+}
+.wy_project_listBody .wy_project_btn>.wy_a_btn{
+	color: #888;
+	border: 1px solid #aaa;
+	margin-top: 24px;
+}
+.wy_project_listBody .wy_project_btn>p{
+	margin-top: 6px;
+	padding-left: 38px;
+	color: #666;
+}
+.wy_project_listBody .wy_project_btn>.wy_appeal{
+	margin-left: 13px;
+}
+.wy_project_listBody .wy_project_btn>p:hover{
+	cursor: pointer;
+}
+
+
+
+/* 招标中-选择团队 */
+
