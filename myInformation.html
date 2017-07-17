@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/app/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/app/dcalendar.picker.js"></script>
+        <title>风安帮</title>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content jyt_myinfo">
+			<div class="jyt_myinfobox">
+				<div class="jyt_myinfoL">
+					555
+				</div>
+				<div class="jyt_myinfoR">
+					<ul class="jyt_myinfoRtit">
+						<li class="jyt_cli3">基础信息</li>
+						<li>企业认证</li>
+						<li>账户绑定</li>
+					</ul>
+					<div class="jyt_myinfoRxq">
+						<form>
+							<ul class="jyt_myinfoRxqul">
+								<li>
+									<p>当前头像：</p>
+									<div class="jyt_libox234">
+										<img src="images/jyt_headimg.jpg">
+										<input type="button" value="选择你要上传的头像">
+										<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>登录名：</p>
+									<h6>12563256985</h6>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>用户名：</p>
+									<input class="inpwid" type="text" placeholder="山野的风" />
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>性别：</p>
+									<label for="boy"><input id="boy" type="radio" name="sex">男</label>
+									<label for="girl"><input id="girl" type="radio" name="sex">女</label>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>真实姓名：</p>
+									<input class="inpwid" type="text" />
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>生日：</p>
+									<input id='mydatepicker'  class="inpwid" type='text'/> 
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<input class="jyt_sub" type="submit" value="提交" >
+							<div class="clear"></div>
+						</form>
+					</div>
+					<div class="jyt_myinfoRxq">
+						<form>
+							<ul class="jyt_openstoreul" style="padding-top: 0;padding-left: 38px;">
+								<li>
+									<p><span>*</span> 营业执照：</p>
+									<input class="jyt_inp3" type="text" />
+									<button>上传</button>
+									<div class="clear"></div>
+									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+								</li>
+								<li>
+									<p style="width: 110px;"><span>*</span> 法人身份证：</p>
+								</li>
+								<li>
+									<p style="text-align: right;"><span>*</span> 正面：</p>
+									<input class="jyt_inp3" type="text" />
+									<button>上传</button>
+									<div class="clear"></div>
+									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+								</li>
+								<li>
+									<p style="text-align: right;"><span>*</span> 反面：</p>
+									<input class="jyt_inp3" type="text" />
+									<button>上传</button>
+									<div class="clear"></div>
+									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+								</li>
+								<li>
+									<p><span>*</span> 公司名称：</p>
+									<input class="jyt_inp3" type="text" />
+									<div class="clear"></div>
+								</li>
+								<li>
+									<p><span>*</span> 公司地址：</p>
+									<textarea></textarea>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<p><span>*</span> 联系人：</p>
+									<input class="jyt_inp3" type="text" />
+									<div class="clear"></div>
+								</li>
+								<li>
+									<p><span>*</span> 联系电话：</p>
+									<input class="jyt_inp3" type="text" />
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<input class="jyt_sub" type="submit" value="提交" >
+						</form>
+					</div>
+					<div class="jyt_myinfoRxq">
+						<div class="jyt_bindbox">
+							<!--绑定微信-->
+							<div class="jyt_wxtit">
+								<img src="images/jyt_wx.jpg">
+								<p>绑定微信</p>
+							</div>
+							<div class="jyt_wxxq">
+								<div class="wxcodebox">
+									<div class="wxcodebox1"></div>
+								</div>
+								<div class="jyt_wxtrouble">
+									<p>请使用微信扫描二维码以完成绑定</p>
+									<h6>(必须使用微信扫码)</a></h6>
+								</div>
+							</div>
+						</div>
+						<div class="jyt_bindbox">
+							<!--绑定支付宝-->
+							<div class="jyt_zfbtit">
+								<img src="images/jyt_zfb.jpg">
+								<p>绑定支付宝</p>
+							</div>
+							<div>
+								<div class="jyt_yuexq">
+									<div class="jyt_pwd">
+										<p>支付密码：</p>
+										<input type="password" />
+										<a href="javascript:void(0);">忘记密码？</a>
+									</div>
+									<input onclick="javascript:window.location.href='openStore.html'" class="jyt_paysub" type="button" value="确认付款" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="footer"></div>		
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#mydatepicker').dcalendarpicker(); //初始化日期选择器
+	$('#mycalendar').dcalendar(); //初始化日历
+	$('#mydatepicker').dcalendarpicker({format: 'yyyy-mm-dd'});//日历格式
+	//选项卡
+	$(".jyt_myinfoRxq").eq(0).css('display', 'block');
+	$(".jyt_myinfoRtit li").on("click",function(){
+
+	//调整左侧盒子高度
+		
+
+		$(".jyt_myinfoRtit li").removeClass('jyt_cli3');
+		$(this).addClass('jyt_cli3');
+		var index = $(this).index();
+		$(".jyt_myinfoRxq").css('display', 'none');
+		$(".jyt_myinfoRxq").eq(index).css('display', 'block');
+		$(".jyt_myinfoL").css('height', $(".jyt_myinfoR").height());
+	})
+});
+</script>												
+    </body>
+   
+</html>
