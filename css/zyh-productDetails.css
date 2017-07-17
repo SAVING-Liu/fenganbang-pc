@@ -1,0 +1,320 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+
+}
+/*chrome隐藏滚动条*/
+::-webkit-scrollbar{width: 0;}
+.zyh-contents{
+    width: 1400px;
+    margin: 0 auto;
+    user-select: none;
+    margin-top: 2rem;
+}
+.productTop{
+    display: flex;
+    flex-direction: row;
+}
+.productImgs{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.productImgs img{
+    width: 500px;
+    height: 500px;
+}
+.productSelects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0 0 2.2rem;
+}
+.productSelects .shopTitle{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.productSelects .shopComment{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #1e7cc4;
+    padding-bottom: 0.9rem;
+}
+.productSelects span{
+    font-size: 1rem;
+    color: #969696;
+    padding: 0.5rem 0;
+}
+.productSelects .spanLi{
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+.productSelects .shopMoneys{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0;
+}
+.productSelects .shopMoneyBefore{
+    width: 4rem;
+    display: inline-block;
+    text-align: justify;
+    text-align-last: justify;
+    margin-right: 1.5rem;
+}
+.productSelects .shopMoneyNew{
+    font-size: 2rem;
+    color: #dc2527;
+}
+.productSelects .padding-top-1{
+    padding-top: 0.5rem;
+}
+.productSelects .shopMoneyOld{
+    text-decoration: line-through;
+}
+.productSelects .numInput{
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    padding: 2px;
+    width: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1rem;
+    height: 1rem;
+}
+.productSelects .Input{
+    height: 1.5rem;
+    width: 3rem;
+    color: #969696;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    margin: 0 0.5rem;
+
+}
+.productSelects .productSelects-top{
+    display: flex;
+    flex-direction: column;
+}
+.productSelects .productSelects-bottom{
+    padding-left: 1.5rem;
+}
+.productSelects .button-style{
+    border: 1px solid #ffa686;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px #cabfbf;
+    margin-right: 1rem;
+}
+.style-red{
+    background-color:#ffe1c9;
+    color: #dc2527;
+}
+.style-yellow{
+    background-color: #ff910e;
+    color: whitesmoke;
+}
+/**/
+.productBottom{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+.productOther{
+    width: 360px;
+}
+.productOther .boxs{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ebebeb;
+    color: #959595;
+}
+.productOther .box-title{
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0.7rem;
+    color: black;
+}
+.productOther .box-contents{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0 0.5rem 0.7rem;
+}
+.productOther .box-contents-span{
+    display: flex;
+    flex-direction: row;
+    padding: 0.25rem 0;
+}
+.box-contents-span span{flex: 1}
+.boxs .box-center{
+    padding: 0.5rem 0;
+    align-items: center;
+}
+.box-imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+.box-imgs img{
+    width: 150px;
+    height: 120px;
+}
+.box-imgs-title{
+    padding: 0.8rem;
+}
+.box-comment{
+    color: red;
+}
+.productInfo{
+    padding-left:1rem;
+}
+.productInfo .Info-nav{
+    background-color: #f5f5f5;
+    height: 3rem;
+    border-bottom: 1px solid #eaeaea;
+}
+.Info-nav .Nav-lable{
+    background-color: #ffffff;
+    width: 8rem;
+    text-align: center;
+    height: 3rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    border: 1px solid #eaeaea;
+    border-top: 2px solid red;
+    border-bottom: 0;
+}
+.productInfo-info{
+    height: 8rem;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    color: #959595;
+}
+.productInfo-info span{flex: 1}
+.productInfo-imgs img{
+    width: 100%;
+}
+/*aside*/
+aside{
+    position: fixed;
+    right: -670px;
+    background-color: white;
+    box-shadow: 0 0 20px 5px rgb(222, 220, 220);
+    width: 650px;
+    top:300px;
+    height: 270px;
+    transition: all 0.6s;
+}
+.zyh-aside-title{
+    font-size: 1rem;
+    color: #777777;;
+    height: 90px;
+    padding: 1rem 0 0 2rem;
+}
+.aside-title{
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 0.3rem 0;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+.zyh-aside-content{}
+/*小三角*/
+aside::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    width: 0;
+    height: 0;
+    border-width: 8px 0 8px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: -10px;
+    top: calc(50% - 5px);
+}
+.x-img{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.link-blue{
+    color: #7daef1;
+}
+.link-orange{
+    color:#ff9a30;
+}
+.title-tip{
+    padding-left: 36px;
+}
+aside a{
+    text-decoration: none;
+}
+.showAside{
+    right: 40px;
+}
+
+/*head-logo*/
+logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.input-height{
+    height: 38px;
+    line-height: 38px;
+}
+.search-input{
+    width: 444px;
+    padding: 0;
+    border: 0;
+    background-color: #e6e6e6;
+}
+.sub-button{
+    width: 80px;
+    text-align: center;
+    background-color: #fabf3d;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*head-nav*/
+head-nav{
+    padding-left: 330px;
+    display: block;
+    background-image: url("../images/25_nav_bg.jpg");
+}
+.ac-span{
+    background-color: #fabf3d;
+    background-image: url("../images/25_icon.png");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+}
+head-nav span{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+}
