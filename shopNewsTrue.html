@@ -9,7 +9,54 @@
         <script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="js/app/common.js"></script>              
 		<script type="text/javascript" src="js/lib/dcalendar.picker.js"></script>
-        <title>风安帮</title>
+        <title>我的信息-普通用户</title>
+        <style type="text/css">
+        	.wy_aside_name img{
+        		margin-top: 10px;
+        	}
+        	.jyt_sub {
+        		border: 1px solid #a2bb92;
+        	}
+        	.jyt_openstoreul li h2 {
+        		font-size: 16px;
+        		color: #666;
+        		float: left;
+        		width: 300px;
+        		padding-left: 20px;
+        	}
+        	.jyt_openstoreul li h2 span {
+        		float: right;
+        		width: 66px;
+        		height: 29px;
+        		font-size: 15px;
+        		line-height: 29px;
+        		border: 1px solid #ccc;
+        		background: #f5f5f5;
+        		color: #666;
+        		text-align: center;
+        		border-radius: 3px;
+        		cursor: pointer;
+        	}
+        	.kll-goshop {
+        		padding-left: 40px;
+        		font-size: 18px;
+        		color: #333;
+        	}
+        	.kll-goshop_a {
+        		margin-left: 40px;
+        		display: inline-block;
+        		width: 130px;
+        		height: 48px;
+        		line-height: 48px;
+        		color: #fff;
+        		border-radius: 3px;
+        		background: #ff910e;
+        		outline: none;
+        		text-align: center;
+        		margin-top: 35px;
+        		font-size: 18px;
+        	}
+        </style>
     </head>
     <body>
 		<div class="header"></div>
@@ -46,7 +93,9 @@
 						<!-- 头像 -->
 						<div class="wy_aside_headBox">
 							<img class="wy_aside_headImg" src="images/wy_header.png" alt="">
-							<span class="wy_aside_name">山野的风</span>
+							<span class="wy_aside_name">
+								山野的风 
+							</span>
 							<p class="wy_project_p1">我的账户</p>
 						</div>
 
@@ -54,9 +103,7 @@
 						<h2 class="wy_aside_h2">个人中心：</h2>
 						<ul class="wy_aside_ul">
 							<li class="wy_aside_li wy_aside_li_on"><a href="myInformation.html">我的信息</a></li>
-							<li class="wy_aside_li"><a href="javascript:void(0);">我的订单</a></li>
-							<li class="wy_aside_li"><a href="myProject.html">我的项目</a></li>
-							<li class="wy_aside_li"><a href="javascript:void(0);">收货地址</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">后台管理入口</a></li>
 							<li class="wy_aside_li"><a href="javascript:void(0);">修改密码</a></li>
 						</ul>
 					</div>
@@ -115,55 +162,47 @@
 							<div class="clear"></div>
 						</form>
 					</div>
+					<!--企业认证-->
 					<div class="jyt_myinfoRxq">
+						<div class="kll-goshop_box" style="display: none;">
+							<h3 class="kll-goshop">请先去开店,开店流程中进行企业认证</h3>
+							<a class="kll-goshop_a" href="#">我要开店</a>
+						</div>
 						<form>
 							<ul class="jyt_openstoreul" style="padding-top: 0;padding-left: 38px;">
 								<li>
 									<p><span>*</span> 营业执照：</p>
-									<input class="jyt_inp3" type="text" />
-									<button>上传</button>
-									<div class="clear"></div>
-									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+									<h2>企业营业执照.jpg<span>查看</span></h2>
 								</li>
 								<li>
 									<p style="width: 110px;"><span>*</span> 法人身份证：</p>
 								</li>
 								<li>
 									<p style="text-align: right;"><span>*</span> 正面：</p>
-									<input class="jyt_inp3" type="text" />
-									<button>上传</button>
-									<div class="clear"></div>
-									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+									<h2>身份证正面.jpg<span>查看</span></h2>
 								</li>
 								<li>
 									<p style="text-align: right;"><span>*</span> 反面：</p>
-									<input class="jyt_inp3" type="text" />
-									<button>上传</button>
-									<div class="clear"></div>
-									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+									<h2>身份证反面.jpg<span>查看</span></h2>
 								</li>
 								<li>
 									<p><span>*</span> 公司名称：</p>
-									<input class="jyt_inp3" type="text" />
-									<div class="clear"></div>
+									<h2>郑州市鑫元电器配件有限公司</h2>
 								</li>
 								<li>
 									<p><span>*</span> 公司地址：</p>
-									<textarea></textarea>
-									<div class="clear"></div>
+									<h2>河南省郑州市金水区新田大厦</h2>
 								</li>
 								<li>
 									<p><span>*</span> 联系人：</p>
-									<input class="jyt_inp3" type="text" />
-									<div class="clear"></div>
+									<h2>王某之</h2>
 								</li>
 								<li>
 									<p><span>*</span> 联系电话：</p>
-									<input class="jyt_inp3" type="text" />
-									<div class="clear"></div>
+									<h2>12314562658</h2>
 								</li>
 							</ul>
-							<input class="jyt_sub" type="submit" value="提交" >
+							<input class="jyt_sub" type="submit" value="提交" style="margin-left: 200px;">
 						</form>
 					</div>
 					<div class="jyt_myinfoRxq">
@@ -180,7 +219,7 @@
 								<div class="jyt_wxtrouble">
 									<p>请使用微信扫描二维码以完成绑定</p>
 									<h6>(必须使用微信扫码)</h6>
-								</div>
+								</div> 
 							</div>
 						</div>
 						<div class="jyt_bindbox">
@@ -212,7 +251,7 @@
 				<div class="clear"></div>
 			</div>
 		</div>
-		<div class="footer"></div>
+		<div class="footer"></div>	
 		<div class="jyt_slide"></div>		
 <script type="text/javascript">
 $(document).ready(function() {

@@ -9,7 +9,15 @@
         <script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="js/app/common.js"></script>              
 		<script type="text/javascript" src="js/lib/dcalendar.picker.js"></script>
-        <title>风安帮</title>
+        <title>我的信息-普通用户</title>
+        <style type="text/css">
+        	.wy_aside_name img{
+        		margin-top: 10px;
+        	}
+        	.jyt_sub {
+        		border: 1px solid #a2bb92;
+        	}
+        </style>
     </head>
     <body>
 		<div class="header"></div>
@@ -46,7 +54,9 @@
 						<!-- 头像 -->
 						<div class="wy_aside_headBox">
 							<img class="wy_aside_headImg" src="images/wy_header.png" alt="">
-							<span class="wy_aside_name">山野的风</span>
+							<span class="wy_aside_name">
+								山野的风 
+							</span>
 							<p class="wy_project_p1">我的账户</p>
 						</div>
 
@@ -55,7 +65,6 @@
 						<ul class="wy_aside_ul">
 							<li class="wy_aside_li wy_aside_li_on"><a href="myInformation.html">我的信息</a></li>
 							<li class="wy_aside_li"><a href="javascript:void(0);">我的订单</a></li>
-							<li class="wy_aside_li"><a href="myProject.html">我的项目</a></li>
 							<li class="wy_aside_li"><a href="javascript:void(0);">收货地址</a></li>
 							<li class="wy_aside_li"><a href="javascript:void(0);">修改密码</a></li>
 						</ul>
@@ -64,7 +73,7 @@
 				<div class="jyt_myinfoR">
 					<ul class="jyt_myinfoRtit">
 						<li class="jyt_cli3">基础信息</li>
-						<li>企业认证</li>
+						<li>实名认证</li>
 						<li>账户绑定</li>
 					</ul>
 					<div class="jyt_myinfoRxq">
@@ -119,14 +128,13 @@
 						<form>
 							<ul class="jyt_openstoreul" style="padding-top: 0;padding-left: 38px;">
 								<li>
-									<p><span>*</span> 营业执照：</p>
+									<p><span>*</span> 真实姓名：</p>
 									<input class="jyt_inp3" type="text" />
-									<button>上传</button>
 									<div class="clear"></div>
-									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+									<h1>为确保您的账户安全，请填写您本人的实名认证信息 </h1>
 								</li>
 								<li>
-									<p style="width: 110px;"><span>*</span> 法人身份证：</p>
+									<p style="width: 110px;"><span>*</span> 上传身份证：</p>
 								</li>
 								<li>
 									<p style="text-align: right;"><span>*</span> 正面：</p>
@@ -143,27 +151,12 @@
 									<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
 								</li>
 								<li>
-									<p><span>*</span> 公司名称：</p>
-									<input class="jyt_inp3" type="text" />
-									<div class="clear"></div>
-								</li>
-								<li>
-									<p><span>*</span> 公司地址：</p>
-									<textarea></textarea>
-									<div class="clear"></div>
-								</li>
-								<li>
-									<p><span>*</span> 联系人：</p>
-									<input class="jyt_inp3" type="text" />
-									<div class="clear"></div>
-								</li>
-								<li>
 									<p><span>*</span> 联系电话：</p>
 									<input class="jyt_inp3" type="text" />
 									<div class="clear"></div>
 								</li>
 							</ul>
-							<input class="jyt_sub" type="submit" value="提交" >
+							<input class="jyt_sub" type="submit" value="提交" style="margin-left: 200px;">
 						</form>
 					</div>
 					<div class="jyt_myinfoRxq">
@@ -180,7 +173,7 @@
 								<div class="jyt_wxtrouble">
 									<p>请使用微信扫描二维码以完成绑定</p>
 									<h6>(必须使用微信扫码)</h6>
-								</div>
+								</div> 
 							</div>
 						</div>
 						<div class="jyt_bindbox">
@@ -212,7 +205,7 @@
 				<div class="clear"></div>
 			</div>
 		</div>
-		<div class="footer"></div>
+		<div class="footer"></div>	
 		<div class="jyt_slide"></div>		
 <script type="text/javascript">
 $(document).ready(function() {

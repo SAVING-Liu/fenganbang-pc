@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/wy_main.css">
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <link rel="stylesheet" href="css/kll_need.css" />
+        <script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/lib/dcalendar.picker.js"></script>
+        <title>我的信息-普通用户</title>
+        <style type="text/css">
+        	.wy_aside_name img{
+        		margin-top: 10px;
+        	}
+        	.jyt_myinfoR {
+        		width: 900px;
+        		padding-left: 40px;
+        		padding-top: 55px;
+        		min-height: 640px;
+        	}
+        </style>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content jyt_myinfo">
+		<div class="lf_headNav">
+           <div class="lf_headNavwrap">
+               <ul class="lf_headNavlist">
+                   <li class="lf_headNavItem lf_headNav-on">
+                       <a href="javascript:void(0);" class="lf_jump">
+                          个人中心
+                       </a> 
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">首页</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">需求大厅</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">服务大厅</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">辅材街</a>
+                   </li>
+                   <li class="lf_headNavItem">
+                       <a href="javascript:void(0);" class="lf_jump">团队培训</a>
+                   </li>
+               </ul>
+           </div>
+        </div>
+			<div class="jyt_myinfobox">
+				<div class="jyt_myinfoL">
+					<div class="wy_aside_box">
+						<!-- 头像 -->
+						<div class="wy_aside_headBox">
+							<img class="wy_aside_headImg" src="images/wy_header.png" alt="">
+							<span class="wy_aside_name">
+								山野的风 <br />
+								<img src="images/zpf_star.png" style="clear: both;"/>
+								<img src="images/zpf_star.png"/>
+								<img src="images/zpf_star.png"/>
+								<img src="images/zpf_1.png"/>
+								<img src="images/zpf_1.png"/>
+							</span>
+							<p class="wy_project_p1">我的账户</p>
+						</div>
+
+						<!-- 导航 -->
+						<h2 class="wy_aside_h2">个人中心：</h2>
+						<ul class="wy_aside_ul">
+							<li class="wy_aside_li"><a href="myInformation.html">我的信息</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">晋升星级</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">我的订单</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">我的项目</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">收货地址</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">修改密码</a></li>
+							<li class="wy_aside_li wy_aside_li_on"><a href="javascript:void(0);">我的标签</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="jyt_myinfoR">
+					<h3 class="kll-mt_title">选择符合自己的标签，让商家快速找到你</h3>
+					<form class="kll-mt_form">
+						<dl class="kll-mt_dl">
+							<dt class="kll-mt_dt">服务区域：</dt>
+							<dd class="kll-mt_dd">
+								<div class="kll-mt_selectbox">
+									<select class="kll-mt_select box1">
+									</select>
+								</div>
+								<div class="kll-mt_selectbox">
+									<select class="kll-mt_select box2">
+									</select>
+								</div>
+								<div class="kll-mt_selectbox">
+									<select class="kll-mt_select box3">
+									</select>
+								</div>
+							</dd>
+						</dl>
+						
+						<dl class="kll-mt_dl">
+							<dt class="kll-mt_dt">服务内容：</dt>
+							<dd class="kll-mt_dd">
+								<label class="kll-mt_change kll-mt_changeok" for="radioContent1">新风系统安装/维修</label>
+								<input class="kll-mt_radio" id="radioContent1" type="radio" name="content" />
+								<label class="kll-mt_change" for="radioContent2">空调安装/维修</label>
+								<input class="kll-mt_radio" id="radioContent2" type="radio" name="content" />
+							</dd>
+						</dl>
+						
+						<dl class="kll-mt_dl">
+							<dt class="kll-mt_dt">服务类型：</dt>
+							<dd class="kll-mt_dd">
+								<label class="kll-mt_change kll-mt_changeok" for="radioType1">短工</label>
+								<input class="kll-mt_radio" id="radioType1" type="radio" name="type" />
+								<label class="kll-mt_change" for="radioType2">大工程</label>
+								<input class="kll-mt_radio" id="radioType2" type="radio" name="type" />
+							</dd>
+						</dl>
+						
+						<dl class="kll-mt_dl">
+							<dt class="kll-mt_dt">团队描述：</dt>
+							<dd class="kll-mt_dd">
+								<textarea class="kll-mt_text" name="teamdes" rows="20" cols="20" placeholder="介绍一下你的团队优势或者具体服务类型!"></textarea>
+							</dd>
+						</dl>
+						
+						<input class="kll-mt_submit" type="submit" value="提交" />
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="footer"></div>	
+		<div class="jyt_slide"></div>				
+		
+		<script>
+	// 头部加载
+	$('.header').load('header2.html');
+	//底部加载
+    $('.footer').load('footer.html');
+    // 侧边栏加载
+    $('.jyt_slide').load('sidebar.html');
+			$(".kll-mt_change").on("click", function () {
+				$(this).addClass("kll-mt_changeok")
+					   .siblings(".kll-mt_change").removeClass("kll-mt_changeok");
+			})
+			$(".jyt_myinfoL").css("height", $(".jyt_myinfobox").height() + "px");
+		</script>
+		<script type="text/javascript">
+			$.ajax({
+				url: "js/app/site.json",
+				type: "get",
+				dataType: "JSON",
+				success: function (data) {
+					for (var i in data) {
+						$(".box1").append('<option value="' + data[i].name + '">' + data[i].name + '</option>');
+					}
+				},
+				error: function () {
+					console.log("没有获取到");
+				}
+			});
+			$(".box1").on("change", function () {
+				$(".box2").html("");
+				$.ajax({
+					url: "js/app/site.json",
+					type: "get",
+					dataType: "JSON",
+					success: function (data) {
+						for (var i in data) {
+							if (data[i].name ==$(".box1").val() ) {
+								for (var j in data[i].city) {
+									$(".box2").append('<option value="' + data[i].city[j].name + '">' + data[i].city[j].name + '</option>');
+								}
+								$(".box2").change();
+							}
+						}
+					},
+					error: function () {
+						console.log("没有获取到");
+					}
+				});
+			});
+			$(".box2").on("change", function () {
+				$(".box3").html("");
+				$.ajax({
+					url: "js/app/site.json",
+					type: "get",
+					dataType: "JSON",
+					success: function (data) {
+						for (var i in data) {
+							if (data[i].name ==$(".box1").val() ) {
+								for (var j in data[i].city) {
+									if ($(".box2").val() == data[i].city[j].name) {
+										for ( var x in data[i].city[j].area) {
+											$(".box3").append('<option value=' + data[i].city[j].area[x] + '>' + data[i].city[j].area[x] + '</option>');
+										}
+									}	
+								}
+							}
+						}
+					},
+					error: function () {
+						console.log("没有获取到");
+					}
+				});
+			});
+			
+			$(".box1").change();
+		</script>
+    </body>
+   
+</html>
