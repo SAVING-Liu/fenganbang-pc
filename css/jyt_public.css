@@ -2,7 +2,7 @@
 * @Author: jyt
 * @Date:   2017-07-12 08:53:54
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-17 19:00:08
+* @Last Modified time: 2017-07-17 19:38:11
 */
 /*发布需求-描述类别*/
 body{
@@ -1331,6 +1331,7 @@ body{
 	color: #666666;
 	text-align: center;
 	padding-top: 15px;
+	cursor: pointer;
 }
 .jyt_orderR{
 	width: 969px;
@@ -1372,19 +1373,81 @@ body{
 	color: #333333;
 	padding-top: 20px;
 }
-.jyt_logistics ul{
+.jyt_logistics ul.ul123{
 	padding-left: 20px;
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
-.jyt_logistics ul li{
+.jyt_logistics ul.ul123 li{
 	padding-bottom: 15px;
 } 
-.jyt_logistics ul li h4{
+.jyt_logistics ul.ul123 li h4{
 	font-weight: normal;
 	font-size: 14px;
 	color: #666666;
 } 
-.jyt_logistics ul li h4 span{
+.jyt_logistics ul.ul123 li h4 span{
 	color: #333333;
 } 
+.jyt_orderdetit{
+	background: #f1f8ff;
+	width: 100%;
+}
+.jyt_logistics1{
+	width: 969px;
+	border-bottom: 1px solid #eaeaea;
+	overflow: hidden;
+}
+.jyt_logistics1 h1{
+	padding-left: 20px;
+	font-weight: normal;
+	font-size: 18px;
+	color: #333333;
+	padding-top: 20px;
+}
+.jyt_orderdetit{
+	overflow: hidden; 
+	line-height: 35px;
+}
+.jyt_orderdetit p{
+	float: left;
+}
+.jyt_ppad1{
+	padding-right: 140px;
+	padding-left: 180px;
+}
+.jyt_ppad2{
+	padding-right: 75px;
+}
+.jyt_ppad3{
+	padding-right: 80px;
+}
+.jyt_ppad4{
+	padding-right: 90px;
+}
+.jyt_ppad5{
+	padding-right: 100px;
+}
+.jyt_price{
+	float: right;
+	margin-right: 20px;
+	margin-top: 26px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #333333;
+}
+.jyt_price span{
+	color: #dd2727;
+	font-size: 24px;
+}
+.jyt_press{
+	float: right;
+	background: #3c8fed;
+	font-size: 18px;
+	color: #fff;
+	margin: 15px;
+	cursor: pointer;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+}
