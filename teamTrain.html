@@ -81,7 +81,14 @@
 			</div>
 		</div>
 		<div class="footer"></div>	
+		<div class="jyt_slide"></div>
 <script type="text/javascript">
+	// 头部加载
+	$('.header').load('header.html');
+	//底部加载
+    $('.footer').load('footer.html');
+    // 侧边栏加载
+    $('.jyt_slide').load('sidebar.html');
 	$(".jyt_tainclass li").on("click",function() {
 		$(".jyt_tainclass li").removeClass('jyt_clibg');
 		$(this).addClass('jyt_clibg');

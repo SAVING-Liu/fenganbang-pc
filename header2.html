@@ -9,8 +9,111 @@
         <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script><!-- 引入jquery文件 -->
         <script type="text/javascript" src="js/app/common.js"></script><!-- 引入公共js文件 -->
         <title>公共头部</title>
+        <style type="text/css">
+        	.jyt_open1{
+        		background: rgba(0, 0, 0, 0.2);
+        		position: fixed;
+        		top: 0;
+        		left: 0;
+        		width: 100vw;
+        		height: 100vh;
+        		display: none;
+        		z-index: 9999;
+        	}
+        	.jyt_open1box{
+        		background: #fff;
+        		width: 490px;
+        		height: 405px;
+        		position: absolute;
+        	}
+        	.jyt_open1box img{
+        		display: block;
+        		float: right;
+        		margin: 15px;
+        		cursor: pointer;
+        	}
+        	.inpbox{
+        		width: 387px;
+        		line-height: 45px;
+        		border-radius: 3px;
+        		border: 1px solid #e7e7e7;
+        		overflow: hidden;
+        		margin: 0 auto;
+        		margin-bottom: 23px;
+        	}
+        	.jyt_open1box p{
+				font-size: 20px;
+				color: #000;
+				padding-left: 50px;
+				padding-bottom: 30px;
+        	}
+        	.inpbox input{
+        		line-height: 45px;
+        		height: 45px
+        	}
+        	.inpbox .input{
+        		float: left;
+        		padding: 0 10px;
+        		width: 240px;
+        	}
+        	.jty_yzm123{
+        		background: #efefef;
+        		color: #adaaad;
+        		border-left: 1px solid #e7e7e7;
+        		width: 127px;
+        		cursor: pointer;
+        	}
+        	.clear{
+        		clear: both;
+        	}
+        	.jyt_openbtn1{
+        		width: 388px;
+        		line-height: 47px;
+        		height: 47px;
+        		color: #fff;
+        		background: #ff6900;
+        		border-radius: 5px;
+        		margin-left: 50px;
+        		cursor: pointer;
+        		font-size: 16px;
+        	}
+        	.jyt_open1box h5{
+				color: #000;
+				padding-bottom: 30px;
+				font-weight: normal;
+				font-size: 14px;
+				float: left;
+				
+        	}
+        	.jyt_open1box h5 a{
+        		color: #0478e6;
+        	}
+        </style>
     </head>
     <body>
+    <div class="jyt_open1">
+    	<div class="jyt_open1box">
+    		<div>
+	    		<img class="jyt_close11" src="images/jyt_close1.jpg">
+	    		<div class="clear"></div>
+    		</div>
+    		<p>我要开店</p>
+    		<div class="inpbox">
+    			<input class="input" type="text" placeholder="请输入手机号" />
+    			<input class="jty_yzm123" type="button" value="获取验证码" />
+    		</div>
+    		<div class="inpbox">
+    			<input class="input" type="text" placeholder="请输入手机验证码" />
+    		</div>
+    		<button class="jyt_openbtn1" type="button">立即开店赚钱</button>
+    		<div style="padding-left: 50px;margin-top: 20px;">
+    			<input style="display: block;float: left;margin-top: 3px;margin-right: 5px;" type="checkbox" />
+    			<h5>我已查看并同意<a href="javascript:void(0);">《风安帮网服务开店协议》</a></h5>
+    			<div class="clear"></div>
+    		</div>
+    		
+    	</div>
+    </div>
     	<header class="lf_header">
     		<!-- 顶部 -->
     		<div class="lf_head">
@@ -102,5 +205,21 @@
                </div>
            </div> -->
     	</header>
+<script type="text/javascript">
+$(document).ready(function() {
+	var hh1 = ($(window).height() - $(".jyt_open1box").height())/2;
+	var ww1 = ($(window).width() - $(".jyt_open1box").width())/2;
+	$(".jyt_open1box").css('top',hh1 );
+	$(".jyt_open1box").css('left',ww1);
+	$(".lf_openShop").on("click",function(){
+		$(".jyt_open1").fadeIn(500)
+	});
+	$(".jyt_close11").on("click",function(){
+		$(".jyt_open1").fadeOut(500)
+	});
+	
+});
+	
+</script>
     </body>
 </html>
