@@ -603,13 +603,14 @@
 	float: right;
 	margin-right: 20px;
 	width: 138px;
-	height: 46px;
-	line-height: 46px;
+	height: 39px;
+	line-height: 39px;
 	text-align: center;
 	border: 1px solid #3c8fed;
 	color: #3c8fed;
-	font-size: 20px;
+	font-size: 19px;
 	margin-top: 7px;
+	border-radius: 4px;
 }
 .wy_team_topBox .wy_ul .wy_li{
 	font-size: 14px;
@@ -680,6 +681,9 @@
 	color: #999;
 	margin-top: 30px;
 }
+.wy_team_right .wy_topDiv{
+	margin-bottom: 10px;
+}
 .wy_team_right .wy_centerDiv{
 	font-size: 14px;
 	width: 100%;
@@ -688,7 +692,16 @@
 .wy_team_right .wy_centerDiv>img{
 	float: left;
 	display: block;
-	margin-top: 3px;
+}
+.wy_team_right .wy_centerDiv>.wy_img1{
+	margin-top: 4px;
+	margin-right: 4px;
+}
+.wy_team_right .wy_centerDiv>.wy_img2{
+	padding: 0 12px;
+	margin: 3px 18px 0 8px;
+	border-left: 1px solid #a7a7a7;
+	border-right: 1px solid #a7a7a7;
 }
 .wy_team_right .wy_centerDiv>span{
 	float: left;
@@ -696,4 +709,74 @@
 .wy_team_right .wy_centerDiv>p{
 	float: left;
 	color: #3c8fed;
+}
+.wy_team_right .wy_bottomDiv{
+	margin-top: 12px;
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+.wy_team_right .wy_bottomDiv>p{
+	font-size: 15px;
+	color: #666;
+	width: 648px;
+	line-height: 25px;
+	float: left;
+}
+.wy_team_right .wy_bottomDiv>button{
+	float: right;
+	width: 120px;
+	height: 40px;
+	background: #3c8fed;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/* 施工详情 */
+.wy_team_topBox .wy_div .wy_detail_p1{
+	border: none; 
+	color: #fff;
+	background: #3c8fed;
+}
+.wy_team_box .wy_teamTit .wy_span1{
+	float: left;
+}
+.wy_team_box .wy_teamTit .wy_shensu{
+	float: right;
+	display: block;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #3c8fed;
+	border: none;
+	width: 75px;
+}
+.wy_team_list .wy_detail_right{
+	margin-bottom: 16px;
+}
+
+/* 已完成 */
+
+.wy_detail2_list{
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+}
+.wy_team_box .wy_detailsDiv{
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.wy_team_box .wy_detailsDiv >dl{
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+}
+.wy_team_box .wy_detailsDiv>dl img{
+	width: 110px;
+	height: 128px;
+	display: block;
+}
+.wy_team_box .wy_detailsDiv>dl dd{
+	margin-top: 8px;
+	font-size: 12px;
+	color: #666;
 }
