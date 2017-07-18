@@ -2,7 +2,7 @@
 * @Author: jyt
 * @Date:   2017-07-12 08:53:54
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-18 09:26:05
+* @Last Modified time: 2017-07-18 16:03:22
 */
 /*发布需求-描述类别*/
 body{
@@ -1476,4 +1476,188 @@ body{
 .jyt_start li span{
 	font-size: 20px;
 	color: #fe0000;
+}
+.jytacctop{
+	overflow: hidden;
+	width: 780px;
+	margin-left: 65px;
+	margin-top: -35px;
+}
+.jytacctop ul{
+	float: left;
+}
+.jytacctop ul li{
+	font-size: 16px;
+	color: #666666;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 30px;
+	margin-bottom: 15px;
+}
+.jytacctop ul li p{}
+.jytacctop h5{
+	float: right;
+	font-weight: normal;
+	font-size: 16px;
+	color: #666666;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.jytacctop h5 span{
+	color: #dd2727;
+	font-size: 35px;
+}
+.jytacctop h5 i{
+	font-style: normal;
+	color: #dd2727;
+	font-size: 24px;
+}
+.jyt_libg1{
+	background: url('../images/jyt_libg1.jpg') no-repeat center left;
+}
+.jyt_libg2{
+	background: url('../images/jyt_libg2.jpg') no-repeat center left;
+}
+.jyt_libg3{
+	background: url('../images/jyt_libg3.jpg') no-repeat center left;
+}
+.jytacccontit{
+	float: right;
+	color: #333333;
+	font-size: 14px;
+	display: block;
+	margin-right: 115px;
+	position: relative;
+}
+.jytacccontit span{
+	display: block;
+	float: left;
+	width: 1px;
+	height: 16px;
+	margin-top: 4px;
+	background: #e6e6e6;
+	position: absolute;
+	left: 60%;
+}
+.jytacccontit li{
+	cursor: pointer;
+	float: left;
+	margin-left: 40px;
+}
+.jytacccontit li.jyt_cli4{
+	color: #dd2727;
+}
+.jyt_tel{
+	width: 920px;
+	height: 42px;
+	line-height: 42px;
+	background: #f6f6f6;
+	color: #666666;
+	font-size: 14px;
+	margin-left: 20px;
+	margin-top: 16px;
+}
+.jyt_tel tr td{
+	width: 25%;
+	text-align: center;
+}
+.jytaccconxq{
+	width: 920px;
+	margin-left: 20px;
+	display: none;
+}
+.jytaccconxq li{
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.jytaccconxq li img{
+	float: left;
+	display: block;
+	margin-left: 38px;
+	margin-right: 15px;
+}
+.jytaccconxq li p{
+	float: left;
+	padding-top: 5px;
+	color: #666666;
+	font-size: 14px;
+}
+.jyt_cla{
+	width: 218px;
+	padding-right: 10px;
+}
+.jytaccconxq li p.jyt_sum{
+	width: 200px;
+	padding-right: 10px;
+	color: #da2524;
+}
+.jyt_time{
+	width: 240px;
+	padding-right: 10px;
+}
+.jyt_status{
+	padding-right: 10px;
+}
+.jyt_page{
+	overflow: hidden; 
+}
+.jyt_page{
+	padding-left: 385px;
+	margin: 10px 0;
+}
+.jyt_page p{
+	float: left;
+	margin: 5px 10px;
+	padding: 5px 10px;
+	border: 1px solid #eee; 
+	font-size: 14px;
+	color: #999999;
+	cursor: pointer;
+}
+.jyt_modeul{
+	margin-top: -35px;
+	padding-left: 35px;
+}
+.jyt_modeul li{
+	line-height: 45px;
+	overflow: hidden; 
+}
+.jyt_modeul li p{
+	float: left;
+	color: #666666;
+	font-size: 16px;
+	width: 150px;
+}
+.jyt_modeul li span{
+	float: left;
+	color: #fe0000;
+	font-size: 18px;
+}
+.jyt_modeul li input{
+	float: left;
+	line-height: 45px;
+	height: 45px;
+	padding: 0 20px;
+	width: 255px;
+	font-size: 14px;
+	border: 1px solid #e6e6e6;
+}
+.jyt_modeul li i{
+	float: left;
+	font-style: normal;
+	color: #fe0000;
+	font-size: 12px;
+	display: block;
+	padding-left: 10px;
+	padding-top: 38px;
+	line-height: 0;
+}
+.jyt_bindbox1{
+	width: 918px;
+    margin: 0 auto;
+    border: 1px solid #bebcbf;
+    margin-left: 38px;
+    margin-top: 20px;
 }
