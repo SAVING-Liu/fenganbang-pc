@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/wy_main.css">
+        <link rel="stylesheet" type="text/css" href="css/jyt_public.css">
+        <script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/app/common.js"></script>              
+		<script type="text/javascript" src="js/lib/dcalendar.picker.js"></script>
+        <title>我的信息-普通用户</title>
+        <style type="text/css">
+        	.wy_aside_name img{
+        		margin-top: 10px;
+        	}
+        	.jyt_sub {
+        		border: 1px solid #a2bb92;
+        	}
+        	.jyt_openstoreul li h2 {
+        		font-size: 16px;
+        		color: #666;
+        		float: left;
+        		width: 300px;
+        		padding-left: 20px;
+        	}
+        	.jyt_openstoreul li h2 span {
+        		float: right;
+        		width: 66px;
+        		height: 29px;
+        		font-size: 15px;
+        		line-height: 29px;
+        		border: 1px solid #ccc;
+        		background: #f5f5f5;
+        		color: #666;
+        		text-align: center;
+        		border-radius: 3px;
+        		cursor: pointer;
+        	}
+        	.kll-goshop {
+        		padding-left: 40px;
+        		font-size: 18px;
+        		color: #333;
+        	}
+        	.kll-goshop_a {
+        		margin-left: 40px;
+        		display: inline-block;
+        		width: 130px;
+        		height: 48px;
+        		line-height: 48px;
+        		color: #fff;
+        		border-radius: 3px;
+        		background: #ff910e;
+        		outline: none;
+        		text-align: center;
+        		margin-top: 35px;
+        		font-size: 18px;
+        	}
+        </style>
+    </head>
+    <body>
+		<div class="header"></div>
+		<div class="jyt_content jyt_myinfo">
+			<div class="jyt_myinfobox">
+				<div class="jyt_myinfoL">
+					<div class="wy_aside_box">
+						<!-- 头像 -->
+						<div class="wy_aside_headBox">
+							<img class="wy_aside_headImg" src="images/wy_header.png" alt="">
+							<span class="wy_aside_name">
+								山野的风 
+							</span>
+							<p class="wy_project_p1">我的账户</p>
+						</div>
+
+						<!-- 导航 -->
+						<h2 class="wy_aside_h2">个人中心：</h2>
+						<ul class="wy_aside_ul">
+							<li class="wy_aside_li wy_aside_li_on"><a href="myInformation.html">我的信息</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">后台管理入口</a></li>
+							<li class="wy_aside_li"><a href="javascript:void(0);">修改密码</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="jyt_myinfoR">
+					<ul class="jyt_myinfoRtit">
+						<li class="jyt_cli3">基础信息</li>
+						<li>企业认证</li>
+						<li>账户绑定</li>
+					</ul>
+					<div class="jyt_myinfoRxq">
+						<form>
+							<ul class="jyt_myinfoRxqul">
+								<li>
+									<p>当前头像：</p>
+									<div class="jyt_libox234">
+										<img src="images/jyt_headimg.jpg">
+										<input type="button" value="选择你要上传的头像">
+										<h1>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h1>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>登录名：</p>
+									<h6>12563256985</h6>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>用户名：</p>
+									<input class="inpwid" type="text" placeholder="山野的风" />
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>性别：</p>
+									<label for="boy"><input id="boy" type="radio" name="sex">男</label>
+									<label for="girl"><input id="girl" type="radio" name="sex">女</label>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>真实姓名：</p>
+									<input class="inpwid" type="text" />
+									<div class="clear"></div>
+								</li>
+								<li>
+									<i>*</i>
+									<p>生日：</p>
+									<input id='mydatepicker'  class="inpwid" type='text'/> 
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<input class="jyt_sub" type="submit" value="提交" >
+							<div class="clear"></div>
+						</form>
+					</div>
+					<!--企业认证-->
+					<div class="jyt_myinfoRxq">
+						<div class="kll-goshop_box" style="display: none;">
+							<h3 class="kll-goshop">请先去开店,开店流程中进行企业认证</h3>
+							<a class="kll-goshop_a" href="#">我要开店</a>
+						</div>
+						<form>
+							<ul class="jyt_openstoreul" style="padding-top: 0;padding-left: 38px;">
+								<li>
+									<p><span>*</span> 营业执照：</p>
+									<h2>企业营业执照.jpg<span>查看</span></h2>
+								</li>
+								<li>
+									<p style="width: 110px;"><span>*</span> 法人身份证：</p>
+								</li>
+								<li>
+									<p style="text-align: right;"><span>*</span> 正面：</p>
+									<h2>身份证正面.jpg<span>查看</span></h2>
+								</li>
+								<li>
+									<p style="text-align: right;"><span>*</span> 反面：</p>
+									<h2>身份证反面.jpg<span>查看</span></h2>
+								</li>
+								<li>
+									<p><span>*</span> 公司名称：</p>
+									<h2>郑州市鑫元电器配件有限公司</h2>
+								</li>
+								<li>
+									<p><span>*</span> 公司地址：</p>
+									<h2>河南省郑州市金水区新田大厦</h2>
+								</li>
+								<li>
+									<p><span>*</span> 联系人：</p>
+									<h2>王某之</h2>
+								</li>
+								<li>
+									<p><span>*</span> 联系电话：</p>
+									<h2>12314562658</h2>
+								</li>
+							</ul>
+							<input class="jyt_sub" type="submit" value="提交" style="margin-left: 200px;">
+						</form>
+					</div>
+					<div class="jyt_myinfoRxq">
+						<div class="jyt_bindbox">
+							<!--绑定微信-->
+							<div class="jyt_wxtit">
+								<img src="images/jyt_wx.jpg">
+								<p>绑定微信</p>
+							</div>
+							<div class="jyt_wxxq">
+								<div class="wxcodebox">
+									<div class="wxcodebox1"></div>
+								</div>
+								<div class="jyt_wxtrouble">
+									<p>请使用微信扫描二维码以完成绑定</p>
+									<h6>(必须使用微信扫码)</h6>
+								</div> 
+							</div>
+						</div>
+						<div class="jyt_bindbox">
+							<!--绑定支付宝-->
+							<div class="jyt_zfbtit">
+								<img src="images/jyt_zfb.jpg">
+								<p>绑定支付宝</p>
+							</div>
+							<div>
+								<div class="jyt_yuexq">
+									<div style="margin-left: 60px;" class="jyt_pwd">
+										<p>手机号：</p>
+										<input type="text" placeholder="请输入支付宝绑定的手机号" />
+									</div>
+									<div class="jyt_yzm">
+										<p>验证码：</p>
+										<input class="jyt_yzmbox" type="text" />
+										<input class="jyt_yzmbtn" type="button" value="获取验证码" />
+									</div>
+									<div class="clear"></div>
+									<input class="jyt_combind" type="button" value="完成绑定" />
+								</div>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="footer"></div>		
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#mydatepicker').dcalendarpicker(); //初始化日期选择器
+	$('#mycalendar').dcalendar(); //初始化日历
+	$('#mydatepicker').dcalendarpicker({format: 'yyyy-mm-dd'});//日历格式
+	//选项卡
+	$(".jyt_myinfoRxq").eq(0).css('display', 'block');
+	$(".jyt_myinfoRtit li").on("click",function(){
+
+	//调整左侧盒子高度
+		$(".jyt_myinfoRtit li").removeClass('jyt_cli3');
+		$(this).addClass('jyt_cli3');
+		var index = $(this).index();
+		$(".jyt_myinfoRxq").css('display', 'none');
+		$(".jyt_myinfoRxq").eq(index).css('display', 'block');
+		$(".jyt_myinfoL").css('height', $(".jyt_myinfoR").height());
+	})
+});
+</script>												
+    </body>
+   
+</html>
