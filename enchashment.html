@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>品牌商余额提现</title>
+    <link rel="stylesheet" href="css/zlb.css"/>
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="js/app/zlbNav.js"></script>
+    <style>
+        .lf_headNav{
+            display: none;
+        }
+        .zlb-pop{
+            width:550px;
+            height: 260px;
+            position: fixed;
+            padding: 0 10px;
+            box-sizing: border-box;
+            left:calc(50% - 275px);
+            top:calc(50% - 130px);
+            background-color: #fff;
+            border:3px solid #aaaaaa;
+            z-index: 9999;
+            display: none;
+        }
+        .zlb-pop-shadow{
+            width: 100%;
+            height: 100%;
+            background-color: #999999;
+            position: fixed;
+            top: 0;
+            left:0;
+            display: none;
+        }
+        .zlb-pop-title{
+            height: 44px;
+            line-height: 44px;
+            font-size: 16px;
+            color: #373737;
+            border-bottom: 1px solid #aaaaaa;
+        }
+        .zlb-pop-txt{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 45px;
+            line-height: 25px;
+        }
+        .zlb-pop-txt img{
+            margin-left:  40px;
+            margin-right: 10px;
+        }
+        .zlb-btn{
+            width: 100px;
+            height: 33px;
+            font-size: 14px;
+            border: 1px solid #3c8fed;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+        .zlb-btn.active{
+            color: #FFFFFF;
+            background-color: #3c8fed;
+        }
+        .zlb-btn:nth-child(1){
+            margin-right: 58px;
+        }
+        .zlb-btn-box{
+            margin-top: 40px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+
+</div>
+<div id="zlb-nav" class="zlb-nav">
+
+</div>
+<div id="zlb-main" class="zlb-clear-fix zlb-main">
+    <div id="zlbLefNav" class="zlb-pull-left zlb-left-nav">
+
+    </div>
+    <div class="zlb-pull-left" style="background-color: #ffffff;width: calc(100% - 233px);border-left: 1px solid #e6e6e6;">
+        <div>
+            <ul class="zlb-tab">
+                <li class="zlb-tab-item">
+                    <a href="account.html"><span>账户余额</span></a>
+                </li>
+                <li class="zlb-tab-item">
+                    <a href="pay.html"><span>余额充值</span></a>
+                </li>
+                <li class="zlb-tab-item active">
+                    <a href="javascript:;"><span>余额提现</span></a>
+                </li>
+            </ul>
+        </div>
+        <div  class="zlb-clear-fix" style="margin-top:52px;height: 48px;line-height: 48px;font-size:16px;">
+            <div style="width: 123px;text-align:left;padding-left:30px;" class="zlb-pull-left">可提金额(元):</div>
+            <div class="zlb-pull-left">
+                <div style="font-size:18px;color: #fe0000;line-height:48px;" class="zlb-pull-left">1800.00</div>
+            </div>
+        </div>
+        <div  class="zlb-clear-fix" style="margin-top:22px;height: 48px;line-height: 48px;font-size:16px;">
+            <div style="width: 123px;text-align:left;padding-left:30px;" class="zlb-pull-left">提现金额(元):</div>
+            <div class="zlb-pull-left">
+                <input placeholder="请输入提现金额"  class="zlb-pull-left" type="text" style="width: 300px;margin-left:2px;border: 1px solid #808080;height: 48px;padding:0 5px;line-height: 48px;" />
+                <div style="font-size:12px;color: #ff0000;line-height:48px;padding-top: 20px;" class="zlb-pull-left">注：提现收取千分之六手续费，最低提现额度100元。</div>
+            </div>
+        </div>
+        <div style="margin-top:30px;margin-bottom:25px;font-size:16px;">
+            <div style="width: 158px;text-align:left;padding-left:30px;">请选择提现方式:</div>
+        </div>
+        <div style="width: 905px;height: 58px;border: 1px solid #3c8fed;margin: 0 auto;">
+            <div style="height: 58px;width: 100%;background-color: #f4f5f7;">
+                <img src="images/zlb_wx_cash.png" alt=""/>
+            </div>
+        </div>
+        <div style="height: 58px;width: 905px;background-color: #fff;margin: 0 auto;margin-top:32px;margin-bottom:43px;border:1px solid #bebcbe;">
+            <img src="images/zlb_ali_cash.png" alt=""/>
+        </div>
+        <div style="width: 100%;text-align:center; padding: 37px 0 80px 0;">
+            <button onclick="enter()"  class="zlb-cursor" type="button" style="width: 70px;height: 30px;border:1px solid #aac09b;border-radius:3px;background-color: #f0f9ea;">确认</button>
+        </div>
+    </div>
+</div>
+<div class="zlb-pop">
+    <div class="zlb-pop-title zlb-clear-fix">
+        <span>提示</span>
+        <div class="zlb-pull-right" >
+            <img onclick="close()" class="zlb-close" src="images/zlb-pop-btn.png" alt=""/>
+        </div>
+        <div class="zlb-pop-txt zlb-clear-fix">
+            <img class="zlb-pull-left" src="images/zlb-waring.png" alt=""/>
+            <div class="zlb-pull-left">
+                <span>余额提现需先进行账户绑定后才能操作，是否现在</span><br/>
+                <span>进行账户绑定？</span>
+            </div>
+        </div>
+        <div class="zlb-btn-box">
+            <button class="zlb-btn active" type="button">去绑定</button>
+            <button class="zlb-btn" type="button">取消</button>
+        </div>
+    </div>
+</div>
+<div class="zlb-pop-shadow">
+
+</div>
+<script>
+    function enter(){
+        $('.zlb-pop').css('display', 'block');
+        $('.zlb-pop-shadow').css('display', 'block');
+    }
+    function close(){
+        $('.zlb-pop').css('display', 'none');
+        $('.zlb-pop-shadow').css('display', 'none');
+    }
+    $(function (){
+        $('#header').load('header.html');
+        $('.lf_headNav').css('display', 'none');
+        $('.zlb-btn').on('click', function (){
+            $('.zlb-pop').css('display', 'none');
+            $('.zlb-pop-shadow').css('display', 'none');
+        })
+    });
+</script>
+</body>
+</html>

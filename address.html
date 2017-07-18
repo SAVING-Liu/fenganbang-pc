@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>品牌商收货地址</title>
+    <link rel="stylesheet" href="css/zlb.css"/>
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="js/app/zlbNav.js"></script>
+    <style>
+        .lf_headNav{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+
+    </div>
+    <div id="zlb-nav" class="zlb-nav">
+
+    </div>
+    <div id="zlb-main" class="zlb-clear-fix zlb-main">
+        <div id="zlbLefNav" class="zlb-pull-left zlb-left-nav">
+
+        </div>
+        <div class="zlb-pull-left" style="background-color: #ffffff;width: calc(100% - 233px);border-left: 1px solid #e6e6e6;">
+            <div>
+                <ul class="zlb-tab">
+                    <li class="zlb-tab-item active">
+                        <span>收获地址</span>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-left: 67px;">
+                <p class="zlb-create-add">新增收货地址</p>
+                <div class="zlb-clear-fix">
+                    <label class="zlb-pull-left zlb-label" for=""><span class="zlb-mark">*</span>收货地址:</label>
+                    <textarea placeholder="建议您如实填写详细收货地址,例如街道名称,门牌号码,楼层和房间号等信息"  class="zlb-pull-left zlb-textarea" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="zlb-clear-fix" style="margin-top: 30px;">
+                    <label  class="zlb-pull-left zlb-label" for="" style="height: 30px;line-height: 30px;"><span class="zlb-mark">*</span>收货人姓名:</label>
+                    <input placeholder="长度不超过25字符"  class="zlb-pull-left" type="text" style="border: 1px solid #808080;height: 30px;padding:0 5px;line-height: 30px;" />
+                </div>
+                <div class="zlb-clear-fix"  style="margin-top: 30px;">
+                    <label  class="zlb-pull-left zlb-label" for="" style="height: 30px;line-height: 30px;"><span class="zlb-mark">*</span>手机号码:</label>
+                    <input placeholder="长度不超过25字符"  class="zlb-pull-left" type="text" style="border: 1px solid #808080;height: 30px;padding:0 5px;line-height: 30px;" />
+                </div>
+                <div class="zlb-clear-fix"  style="margin-top: 30px;margin-left:100px;">
+                    <input  class="zlb-pull-left" type="radio" style="width: 16px;height: 16px;position: relative;top:-2px;" />
+                    <label  class="zlb-pull-left" for="">设置为默认收获地址</label>
+                </div>
+                <div class="zlb-clear-fix"  style="margin-top: 30px;margin-left:100px;">
+                    <label  class="zlb-pull-left zlb-label"></label>
+                    <button  class="zlb-pull-left zlb-cursor" type="button" style="width: 70px;height: 30px;border:1px solid #aac09b;border-radius:3px;background-color: #f0f9ea;">保存</button>
+                </div>
+            </div>
+            <div style="margin-left: 67px;">
+                <p style="color: #ff4001;margin-left:-25px;font-size:16px;margin-top:30px;margin-bottom:22px;">已保存了3条地址,还能保存17条地址</p>
+                <table class="zlb-add-table" style="width: 97%;text-align: left;">
+                    <tr style="line-height:56px;background-color: #e6e6e6;font-size:16px;">
+                    <th width="15%" style="padding-left: 33px;">收货人</th>
+                    <th width="35%">详细地址</th>
+                    <th width="15%">手机号码</th>
+                    <th width="20%">操作</th>
+                    <th width="15%"></th>
+                    </tr>
+
+                    <tr style="line-height:56px;">
+                        <td style="padding-left: 33px;line-height:56px;">李淑娟</td>
+                        <td>河南省郑州市高新区升龙又一城二期D区,</td>
+                        <td>13*******52</td>
+                        <td class="zlb-clear-fix">
+                            <div style="color: #3c8fed;font-size:13px;cursor: pointer;" class="zlb-pull-left" >删除</div>
+                            <div class="zlb-pull-left" style="padding: 0 10px;">|</div>
+                            <div style="color: #3c8fed;font-size:13px;cursor:pointer;" >设为默认地址</div>
+                        </td>
+                        <td>
+                            <div style="color: #ca2323;font-size:13px;width: 80px; line-height:25px;border: 1px solid #ca2323;border-radius: 3px;text-align: center;">默认地址</div>
+                        </td>
+                    </tr>
+                    <tr style="line-height:56px;">
+                        <td style="padding-left: 33px;line-height:56px;">李淑娟</td>
+                        <td>河南省郑州市高新区升龙又一城二期D区,</td>
+                        <td>13*******52</td>
+                        <td class="zlb-clear-fix">
+                            <div style="color: #3c8fed;font-size:13px;cursor: pointer;" class="zlb-pull-left" >删除</div>
+                            <div class="zlb-pull-left" style="padding: 0 10px;">|</div>
+                            <div style="color: #3c8fed;font-size:13px;cursor:pointer;" >设为默认地址</div>
+                        </td>
+                        <td>
+                            <div style="color: #ca2323;font-size:13px;width: 80px; line-height:25px;border: 1px solid #ca2323;border-radius: 3px;text-align: center;">默认地址</div>
+                        </td>
+                    </tr>
+                    <tr style="line-height:56px;">
+                        <td style="padding-left: 33px;line-height:56px;">李淑娟</td>
+                        <td>河南省郑州市高新区升龙又一城二期D区,</td>
+                        <td>13*******52</td>
+                        <td class="zlb-clear-fix">
+                            <div style="color: #3c8fed;font-size:13px;cursor: pointer;" class="zlb-pull-left" >删除</div>
+                            <div class="zlb-pull-left" style="padding: 0 10px;">|</div>
+                            <div style="color: #3c8fed;font-size:13px;cursor:pointer;" >设为默认地址</div>
+                        </td>
+                        <td>
+                            <div style="color: #ca2323;font-size:13px;width: 80px; line-height:25px;border: 1px solid #ca2323;border-radius: 3px;text-align: center;">默认地址</div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function (){
+            $('#header').load('header.html');
+            $('.lf_headNav').css('display', 'none');
+        });
+    </script>
+</body>
+</html>

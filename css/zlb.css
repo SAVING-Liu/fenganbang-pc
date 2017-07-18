@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.zlb-clear-fix:after{
+    display: table;
+    content: '';
+    width: 0;
+    clear: both;
+}
+.zlb-pull-left{
+    float: left;
+}
+.zlb-pull-right{
+    float: right;
+}
+.zlb-nav{
+    width: 100%;
+    height: 44px;
+    margin-bottom: 22px;
+    background-color: #3c8fed;
+}
+.zlb-body-nav{
+    width: 1200px;
+    line-height: 44px;
+    margin: 0 auto;
+}
+.zlb-body-nav li{
+    font-size: 18px;
+    color: #fff;
+    margin: 0 23px;
+    display: inline-block;
+}
+
+.zlb-main{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    background-color: #f8f8f8;
+    border: 1px solid #e6e6e6;
+}
+
+.zlb-left-nav{
+    width: 188px;
+    height: 100%;
+    padding: 22px;
+    box-sizing: content-box;
+}
+.zlb-person{
+    border-radius: 6px;
+}
+
+.zlb-left-nav li{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.zlb-left-nav li.active{
+    color: #3c8fed;
+}
+
+.zlb-tab{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.zlb-tab-item{
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.zlb-tab-item.active span{
+    color: #3c8fed;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #3c8fed;
+}
+
+.zlb-create-add{
+    margin-left: -25px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.zlb-mark{
+    color: #ca2323;
+}
+
+.zlb-label{
+   width: 100px;
+}
+
+
+.zlb-textarea{
+    width: 490px;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid #808080;
+}
+
+.zlb-textarea::-webkit-input-placeholder { /* WebKit browsers */
+　　color:#999;
+    font-size: 16px;
+    line-height: 30px;
+}
+.zlb-textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+　　color:#999;
+    font-size: 16px;
+    line-height: 30px;
+}
+.zlb-textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+　　color:#999;
+    font-size: 16px;
+    line-height: 30px;
+}
+.zlb-textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+　　color:#999;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.zlb-add-table{
+    margin-bottom: 50px;
+}
+
+.zlb-add-table tr{
+    font-size: 12px;
+    color: #333333;
+    box-sizing: border-box;
+    border:2px solid #e6e6e6;
+}
+
+.zlb-cursor{
+    cursor: pointer;
+}
+
+.zlb-wx-pay{
+    position: relative;
+}
+
+.zlb-wx-pay:after{
+    position: absolute;
+    left: -60px;
+    top: calc(50% - 30px);
+    display: table;
+    content: '';
+    border-left: 30px solid transparent;
+    border-right: 30px solid #f4f4f4;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
