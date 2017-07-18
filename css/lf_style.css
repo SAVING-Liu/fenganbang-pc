@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-07-11 17:27:19
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-17 18:29:51
+* @Last Modified by:   鍒樿姵
+* @Last Modified time: 2017-07-18 20:08:12
 */
 .lf_jump{
 	display:block;
@@ -336,7 +336,7 @@ button{
     color:#333;
     text-align: center;
 }
-.lf_demand-content{
+ul.lf_demand-content{
     -webkit-justify-content:space-between;
     -moz-box-pack:space-between;
     -webkit--moz-box-pack:space-between;
@@ -475,4 +475,543 @@ button{
 .lf_material-shopname>a{
     color:#666;
     text-decoration: underline;
+}
+/* 店铺模板一 */
+.lf_modelShop{
+    width:100%;
+    background-color: #000;
+    padding:36px 0;
+}
+.lf_modelShopbrief{
+    width:1200px;
+    margin:0 auto;
+}
+.lf_modelShoplogo{
+    display:block;
+    float:left;
+    width:270px;
+    height:66px;
+    margin-right:60px;
+}
+.lf_modelshopName{
+    font-size:38px;
+    width:540px;
+    height:66px;
+    line-height: 40px;
+    font-weight: bolder;
+    color:#fff;
+    float:left;
+    text-align: center;
+    background:url("../images/lf_model07.png") no-repeat center bottom;
+}
+.lf_modelNav{
+    float:left;
+    padding:16px 0;
+    height:34px;
+}
+.lf_modelNavList>li:nth-child(1){
+    width:118px;
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+    margin-right:12px;
+    float:left;
+    font-size:18px;
+    font-weight: bolder;
+}
+.lf_modelNavList>li:nth-child(1):hover{
+    background-color: #fff;
+}
+.lf_modelNavList>li>.lf_jump{
+    color:#fff;
+}
+.lf_modelNavList>li:nth-child(2){
+    padding:0 100px 0 20px;
+    float:left;
+    line-height: 34px;
+    font-size:18px;
+    font-weight: bolder;
+    position:relative;
+}
+.lf_modelNavList>li:nth-child(2):hover{
+     background: #fff url("../images/lf_model01.png") no-repeat 140px center;
+}
+.lf_modelNavList>li:hover .lf_jump{
+    color:#000;
+}
+.lf_modelsecondNav{
+    position:absolute;
+    top:34px;
+    left:0;
+    background-color: #f6f6f6;
+    z-index:10;
+}
+.lf_modelsecondNav{
+    width:100%;
+    display:none;
+}
+.lf_modelsecondNav>li{
+    padding-left:20px;
+    width:172px;
+    height:30px;
+    line-height: 30px;
+    font-size:14px;
+    color:#333;
+    font-weight: normal;
+    cursor:pointer;
+    position:relative;
+}
+.lf_modelsecondNav>li:hover{
+    background-color: #333333;
+}
+.lf_modelsecondNav>li:hover a{
+    color:#fff;
+}
+.lf_modelNavList>li:nth-child(2):hover .lf_modelsecondNav{
+    display:block;
+}
+.lf_modelsecondNav>li:hover .lf_modelthirdNav{
+    display:block;
+}
+.lf_modelthirdNav{
+    width:400px;
+    position: absolute;
+    top:0;
+    left:-420px;
+    padding:0 10px;
+    background-color: #5b5b5b;
+    z-index:10;
+    display:none;
+}
+.lf_modelthirdNav>a{
+    display:block;
+    width:132px;
+    text-align: center;
+    height:30px;
+    color:#fff;
+    font-size:14px;
+    float:left;
+}
+.lf_modelbanner{
+    width:100%;
+}
+.lf_modelbanner img{
+    display:block;
+    width:100%;
+    height:465px;
+}
+.lf_modelGoods{
+    background-color:#d6d6d6;
+    padding-bottom:60px;
+}
+.lf_modelGoodsBox{
+    width:1200px;
+    margin:0 auto;
+}
+.lf_modelGoodsBox-title{
+    padding:24px 42px;
+    background: -webkit-linear-gradient(left top, #277fb7, #154968); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right, #277fb7, #154968); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right, #277fb7, #154968); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, #277fb7, #154968); /* 标准的语法 */
+    margin-bottom:20px;
+}
+.lf_ourShopsearch{
+    display:block;
+    float:left;
+    height:36px;
+    line-height:36px;
+    font-size:20px;
+    color:#fff;
+    width:112px;
+}
+.lf_ourShopsearch-input{
+    display:block;
+    float:left;
+    width:420px;
+    height:36px;
+    padding:0 10px;
+    background-color: #fff;
+}
+.lf_searchPrice{
+    margin-left:8px;
+    height:36px;
+    line-height: 36px;
+    font-size:16px;
+    color:#fff;
+}
+.lf_searchPricetxt{
+    display:block;
+    float:left;
+    width:66px;
+    text-align: center;
+}
+.lf_searchPrice-input{
+    float:left;
+    height:36px;
+    line-height: 36px;
+}
+.lf_searchPrice-input>label{
+    display:block;
+    float:left;
+    width:80px;
+    height:100%;
+    background-color: #fff;
+    color:#185172;
+    font-size:18px;
+}
+.lf_searchPrice-input>label>span{
+    display:block;
+    float:left;
+    width:22px;
+    text-align:center;
+}
+.lf_searchPrice-input>label>input{
+    display:block;
+    float:left;
+    height:100%;
+    width:50px;
+    padding-right:8px;
+}
+.lf_searchPrice-input>span{
+    display:block;
+    float:left;
+    font-size:16px;
+    color:#fff;
+    width:36px;
+    text-align: center;
+}
+.lf_searchBtn{
+    display:block;
+    float:left;
+    margin-left:40px;
+    font-size:16px;
+    color:#fff;
+    height:36px;
+    width:80px;
+    background-color: #333;
+}
+.lf_modelGoodsCon{
+    padding-bottom: 20px
+}
+.lf_modelGoodsCon-title{
+    padding:20px 20px 20px 52px;
+    background-color: #fff;
+    margin-bottom:20px;
+}
+.lf_modelShophot{
+    display:block;
+    float:left;
+    width:342px;
+    height:40px;
+}
+.lf_notPrice{
+    display:block;
+    width:212px;
+    height:20px;
+    margin-top:20px;
+}
+ul.lf_modelGoodsConlist{
+    padding:20px 20px 0;
+    background-color: #fff;
+    -webkit-justify-content:space-between;
+    -moz-box-pack:space-between;
+    -webkit--moz-box-pack:space-between;
+    box-pack:space-between;
+    justify-content:space-between;
+}
+.lf_modelGoodsConlist>li{
+    width:280px;
+    height:380px;
+    margin-bottom:20px;
+}
+.lf_modelGoodsConitem>.lf_jump{
+    height:280px;
+}
+.lf_modelGoodsConitem>.lf_jump>img{
+    display:block;
+    width:278px;
+    height:278px;
+    border:1px solid #1b5b80;
+}
+.lf_modelGoodsDescript .lf_modelGoods-descript{
+    padding:10px;
+    background-color:#1b5b80;
+    font-size:18px;
+    color:#fff;
+}
+.lf_modelGoods-descript p{
+    height:50px; 
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+    line-height:25px;
+}
+.lf_modelGoodsBtn{
+    height:30px;
+    line-height:30px;
+    overflow:hidden;
+}
+.lf_modelGoodsBtn>p{
+    float:left;
+    width:50%;
+    text-align: center;
+    font-size:18px;
+    color:#fff;
+    background-color: #000;
+}
+.lf_modelGoodsBtn>p>span{
+    font-size:22px;
+    color:#ff0;
+}
+.lf_modelGoodsBtn>p>span>em{
+    font-size:20px;
+}
+.lf_modelGoodsBtn>button{
+    display:block;
+    float:left;
+    background-color: #7d0000;
+    font-size:20px;
+    color:#fff;
+    width:50%;
+    height:30px;
+    padding:0;
+}
+/* 店铺模板二*/
+.lf_templateSearch{
+    width:100%;
+    background-color: #000
+}
+.lf_templateSearchTitle{
+    width:1200px;
+    margin:0 auto;
+    height:140px;
+}
+.lf_templateSearchTitle>img{
+    display:block;
+    float:left;
+    width:612px;
+    height:140px;
+}
+.lf_templateSearch-input{
+    float:left;
+    margin-left:64px;
+    padding:52px 0;
+}
+.lf_templateSearch-input>input{
+    display:block;
+    float:left;
+    background-color: #e6e6e6;
+    height:36px;
+    width:400px;
+    padding:0 20px;
+}
+.lf_templateSearch-input>button{
+    display:block;
+    float:left;
+    padding:0;
+    height:36px;
+    color:#000;
+    font-size:16px;
+    background-color: #fac03d;
+    width:80px;
+}
+.lf_templateNav{
+    width:100%;
+    height:30px;
+    background:url("../images/lf_bg.png") repeat;
+    border-bottom:1px solid #fff;
+}
+.lf_templateNavList{
+    width:1200px;
+    margin:0 auto;
+    height:30px;
+}
+.lf_templateNavList>li{
+    float:left;
+    font-size:16px;
+    height:30px;
+    line-height: 30px;    
+}
+.lf_templateNavList>li:nth-child(1){
+    padding:0 60px 0 32px;
+    position:relative;
+}
+.lf_templateNavList>li:nth-child(2){
+    padding:0 40px;
+}
+.lf_templateNavList>li>.lf_jump{
+    color:#171717;
+}
+.lf_templateNavList>li:hover{
+    background-color:#fac03d;
+}
+.lf_templateNavList>li:nth-child(1):hover{
+    background:#fac03d url("../images/lf_template02.png") no-repeat 120px center;
+}
+.lf_templatecondNav{
+    display:none;
+    position:absolute;
+    background-color: #e4b03a;
+    color:#333;
+    font-size:14px;
+    top:31px;
+    left:0;
+    width:100%;
+    z-index:10;
+}
+.lf_templatecondNav>li{
+    position:relative;
+    padding-left:32px;
+    height:30px;
+    line-height: 30px;
+}
+.lf_templateNavList>li:nth-child(1):hover .lf_templatecondNav{
+    display:block;
+}
+.lf_templatecondNav>li:hover{
+    background-color: #333;
+}
+.lf_templatecondNav>li:hover a{
+    color:#fff;
+}
+.lf_templatethirdNav{
+    display:none;
+    background-color: #3e3e3e;
+    width:100px;
+    position:absolute;
+    top:0;
+    right:-420px;
+    padding:0 10px;
+    width:400px;
+    z-index:10;
+}
+.lf_templatethirdNav>a{
+    display:block;
+    width:132px;
+    text-align: center;
+    height:30px;
+    color:#fff;
+    font-size:14px;
+    float:left;
+
+}
+.lf_templatecondNav>li:hover .lf_templatethirdNav{
+    display:block;
+}
+.lf_templatebanner img{
+    display:block;
+    width:100%;
+    height:430px;
+}
+.lf_templateGoods{
+    width:100%;
+    background:url("../images/lf_bg2.png") repeat;
+    padding:38px 0 64px;
+}
+.lf_templateShowpic{
+    padding:30px 0 60px;
+    width:1200px;
+    margin:0 auto;
+    background:url("../images/lf_aoline.png") no-repeat top center;
+}
+.lf_templateShowpic>.lf_jump{
+    background-color: #0e0e0e;
+    padding:16px 14px;
+    margin-right:10px;
+}
+.lf_templateShowpic>.lf_jump>img{
+    display:block;
+    height:444px;
+    width:763px;
+}
+.lf_templateShowpicRight>.lf_jump{
+    background-color: #0e0e0e;
+    padding:16px 14px;
+}
+.lf_templateShowpicRight>.lf_jump:nth-child(1){
+    margin-bottom:12px;
+}
+.lf_templateShowpicRight>.lf_jump>img{
+    display:block;
+    width:369px;
+    height:200px;
+}
+.lf_templateGoodsBox-title{
+    width:100%;
+    background-color: #0e0e0e;
+    height:130px;
+}
+.lf_templateGoodsBox-titlewrap{
+    width:1200px;
+    margin:0 auto;
+}
+.lf_templateGoodsBox-titlewrap>img{
+    display:block;
+    width:366px;
+    height:130px;
+}
+ul.lf_templateGoodslist{
+    width:1200px;
+    margin:0 auto;
+    padding-top:30px;
+    -webkit-justify-content:flex-start;
+    -moz-box-pack:flex-start;
+    -webkit--moz-box-pack:flex-start;
+    box-pack:flex-start;
+    justify-content:flex-start;
+}
+.lf_templateGoodslist>li{
+    width:278px;
+    height:490px;
+    padding-right:26px;
+    margin-bottom:30px;
+    background:url("../images/lf_aoline.png") no-repeat bottom center;
+}
+.lf_templateGoodslist>li>.lf_jump{
+    height:380px;
+}
+.lf_templateGoodslist>li>.lf_jump>img{
+    display:block;
+    width:280px;
+    height:380px;
+}
+.lf_template{
+    padding-top:12px;
+}
+.lf_template>p{
+    font-size:16px;
+    color:#000;
+    height:28px;
+    width:100%;
+    line-height:28px;
+    border-top:1px dashed #c7c7c7;
+    border-bottom:1px dashed #c7c7c7;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.lf_templateBtn{
+    padding-top:10px;
+}
+.lf_templateBtn>p{
+    font-size:14px;
+    color:#000;
+}
+.lf_templateBtn>p>span{
+    font-size:24px;
+    color:#ce0f0f;
+    font-weight: bolder;
+}
+.lf_templateBtn>button{
+    display:block;
+    width:80px;
+    height:22px;
+    float:right;
+    background-color: #ce0f0f;
+    font-size:12px;
+    color:#fff;
+    margin-top: 5px
 }

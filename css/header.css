@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-07-11 17:37:10
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-17 15:43:12
+* @Last Modified by:   鍒樿姵
+* @Last Modified time: 2017-07-18 16:23:03
 */
 .lf_jump{
 	display:block;
@@ -411,13 +411,7 @@ button{
 	background-color:#000;
 	top:0;
 	right:0;
-	transition:all .3s linear;
-}
-/* .sideBar:hover{
-	width:38px;
-} */
-.sideBarwrap{
-	
+	z-index:99;
 }
 .sideBar-portrait>img{
 	display:block;
