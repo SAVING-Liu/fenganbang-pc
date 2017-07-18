@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单页面</title>
+    <link rel="stylesheet" href="./css/zyh-orderpage.css">
+</head>
+<body>
+<div id="public-head"></div>
+<div id="public-aside"></div>
+<section class="lf_addToCar">
+    <div class="lf_addressBox-con">
+        <h2 class="lf_addressTitle">
+            <span>确认收货地址</span>
+            <button><a href="./myMessage.html?data=1">管理收货地址</a></button>
+        </h2>
+        <div class="lf_addressBox">
+            <ul id="shoubox">
+
+                <li class="lf_borderBox lf_addressList"><i class="iconfont icon-dingwei"></i><span class="lf_sendto">寄送至</span><input type="radio" value="16" name="address"><span class="lf_addressCon">123123</span><span class="lf_consignee">（<span class="Consignee">321321</span>  收）</span><span class="lf_phone">18003963898</span><button class="lf_setDefault" name="16" type="button">设置为默认收货地址</button></li><li class="lf_borderBox lf_addressList"><i class="iconfont icon-dingwei"></i><span class="lf_sendto">寄送至</span><input type="radio" value="17" name="address"><span class="lf_addressCon">dsadasda sad</span><span class="lf_consignee">（<span class="Consignee">asdasdasd</span>  收）</span><span class="lf_phone">13733123473</span><button class="lf_setDefault" name="17" type="button">设置为默认收货地址</button></li><li class="lf_borderBox lf_addressList lf_addressDefault"><i class="iconfont icon-dingwei"></i><span class="lf_sendto">寄送至</span><input value="18" type="radio" name="address" checked="checked"><span class="lf_addressCon">河岸撒旦卡死的就阿娇</span><span class="lf_consignee">（<span class="Consignee">zhangyuhan</span>  收）</span><span class="lf_phone">13888888888</span><span class="lf_default">默认地址</span><button name="18" class="lf_setDefault" type="button">设置为默认收货地址</button></li><li class="lf_borderBox lf_addressList"><i class="iconfont icon-dingwei"></i><span class="lf_sendto">寄送至</span><input type="radio" value="32" name="address"><span class="lf_addressCon">dqwewdasdasd</span><span class="lf_consignee">（<span class="Consignee">1454545</span>  收）</span><span class="lf_phone">13733111111</span><button class="lf_setDefault" name="32" type="button">设置为默认收货地址</button></li></ul>
+            <div class="lf_moreAddress">
+                <h2><a href="./myMessage.html?data=1">使用新地址</a></h2>
+            </div>
+            <div class="lf_orderDetail">
+                <h2 class="lf_orderTitle">确认订单信息</h2>
+                <ul class="lf_sureShopLists">
+                    <li class="lf_sureListTitle">
+                        <p>商品</p>
+                        <p>单价</p>
+                        <p>数量</p>
+                        <p>小计</p>
+                    </li>
+                </ul>
+                <ul class="lf_expressList">
+                    <li class="lf_expressItem">
+                        <p>运送方式：<span>普通配送</span>
+                            <select class="lf_selectExpress" id="addressSelect">
+                            </select>
+                        </p>
+                        <span>¥0.00</span>
+                    </li>
+                    <!--<li class="lf_expressItem">-->
+                        <!--<p><input type="checkbox" name='isIntegral'>使用积分：<span>可用100积分抵用1元</span></p>-->
+                        <!--<span style="color:#dd2727">- <span name="Integral">1.92</span></span>-->
+                    <!--</li>-->
+                    <li class="lf_expressItem">
+                        <p>发货时间：<span>卖家承诺订单在买家付款后, 10天内发货</span></p>
+                    </li>
+                    <li class="lf_expressItem">
+                        <span>商品合计(含运费)<span style="padding-left:18px;font-size:18px;font-weight: bolder;color:#dd2727">¥ <span name="shopTotal"></span></span></span>
+                    </li>
+                </ul>
+                <div class="lf_addressSure">
+                    <div class="lf_addressSure-wrapper">
+                        <h2>实付款：<span>¥ <span name="shopTotal"></span></span></h2>
+                        <p id="wy_adderss" class="lf_addressContent">寄送至：<span>河南省 郑州市 金水区 东风路街道 东风路南阳路</span></p>
+                        <p class="lf_consigneer">收货人：<span id="wy_username">王XX</span></p>
+                    </div>
+                </div>
+                <button  class="lf_submitOrder" type="button">提交订单</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="public-footer"></div>
+<script src="./js/lib/jquery-3.1.1.min.js"></script>
+<script src="./js/app/zyh-orderpage.js"></script>
+<script>
+  $('#public-footer').load('./footer.html')
+  $("#public-head").load('./header.html')
+  $("#public-aside").load('./sidebar.html')
+</script>

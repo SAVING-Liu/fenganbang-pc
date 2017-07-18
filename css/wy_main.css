@@ -348,7 +348,8 @@
 
 .wy_project_centerBox{
 	width: 1198px;
-	height: 740px;
+	/* height: 740px; */
+	height: auto;
 	border: 1px solid #e6e6e6;
 	margin: 20px auto;
 	overflow: hidden;
@@ -356,7 +357,7 @@
 /* 左边 */
 .wy_aside_box{
 	width: 189px;
-	height: 100%;
+	height: calc(100% - 20px);
 	padding: 20px 21px 0px;
 	background: #f8f8f8;
 	border-right: 1px solid #e6e6e6;
@@ -575,3 +576,124 @@
 
 /* 招标中-选择团队 */
 
+.wy_team_box{
+	width: 926px;
+	padding: 0 20px;
+	float: left;
+}
+.wy_team_topBox{
+	padding-top: 30px;
+	width: 100%;
+	height: auto;
+}
+.wy_team_topBox .wy_div {
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+.wy_team_topBox .wy_div > img{
+	float: left;
+	margin-right: 30px;
+}
+.wy_team_topBox .wy_div .wy_team_p1{
+	float: left;
+	font-size: 22px;
+	line-height: 62px;
+}
+.wy_team_topBox .wy_div .wy_team_p2{
+	float: right;
+	margin-right: 20px;
+	width: 138px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	border: 1px solid #3c8fed;
+	color: #3c8fed;
+	font-size: 20px;
+	margin-top: 7px;
+}
+.wy_team_topBox .wy_ul .wy_li{
+	font-size: 14px;
+	color: #999;
+	overflow: hidden;
+	line-height: 38px;
+}
+.wy_team_topBox .wy_ul .wy_li>span{
+	float: left;
+	margin-right: 5px;
+}
+.wy_team_topBox .wy_ul .wy_li>p{
+	float: left;
+	color: #333;
+}
+.wy_team_topBox .wy_ul .wy_li>.wy_price{
+	font-size: 24px;
+	color: #ff910e;
+}
+.wy_team_topBox .wy_ul .wy_li>.wy_time{
+	font-size: 18px;
+	color: #ff910e;
+}
+.wy_team_box .wy_teamTit{
+	width: 100%;
+	height: 30px;
+	background: #f9f9f9;
+	border: 1px solid #e6e6e6;
+}
+.wy_team_box .wy_teamTit>span{
+	width: 110px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	border-right: 1px solid #e6e6e6;
+	text-align: center;
+}
+.wy_team_list{
+	border: 1px solid #e6e6e6;
+	margin-top: 20px;
+	padding: 0 20px;
+	overflow: hidden;
+}
+.wy_team_list > .wy_teamheade{
+	display: block;
+	float: left;
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
+	margin-top: 16px;
+	margin-right: 18px;
+}
+.wy_team_list >.wy_team_right{
+	width: 818px;
+	float: left;
+}
+.wy_team_right .wy_name{
+	font-size: 20px;
+	margin-top: 24px;
+	margin-right: 20px;
+}
+.wy_team_right .wy_star{
+	margin-top: 30px;
+}
+.wy_team_right .wy_p1{
+	float: right;
+	font-size: 14px;
+	color: #999;
+	margin-top: 30px;
+}
+.wy_team_right .wy_centerDiv{
+	font-size: 14px;
+	width: 100%;
+	overflow: hidden;
+}
+.wy_team_right .wy_centerDiv>img{
+	float: left;
+	display: block;
+	margin-top: 3px;
+}
+.wy_team_right .wy_centerDiv>span{
+	float: left;
+}
+.wy_team_right .wy_centerDiv>p{
+	float: left;
+	color: #3c8fed;
+}

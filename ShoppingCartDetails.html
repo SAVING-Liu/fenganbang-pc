@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/zyh-shoppingCartDetails.css">
+</head>
+<body>
+<div id="public-head"></div>
+<div id="public-aside"></div>
+<main>
+    <span class="titleTip">全部商品 <span name="shopNumber">4</span></span>
+    <div class="shopSelectNav">
+        <div>
+            <input type="checkbox" id="shopAllCheck">
+            <label for="shopAllCheck">全选</label>
+            <span style="margin-left: 6rem">商品</span>
+        </div>
+        <div class="shopSelectOther">
+            <span>单价</span>
+            <span>数量</span>
+            <span>小计</span>
+            <span>操作</span>
+        </div>
+    </div>
+    <div class="shopAllBoxs">
+        <div class="shopBox">
+            <div class="shopSelectName">
+            <input type="checkbox" id="">
+            <label for="shopAllCheck"><span class="my-line"></span>店铺名称 &nbsp;:&nbsp;<span name="shopName">商铺名称</span></label>
+            </div>
+            <div class="productInfo">
+            <input type="checkbox">
+            <img src="./images/shopImg.PNG">
+            <span>asfasfadgfadfasfdasf</span>
+            <span class="margin-23">￥ <span name="productPic">66.00</span></span>
+            <my-input class="margin-7">
+                <span class="numInput" name="deNum">-</span>
+                <input class="Input" value="1">
+                <span class="numInput" name="addNum">+</span>
+            </my-input>
+            <span class="margin-7">￥ <span name="productAllPic">66.00</span></span>
+            <span class="margin-10">删除</span>
+            </div>
+        </div>
+
+        <div class="shopBox">
+            <div class="shopSelectName">
+                <input type="checkbox" checked>
+                <label for="shopAllCheck"><span class="my-line"></span>店铺名称 &nbsp;:&nbsp;<span name="shopName">商铺名称</span></label>
+            </div>
+            <div class="productInfo  checkAc">
+                <input type="checkbox">
+                <img src="./images/shopImg.PNG">
+                <span>asfasfadgfadfasfdasf</span>
+                <span class="margin-23">￥ <span name="productPic">66.00</span></span>
+                <my-input class="margin-7">
+                    <span class="numInput" name="deNum">-</span>
+                    <input class="Input" value="1">
+                    <span class="numInput" name="addNum">+</span>
+                </my-input>
+                <span class="margin-7">￥ <span name="productAllPic">66.00</span></span>
+                <span class="margin-10">删除</span>
+            </div>
+        </div>
+
+        <div class="shopBox ">
+            <div class="shopSelectName">
+                <input type="checkbox" id="">
+                <label for="shopAllCheck"><span class="my-line"></span>店铺名称 &nbsp;:&nbsp;<span name="shopName">商铺名称</span></label>
+            </div>
+            <div class="productInfo checkAc">
+                <input type="checkbox">
+                <img src="./images/shopImg.PNG">
+                <span>asfasfadgfadfasfdasf</span>
+                <span class="margin-23">￥ <span name="productPic">66.00</span></span>
+                <my-input class="margin-7">
+                    <span class="numInput" name="deNum">-</span>
+                    <input class="Input" value="1">
+                    <span class="numInput" name="addNum">+</span>
+                </my-input>
+                <span class="margin-7">￥ <span name="productAllPic">66.00</span></span>
+                <span class="margin-10">删除</span>
+            </div>
+        </div>
+
+        <div class="shopBox">
+            <div class="shopSelectName">
+                <input type="checkbox" id="">
+                <label for="shopAllCheck"><span class="my-line"></span>店铺名称 &nbsp;:&nbsp;<span name="shopName">商铺名称</span></label>
+            </div>
+            <div class="productInfo">
+                <input type="checkbox">
+                <img src="./images/shopImg.PNG">
+                <span>asfasfadgfadfasfdasf</span>
+                <span class="margin-23">￥ <span name="productPic">66.00</span></span>
+                <my-input class="margin-7">
+                    <span class="numInput" name="deNum">-</span>
+                    <input class="Input" value="1">
+                    <span class="numInput" name="addNum">+</span>
+                </my-input>
+                <span class="margin-7">￥ <span name="productAllPic">66.00</span></span>
+                <span class="margin-10">删除</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="shopSelectFooter">
+        <div class="money-flex">
+            <input type="checkbox" id="">
+            <label for="shopAllCheck">全选</label>
+            <span class="margin-2">删除选择的商品</span>
+        </div>
+        <div class="money-flex">
+            <span>已选择 <span name="shopCheckNum">2</span>件商品</span>
+            <span class="margin-2">总价: <span class="shopAllMoney">￥ <span name="shopAllMoney">599.99</span></span></span>
+            <span class="sub-button margin-7">去结算</span>
+        </div>
+    </div>
+</main>
+<div id="public-footer"></div>
+<script src="./js/lib/jquery-3.1.1.min.js"></script>
+<script>
+  $('#public-footer').load('./footer.html')
+  $("#public-head").load('./header.html')
+  $("#public-aside").load('./sidebar.html')
+</script>
