@@ -12,7 +12,7 @@
         <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script><!-- 引入jquery文件 -->
         <script type="text/javascript" src="js/lib/swiper.min.js"></script>
         <script type="text/javascript" src="js/app/common.js"></script><!-- 引入公共js文件 -->
-        <title>店铺模板二</title>
+        <title>店铺模板三</title>
         <style>
 			::-webkit-input-placeholder {
 				color: #333;
@@ -26,6 +26,29 @@
 			:-ms-input-placeholder {
 				color: #333; 
 			} 
+			.lf_templateSearch-input>button{
+				background-color:#a75422;
+				color:#fff
+			}
+			.lf_templateNavList>li:hover{
+				 background: #a75422;
+			}
+			.lf_templateNavList>li:nth-child(1):hover {
+			    background: #a75422 url(images/lf_mold01.png) no-repeat 120px center;
+			}
+			.lf_templateNavList>li:nth-child(1):hover .lf_jump{
+				color:#fff
+			}
+			.lf_templatecondNav{
+				background-color:#fff
+			}
+			.lf_templatecondNav>li>a{
+				color:#333
+			}
+			.lf_templateSearchTitle>img{
+				width:303px;
+				margin-right:309px
+			}
         </style>
     </head>
     <body>
@@ -56,7 +79,7 @@
 	   		<!-- 本店搜索 -->
 	   		<div class="lf_templateSearch">
 	   			<div class="lf_templateSearchTitle lf_clearFloat">
-	   				<img src="images/lf_template01.png" alt=""/>
+	   				<img src="images/lf_mold02.png" alt=""/>
 	   				<div class="lf_templateSearch-input lf_left lf_clearFloat">
 	   					<input type="text" placeholder="本店搜索"/>
 	   					<button type="button">搜索</button>
@@ -161,97 +184,119 @@
 				</ul>
 	   		</div>
 	   		<!-- banner -->
-            <div class="lf_templatebanner swiper-container">
+            <div class="lf_moldbanner swiper-container">
 	             <!-- banner图轮播 -->
 	             <div class="swiper-wrapper">
 	                 <div class="swiper-slide">
 	                     <a class="lf_jump" href="javascript:void(0)">
-	                         <img class="content-banner" src="images/lf_template04.png" height="430" width="1920"/>
+	                         <img class="content-banner" src="images/lf_mold03.png" height="430" width="1920"/>
 	                     </a>
 	                 </div>
 	                 <div class="swiper-slide">
 	                     <a class="lf_jump" href="javascript:void(0)">
-	                         <img class="content-banner" src="images/lf_template04.png" />
+	                         <img class="content-banner" src="images/lf_mold03.png" />
 	                     </a>
 	                 </div>
 	                 <div class="swiper-slide">
 	                     <a class="lf_jump" href="javascript:void(0)">
-	                         <img class="content-banner" src="images/lf_template04.png" />
+	                         <img class="content-banner" src="images/lf_mold03.png" />
 	                     </a>
 	                 </div>
 	              </div>
 	              <!-- 如果需要分页器 -->
 	             <div class="swiper-pagination lf_page"></div>
           	</div>
-          	<!-- 本店商品 -->
-          	<div class="lf_templateGoods">
-          		<!-- 图片展示 -->
-          		<div class="lf_templateShowpic lf_clearFloat">
-          			<a href="javascript:void(0);" class="lf_jump lf_left">
-          				<img src="images/lf_template07.png" alt=""/>
-          			</a>
-          			<div class="lf_templateShowpicRight lf_left">
-          				<a href="javascript:void(0);" class="lf_jump">
-          					<img src="images/lf_template08.png" alt=""/>
-          				</a>
-          				<a href="javascript:void(0);" class="lf_jump">
-          					<img src="images/lf_template08.png" alt=""/>
-          				</a>
-          			</div>
-          		</div>
-          		<!-- 热卖单品 -->
-          		<div class="lf_templateGoodsBox">
-          			 <div class="lf_templateGoodsBox-title">
-          			 	<div class="lf_templateGoodsBox-titlewrap">
-          			 		<img src="images/lf_template03.png" alt=""/>
-          			 	</div>
-          			 </div>
-          			 <ul class="lf_displayFlex lf_templateGoodslist lf_hotGoods1">
-          			 	<li>
-          			 		<a href="javascript:void(0);" class="lf_jump">
-          			 			<img src="images/lf_template09.png" alt=""/>
-          			 		</a>
-          			 		<div class="lf_template">
-          			 			<p>
-          			 				加厚1.8mm不锈钢 1-1.5匹空调架
-          			 			</p>
-          			 			<div class="lf_templateBtn lf_clearFloat">
-          			 				<p class="lf_left">
-          			 					￥<span>121.0</span>元
-          			 				</p>
-          			 				<button type="button">立即抢购 ▶</button>
-          			 			</div>
-          			 		</div>
-          			 	</li>
-          			 </ul>
-          		</div>
-          		<!-- 产品列表 -->
-          		<div class="lf_templateGoodsBox">
-          			 <div class="lf_templateGoodsBox-title">
-          			 	<div class="lf_templateGoodsBox-titlewrap">
-          			 		<img src="images/lf_template06.png" alt=""/>
-          			 	</div>
-          			 </div>
-          			 <ul class="lf_displayFlex lf_templateGoodslist lf_hotGoods2">
-          			 	<li>
-          			 		<a href="javascript:void(0);" class="lf_jump">
-          			 			<img src="images/lf_template09.png" alt=""/>
-          			 		</a>
-          			 		<div class="lf_template">
-          			 			<p>
-          			 				加厚1.8mm不锈钢 1-1.5匹空调架
-          			 			</p>
-          			 			<div class="lf_templateBtn lf_clearFloat">
-          			 				<p class="lf_left">
-          			 					￥<span>121.0</span>元
-          			 				</p>
-          			 				<button type="button">立即抢购 ▶</button>
-          			 			</div>
-          			 		</div>
-          			 	</li>
-          			 </ul>
-          		</div>
-          	</div>
+	   		<!--本店商品-->
+	   		<div class="lf_moldGoods">
+	   			<!--产品展示 -->
+	   			<div class="lf_moldShow lf_clearFloat">
+	   				<a href="javascript:void(0);" class="lf_jump">
+	   					<img src="images/lf_mold04.png" alt="" />
+	   				</a>
+	   				<div class="lf_moldShowright lf_displayFlex">
+	   					<a href="javascript:void(0);" class="lf_jump">
+	   						<img src="images/lf_mold05.png" alt="" />
+	   					</a>
+	   					<a href="javascript:void(0);" class="lf_jump">
+	   						<img src="images/lf_mold05.png" alt="" />
+	   					</a>
+	   					<a href="javascript:void(0);" class="lf_jump">
+	   						<img src="images/lf_mold05.png" alt="" />
+	   					</a>
+	   					<a href="javascript:void(0);" class="lf_jump">
+	   						<img src="images/lf_mold05.png" alt="" />
+	   					</a>
+	   				</div>
+	   			</div>
+	   			<!--新品-->
+	   			<div class="lf_moldNew">
+	   				<div class="lf_moldNewwrap">
+	   					<div class="lf_moldNewwrap-title">
+	   						<img src="images/lf_mold06.png" alt=""/>
+	   					</div>
+	   					<div class="lf_moldNewwrapCon">
+	   						<div class="lf_moldNew-top lf_clearFloat">
+	   							<div class="lf_left lf_moldNewCon">
+	   								<img src="images/lf_mold10.png" alt="" />
+	   								<div class="lf_moldNew-safe">
+	   									<p class="lf_mold-safe">
+		   									全封闭结构<span>更安全</span>，免打孔安装<span>更便捷</span>
+		   								</p>
+		   								<p class="lf_mold-des">
+		   									空调挡风板 纯白色94CM
+		   								</p>
+		   								<p class="lf_moldNewprice">
+		   									售价：￥<span>210<em>.20</em></span>
+		   								</p>
+	   								</div>
+	   							</div>
+	   							<a href="javascript:void(0);" class="lf_jump">
+	   								<img src="images/lf_mold09.png" alt="" />
+	   							</a>
+	   						</div>
+	   						<div class="lf_moldNew-top lf_clearFloat">
+	   							<a href="javascript:void(0);" class="lf_jump">
+	   								<img src="images/lf_mold09.png" alt="" />
+	   							</a>
+	   							<div class="lf_left lf_moldNewCon">
+	   								<img src="images/lf_mold10.png" alt="" />
+	   								<div class="lf_moldNew-safe">
+	   									<p class="lf_mold-safe">
+		   									全封闭结构<span>更安全</span>，免打孔安装<span>更便捷</span>
+		   								</p>
+		   								<p class="lf_mold-des">
+		   									空调挡风板 纯白色94CM
+		   								</p>
+		   								<p class="lf_moldNewprice">
+		   									售价：￥<span>210<em>.20</em></span>
+		   								</p>
+	   								</div>
+	   							</div>
+	   						</div>
+	   					</div>
+	   				</div>
+	   			</div>
+	   			<!--产品列表-->
+	   			<div class="lf_moldGoodsList">
+	   				<div class="lf_moldGoodsList-title">
+	   					<img src="images/lf_mold07.png" alt="" />
+	   				</div>
+	   				<ul class="lf_displayFlex lf_moldList lf_hotGoods">
+	   					<li>
+	   						<a href="javascript:void(0);" class="lf_jump lf_borderBox">
+	   							<img src="images/lf_mold11.png" alt="" />
+	   							<p class="lf_moldGoods-des">
+	   								中央空调挡风板40CM塑钢白色 单片价格价单片价格价单片价格价
+	   							</p>
+	   							<p class="lf_moldgoodsPrice">
+	   								售价：￥<span>13<em>.80</em></span>
+	   							</p>
+	   						</a>
+	   						<button class="lf_moldBtn">立即购买 ▶</button>
+	   					</li>
+	   				</ul>
+	   			</div>
+	   		</div>
 	   </div>
        <footer></footer>
        <div id="aside"></div>
@@ -275,56 +320,49 @@
           });
           //商品加载
           var goodsarr = [
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'}
-          ];
-          var goodsarr2 = [
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'},
-            {img:'images/lf_template09.png'}
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'},
+            {img:'images/lf_mold11.png'}
           ];
           function goodsBox(arr,divClass){
               $.each(arr,function(index,value){
                   var _li = '<li>'
-          			 	  +		'<a href="javascript:void(0);" class="lf_jump">'
-          			 	  +			'<img src="images/lf_template09.png" alt=""/>'
-          			 	  +		'</a>'
-          			 	  +		'<div class="lf_template">'
-          			 	  +			'<p>'
-          			 	  +				'加厚1.8mm不锈钢 1-1.5匹空调架'
-          			 	  +			'</p>'
-          			 	  +			'<div class="lf_templateBtn lf_clearFloat">'
-          			 	  +				'<p class="lf_left">'
-          			 	  +					'￥<span>121.0</span>元'
-          			 	  +				'</p>'
-          			 	  +				'<button type="button">立即抢购 ▶</button>'
-          			 	  +			'</div>'
-          			 	  +		'</div>'
-          			 	  + '</li>';
+	   					  +		'<a href="javascript:void(0);" class="lf_jump lf_borderBox">'
+	   					  +			'<img src="images/lf_mold11.png" alt="" />'
+	   					  +			'<p class="lf_moldGoods-des">'
+	   					  +				'中央空调挡风板40CM塑钢白色 单片价格价单片价格价单片价格价'
+	   					  +			'</p>'
+	   					  +			'<p class="lf_moldgoodsPrice">'
+	   					  +				'售价：￥<span>13<em>.80</em></span>'
+	   					  +			'</p>'
+	   					  +		'</a>'
+	   					  +		'<button class="lf_moldBtn">立即购买 ▶</button>'
+	   					  + '</li>';
                   divClass.append(_li);
               })
           };
-          var goodsCon = $('.lf_hotGoods1');
-          var goodsCon2 = $('.lf_hotGoods2');
+          var goodsCon = $('.lf_hotGoods');
           goodsBox(goodsarr,goodsCon);
-          goodsBox(goodsarr2,goodsCon2);
-          //最右侧的li没有padding-right值
-          var _h = $('.lf_templateGoodslist>li').length;
+          //最右侧的li没有margin-right值
+          /*var _h = $('.lf_templateGoodslist>li').length;
             for(var i = 1;i<_h;i++){
                 
                 if(((i-3)%4)==0){
                     $('.lf_templateGoodslist>li').eq(i).css('padding-right','0');
                 }
-          }
+          }*/
        </script>
     </body>
 </html>

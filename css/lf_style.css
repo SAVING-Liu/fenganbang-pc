@@ -1015,3 +1015,200 @@ ul.lf_templateGoodslist{
     color:#fff;
     margin-top: 5px
 }
+/*店铺模板三*/
+.lf_moldbanner{
+	width:100%;
+}
+.lf_moldbanner img{
+	display:block;
+	width:100%;
+	height:500px;
+}
+.lf_moldGoods{
+	background-color:#eeeeee;
+	padding:22px 0 18px;
+}
+.lf_moldShow{
+	width:1200px;
+	padding-bottom:22px;
+	margin:0 auto;
+}
+.lf_moldShow>.lf_jump{
+	float:left;
+	margin-right:20px
+}
+.lf_moldShow>.lf_jump>img{
+	display:block;
+	width:640px;
+	height:397px;
+}
+div.lf_moldShowright{
+	width:540px;
+	float:left;
+	-webkit-justify-content:space-between;
+    -moz-box-pack:space-between;
+    -webkit--moz-box-pack:space-between;
+    box-pack:space-between;
+    justify-content:space-between;
+}
+.lf_moldShowright>.lf_jump{
+	width:260px;
+	height:195px;
+	margin-bottom:5px;
+}
+.lf_moldShowright>.lf_jump>img{
+	display:block;
+	width:260px;
+	height:195px;
+}
+.lf_moldNew{
+	width:100%;
+	padding-bottom:65px;
+	background-color:#fff;
+}
+.lf_moldNewwrap{
+	width:1200px;
+	margin:0 auto;
+}
+.lf_moldNewwrap-title{
+	width:100%;
+	height:87px;
+}
+.lf_moldNewwrap-title>img{
+	display:block;
+	width:87px;
+	height:87px;
+}
+.lf_moldNewwrapCon{
+	padding-top:28px;
+	height:905px;
+	background:url("../images/lf_mold08.png") no-repeat center 105px;
+}
+.lf_moldNew-top{
+	margin-bottom:100px
+}
+.lf_moldNew-top>.lf_jump{
+	float:left;
+	margin-left:135px;
+	width:562px;
+	height:392px;
+}
+.lf_moldNew-top>.lf_jump>img{
+	display:block;
+	width:562px;
+	height:392px;
+}
+.lf_moldNewCon{
+	margin-left:135px;
+}
+.lf_moldNewCon>img{
+	display:block;
+	width:338px;
+	height:98px;
+}
+.lf_moldNew-safe{
+	padding-left:18px;
+	padding-top:2px;
+}
+.lf_mold-safe{
+	height:32px;
+	line-height:32px;
+	color:#333;
+	font-size:12px;
+}
+.lf_mold-safe>span{
+	color:#a75422;
+}
+.lf_mold-des{
+	width:208px;
+	height:23px;
+	text-align:center;
+	border:1px solid #a5a5a5;
+	font-size:16px;
+	color:#000
+}
+.lf_moldNewprice{
+	font-size:14px;
+	color:#000;
+	font-weight:bolder;
+	padding-top:5px;
+}
+.lf_moldNewprice>span{
+	font-size:30px;
+	color:#a75422;
+}
+.lf_moldNewprice>span>em{
+	font-size:16px;
+}
+.lf_moldGoodsList{
+	width:1200px;
+	margin:0 auto;
+}
+.lf_moldGoodsList-title{
+	padding-bottom:30px;
+}
+.lf_moldGoodsList-title>img{
+	display:block;
+	width:87px;
+	height:87px;
+}
+ul.lf_moldList{
+	-webkit-justify-content:space-between;
+    -moz-box-pack:space-between;
+    -webkit--moz-box-pack:space-between;
+    box-pack:space-between;
+    justify-content:space-between;
+}
+.lf_moldList>li{
+	width:290px;
+	height:350px;
+	margin-bottom:30px;
+	position:relative;
+}
+.lf_moldList>li>.lf_jump{
+	padding:4px;
+	border:1px solid #a5a5a5;
+	height:336px;
+	background-color:#fff
+}
+.lf_moldList>li>.lf_jump>img{
+	display:block;
+	width:280px;
+	height:260px;
+}
+.lf_moldList>li>.lf_moldBtn{
+	display:block;
+	position:absolute;
+	width:280px;
+	height:28px;
+	color:#fff;
+	font-size:14px;
+	background-color: #000;
+	z-index:9;
+	bottom:0px;
+	left:5px;
+}
+.lf_moldGoods-des{
+	margin-top:3px;
+	height:26px;
+	line-height:26px;
+	color:#221815;
+	font-size:14px;
+	width:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.lf_moldgoodsPrice{
+	text-align:right;
+	font-size:12px;
+	color:#000;
+	font-weight:bolder;
+}
+.lf_moldgoodsPrice>span{
+	font-size:22px;
+	color:#a75422;
+}
+.lf_moldgoodsPrice>span>em{
+	font-size:12px;
+}
