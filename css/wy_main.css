@@ -353,14 +353,13 @@
 	border: 1px solid #e6e6e6;
 	margin: 20px auto;
 	overflow: hidden;
+	background-color:#f8f8f8;
 }
 /* 左边 */
 .wy_aside_box{
 	width: 189px;
 	height: calc(100% - 20px);
 	padding: 20px 21px 0px;
-	background: #f8f8f8;
-	border-right: 1px solid #e6e6e6;
 	float: left;
 }
 .wy_aside_box .wy_aside_headBox{
@@ -580,6 +579,8 @@
 	width: 926px;
 	padding: 0 20px;
 	float: left;
+	border-left: 1px solid #e6e6e6;
+	background-color:#fff;
 }
 .wy_team_topBox{
 	padding-top: 30px;

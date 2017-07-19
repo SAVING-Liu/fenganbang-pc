@@ -17,6 +17,10 @@
 			.jyt_wid240{
 				width: 240px!important;
 			}
+			.wy_project_box{
+				background-color:#fff;
+				border-left:1px solid #e6e6e6;
+			}
 		</style>
     </head>
     <body>
@@ -214,7 +218,6 @@
 	$('.wy_sideBar').load('sidebar.html');
 
 	$(function(){
-		$(".wy_aside_box").css('height', $(".wy_project_box").height());
 		$(".wy_project_ul > li").click(function(){
 			var li_index = $(this).index();
 			$(".wy_project_ul > li").removeClass('wy_project_li_on');
