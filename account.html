@@ -7,7 +7,103 @@
     <script src="js/lib/jquery-3.1.1.min.js"></script>
     <script src="js/app/zlbNav.js"></script>
     <style>
+        a{
+            text-decoration: none;
+            color: #333333;
+        }
         .lf_headNav{
+            display: none;
+        }
+        .zlb_tr{
+            height: 57px;line-height:57px;text-align:center;border-bottom: 1px solid #e6e6e6;
+        }
+        .zlb_td1{
+            text-align:left;position: relative;padding-left:40px;
+        }
+        .zlb_td1 img{
+            position: absolute;top: calc(50% - 16px);
+        }
+        .zlb_td1 span{
+            margin-left: 40px;
+        }
+        .zlb-pop{
+            width:550px;
+            height: 260px;
+            position: fixed;
+            padding: 0 10px;
+            box-sizing: border-box;
+            left:calc(50% - 275px);
+            top:calc(50% - 130px);
+            background-color: #fff;
+            border:3px solid #aaaaaa;
+            z-index: 9999;
+            display: none;
+        }
+        .zlb-pop-shadow{
+            width: 100%;
+            height: 100%;
+            background-color: #999999;
+            position: fixed;
+            top: 0;
+            left:0;
+            display: none;
+        }
+        .zlb-pop-title{
+            height: 44px;
+            line-height: 44px;
+            font-size: 16px;
+            color: #373737;
+            border-bottom: 1px solid #aaaaaa;
+        }
+        .zlb-pop-txt{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 45px;
+            line-height: 25px;
+        }
+        .zlb-pop-txt img{
+            margin-left:  40px;
+            margin-right: 10px;
+        }
+        .zlb-btn{
+            width: 100px;
+            height: 33px;
+            font-size: 14px;
+            border: 1px solid #3c8fed;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+        .zlb-btn.active{
+            color: #FFFFFF;
+            background-color: #3c8fed;
+        }
+        .zlb-btn:nth-child(1){
+            margin-right: 58px;
+        }
+        .zlb-btn-box{
+            margin-top: 40px;
+            width: 100%;
+            text-align: center;
+        }
+        #wxpay, #enchashment{
+            display: none;
+        }
+        .zlb-table{
+            width: 95%;height: 40px;line-height: 40px;font-size:14px;margin:0 auto;margin-bottom:120px;color: #666666;
+        }
+        .zlb-thead{
+            background-color: #f6f6f6;
+        }
+        .zlb-cash-in{
+            display: inline-block;
+        }
+        .zlb-cash-expend{
+            display: inline-block;
+        }
+        .zlb-sec-tab.active{
+            color: #dd2727;
+        }
+        #expend{
             display: none;
         }
     </style>
@@ -26,129 +122,296 @@
     <div class="zlb-pull-left" style="background-color: #ffffff;width:calc(100% - 233px);border-left: 1px solid #e6e6e6;">
         <div>
             <ul class="zlb-tab">
-                <li class="zlb-tab-item active">
+                <li data-id="account" class="zlb-tab-item active">
                     <a href="javascript:;"><span>账户余额</span></a>
                 </li>
-                <li class="zlb-tab-item">
-                    <a href="wxpay.html"><span>余额充值</span></a>
+                <li data-id="wxpay" class="zlb-tab-item">
+                    <a href="javascript:;"><span>余额充值</span></a>
                 </li>
-                <li class="zlb-tab-item">
-                    <a href="enchashment.html"><span>余额提现</span></a>
+                <li data-id="enchashment" class="zlb-tab-item">
+                    <a href="javascript:;"><span>余额提现</span></a>
                 </li>
             </ul>
         </div>
-        <div style="margin-top:52px;">
-            <p class="zlb-clear-fix" style="width: 870px;margin: 0 auto;height:100px;line-height:100px;border: 1px solid #e6e6e6;">
-                <span class="zlb-pull-left" style="font-size:20px;padding-left:58px;">我的余额(元):</span>
-                <span class="zlb-pull-right" style="color: #dd2727;font-size:36px;padding-right:120px;">18888<span style="color: #dd2727;font-size:24px;">.00</span></span>
-            </p>
-            <div style="height: 57px;line-height:57px;font-size:14px;padding-left:640px;" class="zlb-clear-fix">
-                <div class="zlb-cursor"  style="color: #dd2727;display: inline-block;">收入明细</div>
-                <div style="padding: 0 10px;display: inline-block">|</div>
-                <a href="expend.html"><div class="zlb-cursor" style="display: inline-block;">支出明细</div></a>
+        <div class="zlb-card" id="account">
+            <div style="margin-top:52px;">
+                <p class="zlb-clear-fix" style="width: 870px;margin: 0 auto;height:100px;line-height:100px;border: 1px solid #e6e6e6;">
+                    <span class="zlb-pull-left" style="font-size:20px;padding-left:58px;">我的余额(元):</span>
+                    <span class="zlb-pull-right" style="color: #dd2727;font-size:36px;padding-right:120px;">18888<span style="color: #dd2727;font-size:24px;">.00</span></span>
+                </p>
+                <div style="height: 57px;line-height:57px;font-size:14px;padding-left:640px;" class="zlb-clear-fix">
+                    <div class="zlb-cursor zlb-sec-tab zlb-cash-in active" data-id="details">收入明细</div>
+                    <div style="padding: 0 10px;display: inline-block">|</div>
+                    <a href="javascript:;"><div class="zlb-cursor zlb-sec-tab zlb-cash-expend" data-id="expend">支出明细</div></a>
+                </div>
+            </div>
+            <div class="zlb-sec-card" id="details">
+                <table class="zlb-table">
+                    <tr class="zlb-thead">
+                        <th width="25%">来源/用途</th>
+                        <th width="25%">金额</th>
+                        <th width="25%">日期</th>
+                        <th width="25%">状态</th>
+                    </tr>
+                    <tbody>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_in.png" alt=""/>
+                            <span>账户充值</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_cancel.png" alt=""/>
+                            <span>取消项目返还金额</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_in.png" alt=""/>
+                            <span>账户充值</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_cancel.png" alt=""/>
+                            <span>取消项目返还金额</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_in.png" alt=""/>
+                            <span>账户充值</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_cancel.png" alt=""/>
+                            <span>取消项目返还金额</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="zlb-sec-card" id="expend">
+                <table class="zlb-table">
+                    <tr class="zlb-thead">
+                        <th width="25%">来源/用途</th>
+                        <th width="25%">金额</th>
+                        <th width="25%">日期</th>
+                        <th width="25%">状态</th>
+                    </tr>
+                    <tbody>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb-enchashment_03.png" alt=""/>
+                            <span>余额提现</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img  src="images/zlb_sum_09.png" alt=""/>
+                            <span>项目托管金额</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_buy_09.png" alt=""/>
+                            <span>购买辅料</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb-enchashment_03.png" alt=""/>
+                            <span>余额提现</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img  src="images/zlb_sum_09.png" alt=""/>
+                            <span>项目托管金额</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    <tr class="zlb_tr">
+                        <td class="zlb_td1">
+                            <img src="images/zlb_buy_09.png" alt=""/>
+                            <span>购买辅料</span>
+                        </td>
+                        <td class="zlb-mark">
+                            +1000.00
+                        </td>
+                        <td>
+                            2017-06-17&nbsp;&nbsp;17:43
+                        </td>
+                        <td>
+                            交易成功
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div>
-            <table style="width: 95%;height: 40px;line-height: 40px;font-size:14px;margin:0 auto;margin-bottom:120px;color: #666666;">
-                <tr style="background-color: #f6f6f6;">
-                    <th width="25%">来源/用途</th>
-                    <th width="25%">金额</th>
-                    <th width="25%">日期</th>
-                    <th width="25%">状态</th>
-                </tr>
-                <tbody>
-                    <tr style="height: 57px;line-height:57px;text-align:center;border-bottom: 1px solid #e6e6e6;">
-                        <td style="text-align:left;position: relative;padding-left:40px;">
-                            <img style="position: absolute;top: calc(50% - 16px);" src="images/zlb_in.png" alt=""/>
-                            <span style="margin-left: 40px;">账户充值</span>
-                        </td>
-                        <td class="zlb-mark">
-                            +1000.00
-                        </td>
-                        <td>
-                            2017-06-17&nbsp;&nbsp;17:43
-                        </td>
-                        <td>
-                            交易成功
-                        </td>
-                    </tr>
-                    <tr style="height: 57px;line-height:57px;text-align:center;border-bottom: 1px solid #e6e6e6;">
-                        <td style="text-align:left;position: relative;padding-left:40px;">
-                            <img style="position: absolute;top: calc(50% - 16px);" src="images/zlb_cancel.png" alt=""/>
-                            <span style="margin-left: 40px;">取消项目返还金额</span>
-                        </td>
-                        <td class="zlb-mark">
-                            +1000.00
-                        </td>
-                        <td>
-                            2017-06-17&nbsp;&nbsp;17:43
-                        </td>
-                        <td>
-                            交易成功
-                        </td>
-                    </tr>
-                    <tr style="height: 57px;line-height:57px;text-align:center;border-bottom: 1px solid #e6e6e6;">
-                        <td style="text-align:left;position: relative;padding-left:40px;">
-                            <img style="position: absolute;top: calc(50% - 16px);" src="images/zlb_in.png" alt=""/>
-                            <span style="margin-left: 40px;">账户充值</span>
-                        </td>
-                        <td class="zlb-mark">
-                            +1000.00
-                        </td>
-                        <td>
-                            2017-06-17&nbsp;&nbsp;17:43
-                        </td>
-                        <td>
-                            交易成功
-                        </td>
-                    </tr>
-                    <tr style="height: 57px;line-height:57px;text-align:center;border-bottom: 1px solid #e6e6e6;">
-                        <td style="text-align:left;position: relative;padding-left:40px;">
-                            <img style="position: absolute;top: calc(50% - 16px);" src="images/zlb_cancel.png" alt=""/>
-                            <span style="margin-left: 40px;">取消项目返还金额</span>
-                        </td>
-                        <td class="zlb-mark">
-                            +1000.00
-                        </td>
-                        <td>
-                            2017-06-17&nbsp;&nbsp;17:43
-                        </td>
-                        <td>
-                            交易成功
-                        </td>
-                    </tr>
-                    <tr style="height: 57px;line-height:57px;text-align:center;border-bottom: 1px solid #e6e6e6;">
-                        <td style="text-align:left;position: relative;padding-left:40px;">
-                            <img style="position: absolute;top: calc(50% - 16px);" src="images/zlb_in.png" alt=""/>
-                            <span style="margin-left: 40px;">账户充值</span>
-                        </td>
-                        <td class="zlb-mark">
-                            +1000.00
-                        </td>
-                        <td>
-                            2017-06-17&nbsp;&nbsp;17:43
-                        </td>
-                        <td>
-                            交易成功
-                        </td>
-                    </tr>
-                    <tr style="height: 57px;line-height:57px;text-align:center;">
-                        <td style="text-align:left;position: relative;padding-left:40px;">
-                            <img style="position: absolute;top: calc(50% - 16px);" src="images/zlb_cancel.png" alt=""/>
-                            <span style="margin-left: 40px;">取消项目返还金额</span>
-                        </td>
-                        <td class="zlb-mark">
-                            +1000.00
-                        </td>
-                        <td>
-                            2017-06-17&nbsp;&nbsp;17:43
-                        </td>
-                        <td>
-                            交易成功
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="zlb-card"  id="wxpay">
+            <div  class="zlb-clear-fix" style="margin-top:52px;height: 48px;line-height: 48px;font-size:16px;">
+                <div style="width: 123px;text-align:left;padding-left:30px;" class="zlb-pull-left">充值金额(元):</div>
+                <div class="zlb-pull-left">
+                    <input placeholder="请输入充值金额"  class="zlb-pull-left" type="text" style="width: 300px;margin-left:30px;border: 1px solid #808080;height: 48px;padding:0 5px;line-height: 48px;" />
+                </div>
+            </div>
+            <div style="margin-top:30px;margin-bottom:25px;font-size:16px;">
+                <div style="width: 158px;text-align:left;padding-left:30px;">请选择支付方式:</div>
+            </div>
+            <div style="width: 905px;height: 315px;border: 1px solid #bebcbe;margin: 0 auto;">
+                <div style="height: 58px;width: 100%;background-color: #f4f5f7;border-bottom:1px solid #bebcbe;">
+                    <img src="images/zlb_wx_pay.png" alt=""/>
+                </div>
+                <div class="zlb-clear-fix" style="width: 100%;height: 254px;background-color: #fffbff;padding: 15px 30px;box-sizing: border-box;">
+                    <div class="zlb-pull-left" style="width: 50%;height: 225px;background-color: #FFFFFF;">
+                        <div style="width: 200px;padding:20px;box-sizing:border-box;height: 200px;border: 1px solid #eaeaea;margin-left: calc(50% - 100px);margin-top:12px;">
+                            <div style="width: 100%;height: 100%;background-color: #999999;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zlb-pull-left zlb-wx-pay" style="width: 50%;height: 225px;background-color: #f4f4f4;">
+                        <div style="font-size:18px;width: 100%;text-align: center;margin-top:60px;">请使用微信扫描二维码</div>
+                        <div style="font-size:18px;width: 100%;text-align: center;margin-top:15px;">以完成支付</div>
+                        <div style="font-size:12px;width: 100%;text-align: center;margin-top:37px;">(如支付遇到问题 <a class="zlb-mark" style="text-decoration: underline;" href="">可联系客服</a>)</div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 58px;width: 905px;background-color: #fff;margin: 0 auto;margin-top:32px;margin-bottom:43px;border:1px solid #bebcbe;">
+                <img src="images/zlb_ali_pay.png" alt=""/>
+            </div>
+        </div>
+        <div class="zlb-card" id="enchashment">
+            <div  class="zlb-clear-fix" style="margin-top:52px;height: 48px;line-height: 48px;font-size:16px;">
+                <div style="width: 123px;text-align:left;padding-left:30px;" class="zlb-pull-left">可提金额(元):</div>
+                <div class="zlb-pull-left">
+                    <div style="font-size:18px;color: #fe0000;line-height:48px;" class="zlb-pull-left">1800.00</div>
+                </div>
+            </div>
+            <div  class="zlb-clear-fix" style="margin-top:22px;height: 48px;line-height: 48px;font-size:16px;">
+                <div style="width: 123px;text-align:left;padding-left:30px;" class="zlb-pull-left">提现金额(元):</div>
+                <div class="zlb-pull-left">
+                    <input placeholder="请输入提现金额"  class="zlb-pull-left" type="text" style="width: 300px;margin-left:2px;border: 1px solid #808080;height: 48px;padding:0 5px;line-height: 48px;" />
+                    <div style="font-size:12px;color: #ff0000;line-height:48px;padding-top: 20px;" class="zlb-pull-left">注：提现收取千分之六手续费，最低提现额度100元。</div>
+                </div>
+            </div>
+            <div style="margin-top:30px;margin-bottom:25px;font-size:16px;">
+                <div style="width: 158px;text-align:left;padding-left:30px;">请选择提现方式:</div>
+            </div>
+            <div style="width: 905px;height: 58px;border: 1px solid #3c8fed;margin: 0 auto;">
+                <div style="height: 58px;width: 100%;background-color: #f4f5f7;">
+                    <img src="images/zlb_wx_cash.png" alt=""/>
+                </div>
+            </div>
+            <div style="height: 58px;width: 905px;background-color: #fff;margin: 0 auto;margin-top:32px;margin-bottom:43px;border:1px solid #bebcbe;">
+                <img src="images/zlb_ali_cash.png" alt=""/>
+            </div>
+            <div style="width: 100%;text-align:center; padding: 37px 0 80px 0;">
+                <button onclick="enter()"  class="zlb-cursor" type="button" style="width: 70px;height: 30px;border:1px solid #aac09b;border-radius:3px;background-color: #f0f9ea;">确认</button>
+            </div>
         </div>
     </div>
 </div>
@@ -158,12 +421,67 @@
 <div id="slider">
 
 </div>
+<div class="zlb-pop">
+    <div class="zlb-pop-title zlb-clear-fix">
+        <span>提示</span>
+        <div class="zlb-pull-right" >
+            <img onclick="close()" class="zlb-close" src="images/zlb-pop-btn.png" alt=""/>
+        </div>
+        <div class="zlb-pop-txt zlb-clear-fix">
+            <img class="zlb-pull-left" src="images/zlb-waring.png" alt=""/>
+            <div class="zlb-pull-left">
+                <span>余额提现需先进行账户绑定后才能操作，是否现在</span><br/>
+                <span>进行账户绑定？</span>
+            </div>
+        </div>
+        <div class="zlb-btn-box">
+            <button class="zlb-btn active" type="button">去绑定</button>
+            <button class="zlb-btn" type="button">取消</button>
+        </div>
+    </div>
+</div>
+<div class="zlb-pop-shadow">
+
+</div>
 <script>
+    function enter(){
+        $('.zlb-pop').css('display', 'block');
+        $('.zlb-pop-shadow').css('display', 'block');
+    }
+    function close(){
+        $('.zlb-pop').css('display', 'none');
+        $('.zlb-pop-shadow').css('display', 'none');
+    }
     $(function (){
         $('#header').load('header.html');
         $('#footer').load('footer.html');
         $('#slider').load('sidebar.html');
         $('.lf_headNav').css('display', 'none');
+        $('.zlb-btn').on('click', function (){
+            $('.zlb-pop').css('display', 'none');
+            $('.zlb-pop-shadow').css('display', 'none');
+        });
+        $('.zlb-tab').off('click').on('click', '.zlb-tab-item', function(){
+            var $this = $(this);
+            var $items = $('.zlb-tab-item');
+            var $card = $('.zlb-card');
+            var $id = $('#' + $this.data('id'));
+            $items.removeClass('active');
+            $this.addClass('active');
+            $card.hide();
+            $id.show();
+        });
+        $('.zlb-sec-tab').off('click').on('click', function (){
+            var $this = $(this);
+            var $card = $('.zlb-sec-card');
+            var $secTab = $('.zlb-sec-tab');
+            var $id = $('#' + $this.data('id'));
+            $secTab.removeClass('active');
+            $this.addClass('active');
+            $card.hide();
+            $id.show();
+        });
+        $('.zlb-address').removeClass('active');
     });
 </script>
 </body>

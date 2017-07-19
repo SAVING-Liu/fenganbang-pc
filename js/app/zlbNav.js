@@ -20,7 +20,7 @@ $(
             +"<li>我的信息</li>"
             +"<li>我的订单</li>"
             +"<li>我的项目</li>"
-            +"<li class='active'>收获地址</li>"
+            +"<li class='zlb-address active'>收获地址</li>"
             +"<li>修改密码</li>"
             +"</ul>";
             +'</div>';
