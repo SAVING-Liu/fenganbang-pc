@@ -26,12 +26,26 @@
                 <h2 class="lf_orderTitle">确认订单信息</h2>
                 <ul class="lf_sureShopLists">
                     <li class="lf_sureListTitle">
-                        <p>商品</p>
-                        <p>单价</p>
-                        <p>数量</p>
-                        <p>小计</p>
+                        <p style="width: 548px">商品</p>
+                        <p style="width: 200px">单价</p>
+                        <p style="width: 228px">数量</p>
+                        <p style="width: 200px">小计</p>
                     </li>
                 </ul>
+                <li class="lf_sureShopList">
+                    <p><img src="./image/shopImg.png" alt=""></p>
+                    <p>我hi硕大的</p>
+                    <p name="shopPic">88.88</p>
+                    <p>
+								<span>
+									<button name="minus">-</button>
+									<input name="shopNum" type="text" value="8">
+									<button name="adder">+</button>
+								</span>
+                    </p>
+
+                    <p name="shopMoney">¥ <span>711.04</span></p>
+                </li>
                 <ul class="lf_expressList">
                     <li class="lf_expressItem">
                         <p>运送方式：<span>普通配送</span>
@@ -64,8 +78,7 @@
     </div>
 </section>
 <div id="public-footer"></div>
-<script src="./js/lib/jquery-3.1.1.min.js"></script>
-<script src="./js/app/zyh-orderpage.js"></script>
+<script src="./js/lib/jquery-1.11.3.js"></script>
 <script>
   $('#public-footer').load('./footer.html')
   $("#public-head").load('./header.html')

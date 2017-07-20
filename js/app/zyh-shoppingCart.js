@@ -9,7 +9,7 @@
  * imgNumber 显示图片数量
  * imgArr [{imgUrl,imgPic,imgLink}]
  *商品对应的预览图地址,商品价格,点击后的链接或者购物车链接
- *
+ *ie系列不支持
  * */
 'use strict'
 /*模拟数据*/
