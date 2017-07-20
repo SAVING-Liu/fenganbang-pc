@@ -5,12 +5,12 @@
 /*addListening shopNum*/
 function ListentingShopNum () {
   $("span[name='addNum']").on('click',function () {
-    let tempNum = parseInt(getShopNum())
+    var tempNum = parseInt(getShopNum())
     tempNum++
     $(".Input").val(tempNum)
   })
   $("span[name='deNum']").on('click',function () {
-    let tempNum = parseInt(getShopNum())
+    var tempNum = parseInt(getShopNum())
     if(tempNum > 0){
       tempNum--
     }else{tempNum = 0}

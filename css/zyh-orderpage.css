@@ -51,7 +51,6 @@ a.zhichi:hover{
     -webkit-flex-direction:row;
     flex-direction:row;/* 元素排列方式 */
     -webkit-justify-content:space-around;
-    -moz-box-pack:space-around;
     -webkit--moz-box-pack:space-around;
     box-pack:space-around;
     justify-content:space-around;
@@ -123,7 +122,7 @@ a.zhichi:hover{
     border-top:1px solid #d2d2d2;
     border-bottom:1px solid #d2d2d2;
     height:528px;
-    background:url(../images/lf_loginbg.png) no-repeat center center;
+    /*background:url(../images/lf_loginbg.png) no-repeat center center;*/
     background-size:cover;
 }
 .lf_loginbox{
@@ -144,11 +143,11 @@ a.zhichi:hover{
     padding:0 30px;
     width:380px;
 }
-.lf_loginUl>li:nth-child(1){
-    height:66px;
-    padding-top:28px;
-    font-size:18px;
-}
+/*.lf_loginUl>li:nth-child(1){*/
+    /*height:66px;*/
+    /*padding-top:28px;*/
+    /*font-size:18px;*/
+/*}*/
 .lf_input{
     width:100%;
     height:42px;
@@ -197,7 +196,6 @@ a.zhichi:hover{
     width:100%;
     height:41px;
     background-color:#dd2727;
-    font-size:;
     color:#fff;
     border-radius:3px;
 }
@@ -246,7 +244,6 @@ a.zhichi:hover{
     border-top:1px solid #d2d2d2;
     border-bottom:1px solid #d2d2d2;
     height:528px;
-    background:url(../images/lf_img/lf_pwdbg.png) no-repeat center center;
     background-size:cover;
 }
 .lf_pwdbox{
@@ -361,7 +358,6 @@ a.zhichi:hover{
     -webkit-appearance:none;
     appearance:none;
     outline:none;
-    background:url("../images/lf_img/lf_arrowDown.png") no-repeat 196px center;
 }
 .lf_goodsCon{
     padding-bottom:80px;
@@ -662,7 +658,7 @@ a.zhichi:hover{
 }
 .lf_anotherGoodsList{
     -webkit-justify-content: flex-start;
-    -moz-box-pack: flex-start;
+    /*-moz-box-pack: flex-start;*/
     -webkit--moz-box-pack: flex-start;
     box-pack: flex-start;
     justify-content: flex-start;
@@ -892,6 +888,7 @@ a.zhichi:hover{
     border-bottom:4px solid #b2d1ff;
     float:left;
     margin-right:6px;
+
 }
 .lf_sureListTitle>p:nth-child(1){
     width:548px;
@@ -912,6 +909,7 @@ a.zhichi:hover{
     padding:20px 0;
     border-bottom:1px dashed #b2d1ff;
     overflow:hidden;
+    list-style: none;
 }
 .lf_sureShopLists>li>p:last-child{
     margin:0;
@@ -1132,7 +1130,7 @@ a.zhichi:hover{
 .lf_codebgCon{
     width:100%;
     height:276px;
-    background:url("../images/lf_img/lf_codebg.png") no-repeat center center;
+    /*background:url("../images/lf_img/lf_codebg.png") no-repeat center center;*/
     background-size:cover;
     padding:38px 168px;
 }
