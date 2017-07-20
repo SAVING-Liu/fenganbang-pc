@@ -32,7 +32,7 @@
 		<div class="kll-center_box kll-center_ns">
 			<!--导航-->
 			<h4 class="kll-ns_path">
-				您的位置：<a class="kll-ns_patha" href="">需求大厅</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;格力中央空调安装项目，急需施工团队合作
+				您的位置：<a class="kll-ns_patha" href="javascript:void(0);">需求大厅</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;格力中央空调安装项目，急需施工团队合作
 			</h4>
 			<!--项目详情-->
 			<div class="kll-ns_details">
@@ -233,6 +233,8 @@
 			$(".footer").load("footer.html");
 			//加载侧边栏
 			$(".slide").load("sidebar.html");
+			//设置本页导航颜色
+			console.log($('.header .lf_headNav'));
 			//添加遮罩层
 			$(".kll-ns_debtn").on("click", function () {
 				alertBox({
